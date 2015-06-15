@@ -7,3 +7,16 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+section {
+	padding: 60px 0;
+}
+
+footer {
+	background: $gray-lighter;
+	padding: 20px 0;
+
+	span {
+		text-align: center;
+		display: block;
+	}
+}

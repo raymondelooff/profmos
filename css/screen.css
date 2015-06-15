@@ -7138,3 +7138,15 @@ button.close {
     display: none !important;
   }
 }
+section {
+  padding: 60px 0;
+}
+
+footer {
+  background: #eeeeee;
+  padding: 20px 0;
+}
+footer span {
+  text-align: center;
+  display: block;
+}
