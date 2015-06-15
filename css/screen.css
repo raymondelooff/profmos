@@ -7138,3 +7138,18 @@ button.close {
     display: none !important;
   }
 }
+<<<<<<< HEAD
+=======
+section {
+  padding: 60px 0;
+}
+
+footer {
+  background: #eeeeee;
+  padding: 20px 0;
+}
+footer span {
+  text-align: center;
+  display: block;
+}
+>>>>>>> 70adbda3e2a7ffdb229f9a473a671a7f3005d5eb
