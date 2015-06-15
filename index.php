@@ -27,13 +27,10 @@
 
 <body>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1>PROFMOS</h1>
-        </div>
-    </div>
-
     <nav class="navbar navbar-default navbar-fixed-top">
+        <div>
+            <img src="Delta%20logo.jpg">
+        </div>
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
