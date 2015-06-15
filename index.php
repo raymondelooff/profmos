@@ -1,3 +1,9 @@
+<?php
+
+    require_once('includes/MysqliDb.php');
+    require_once('includes/connectdb.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +25,7 @@
 </head>
 
 <body>
-<audio src="mosselman.mp3" autoplay loop></audio>
+
 <h1>Hello, world!</h1>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
