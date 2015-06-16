@@ -49,7 +49,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="comp">Comp</label></td>
                     <td>
-                        <select name="comp">
+                        <select name="comp" id="comp">
                             <option value="">Select one</option>
                             <?php
                                 for($i = 1; $i <13; $i++){
@@ -66,7 +66,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="type">Type</label></td>
                     <td>
-                        <select name="type">
+                        <select name="type" id="type">
                             <option value="">Select one</option>
                             <option value="HW">HW</option>
                             <option value="cons">cons</option>
@@ -97,7 +97,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="moment">moment</label></td>
                     <td>
-                        <select name="moment">
+                        <select name="moment" id="moment">
                             <option value="">Select one</option>
                             <?php
                             for($i = 1; $i <10; $i++){
