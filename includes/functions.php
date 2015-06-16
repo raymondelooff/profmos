@@ -27,6 +27,19 @@ function isValidEmail($input) {
 
 }
 
+// Funciton for validating numeric inputs
+function isValidNumber($input) {
+
+    $input = str_replace(',', '.', $input);
+
+    if(!is_numeric($input)) {
+        return false;
+    }
+
+    return true;
+
+}
+
 // Function for validating a form
 function isValidArray($rules, $array) {
 
@@ -52,7 +65,17 @@ function isValidArray($rules, $array) {
                     case 'email':
 
                         if(!isValidEmail($value)) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in!</div>';
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!</div>';
+                            return false;
+                        }
+
+                        break;
+
+                    // Value needs to be checked as 'numeric'
+                    case 'numeric':
+
+                        if(!isValidNumber($value)) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> (geldig) nummer in!</div>';
                             return false;
                         }
 
@@ -65,8 +88,6 @@ function isValidArray($rules, $array) {
             echo '<div class="alert alert-danger">Veld <strong>' . $name . '</strong> wordt niet gevalideerd! Voeg regels toe aan de validatie rules array.</div>';
             return false;
         }
-
-        var_dump($value);
     }
 
     return true;
