@@ -26,10 +26,9 @@ require_once ('../includes/connectdb.php');
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-
 		<title>Registratie kweekactiviteiten</title>
 	</head>
-	
+
 	<body>
 
 		<?php
@@ -40,13 +39,15 @@ require_once ('../includes/connectdb.php');
 			<div class="container">
 				<h2>Registratie kweekactiviteiten</h2>
 				<form role="form">
+					
 					<div class="form-group">
 						<label for="datum">Datum:</label>
 						<div class="date">
-						<input type="text" class="form-control">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+							<input type="text" class="form-control">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+						</div>
 					</div>
-					</div>
+					
 					<div class="form-group">
 						<label for="activiteit">Activiteit:</label>
 						<select class="form-control" id="activiteit">
@@ -60,14 +61,17 @@ require_once ('../includes/connectdb.php');
 							<option >Anders</option>
 						</select>
 					</div>
+					
 					<div class="form-group">
 						<label for="perceel_naam">Perceel naam: </label>
 						<input type="text" class="form-control" id="perceel_naam">
 					</div>
+					
 					<div class="form-group">
 						<label for="perceel_plaats">Perceel plaats: </label>
 						<input type="text" class="form-control" id="perceel_plaats">
 					</div>
+					
 					<div class="form-group">
 						<label for="gezaaid_als">Gezaaid als:</label>
 						<select class="form-control" id="gezaaid_als">
@@ -80,15 +84,19 @@ require_once ('../includes/connectdb.php');
 							<option >Anders</option>
 						</select>
 					</div>
+					
 					<div class="form-group">
 						<label for="oppervlakte">Oppervlakte: </label>
 						<input type="text" class="form-control" id="oppervlakte">
 					</div>
+					
 					<div class="row spacer">
 						<div class="span4"></div>
 					</div>
+					
 					<br>
 					<br>
+					
 					<div class="form-group">
 						<label for="monster">Monster:</label>
 						<select class="form-control" id="monster">
@@ -96,40 +104,51 @@ require_once ('../includes/connectdb.php');
 							<option >Nee</option>
 						</select>
 					</div>
+					
 					<div class="form-group">
 						<label for="label">Label: </label>
 						<input type="text" class="form-control" id="label">
 					</div>
+					
 					<br>
 					<br>
+					
 					<div class="form-group">
 						<label for="label">Verzaaien </label>
 					</div>
+					
 					<div class="form-group">
 						<label for="perceel_naam_verzaaien">Perceel naam: </label>
 						<input type="text" class="form-control" id="perceel_naam_verzaaien">
 					</div>
+					
 					<div class="form-group">
 						<label for="perceel_plaats_verzaaien">Perceel plaats: </label>
 						<input type="text" class="form-control" id="perceel_plaats_verzaaien">
 					</div>
+					
 					<div class="form-group">
 						<label for="oppervlakte_verzaaien">Oppervlakte: </label>
 						<input type="text" class="form-control" id="oppervlakte_verzaaien">
 					</div>
+					
 					<br>
 					<br>
+					
 					<div class="form-group">
 						<label for="label">Indien van toepassing </label>
 					</div>
+					
 					<div class="form-group">
 						<label for="busstukstal">Busstukstal: </label>
 						<input type="text" class="form-control" id="busstukstal">
 					</div>
+					
 					<div class="form-group">
 						<label for="mosselton">Mosselton: </label>
 						<input type="text" class="form-control" id="mosselton">
 					</div>
+					
 					<div class="form-group">
 						<label for="perceel_leeggevist">Perceel leeggevist?</label>
 						<select class="form-control" id="perceel_leeggevist">
@@ -137,10 +156,12 @@ require_once ('../includes/connectdb.php');
 							<option >Nee</option>
 						</select>
 					</div>
+					
 					<div class="form-group">
 						<label for="opmerkingen">Opmerkingen:</label>
 						<textarea class="form-control" rows="5" id="opmerkingen"></textarea>
 					</div>
+					
 				</form>
 			</div>
 		</section>
