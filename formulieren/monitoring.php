@@ -1,7 +1,7 @@
 <?php
 
-require_once('includes/MysqliDb.php');
-require_once('includes/connectdb.php');
+require_once('../includes/MysqliDb.php');
+require_once('../includes/connectdb.php');
 
 ?>
 <!DOCTYPE html>
@@ -27,11 +27,9 @@ require_once('includes/connectdb.php');
 
 <body>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>PROFMOS</h1>
-    </div>
-</div>
+<?php
+    include ('../includes/header.php');
+?>
 
 <section id="content">
     <div class="container">
@@ -49,7 +47,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="comp">Comp</label></td>
                     <td>
-                        <select name="comp">
+                        <select name="comp" id="comp">
                             <option value="">Select one</option>
                             <?php
                                 for($i = 1; $i <13; $i++){
@@ -66,7 +64,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="type">Type</label></td>
                     <td>
-                        <select name="type">
+                        <select name="type" id="type">
                             <option value="">Select one</option>
                             <option value="HW">HW</option>
                             <option value="cons">cons</option>
@@ -93,19 +91,6 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="DWschelp">DWschelp</label></td>
                     <td><input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="moment">moment</label></td>
-                    <td>
-                        <select name="moment">
-                            <option value="">Select one</option>
-                            <?php
-                            for($i = 1; $i <10; $i++){
-                                echo "<option value='".$i."''>".$i."</option>";
-                            }
-                            ?>
-                        </select>
-                    </td>
                 </tr>
                 <tr>
                     <td><input type="submit" value="Verstuur"></td>
