@@ -11,7 +11,7 @@
                 </button>
 
                 <div id="logo">
-                    <a href="#">
+                    <a href="/">
                         <img src="/images/delta-academy-logo.png">
                         <span>Delta Academy</span>
                     </a>
