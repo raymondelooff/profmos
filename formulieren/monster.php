@@ -7,7 +7,6 @@ require_once ('../includes/connectdb.php');
 <!DOCTYPE html>
 <html lang="nl">
 	<head>
-		<title>Monster Data</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,8 +39,9 @@ require_once ('../includes/connectdb.php');
 			<div class="container"><br />
 				<h2>Monster data</h2>
 				<form role="form">
-					Datum:
-					<div class="date">
+					<div class="form-group">
+						<label for="datum">Datum:</label>
+						<div class="date">
 						<input type="text" class="form-control">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 					</div>
