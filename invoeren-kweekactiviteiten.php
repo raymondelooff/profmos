@@ -50,7 +50,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="activiteit">Activiteit:</label>
-                    <select class="form-control" id="activiteit">
+                    <select class="form-control" id="activiteit" name="activiteit" >
                         <option >Zaaien</option>
                         <option >Verzaaien</option>
                         <option >Sterren dweilen</option>
@@ -64,17 +64,17 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="perceel_naam">Perceel naam: </label>
-                    <input type="text" class="form-control" id="perceel_naam">
+                    <input type="text" class="form-control" id="perceel_naam" name="perceel_naam" >
                 </div>
                 
                 <div class="form-group">
                     <label for="perceel_plaats">Perceel plaats: </label>
-                    <input type="text" class="form-control" id="perceel_plaats">
+                    <input type="text" class="form-control" id="perceel_plaats" name="perceel_plaats" >
                 </div>
                 
                 <div class="form-group">
                     <label for="gezaaid_als">Gezaaid als:</label>
-                    <select class="form-control" id="gezaaid_als">
+                    <select class="form-control" id="gezaaid_als" name="gezaaid_als" >
                         <option >MZI WAD</option>
                         <option >NJZAAD</option>
                         <option >VJZAAD</option>
@@ -87,11 +87,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="oppervlakte">Oppervlakte: </label>
-                    <input type="text" class="form-control" id="oppervlakte">
-                </div>
-                
-                <div class="row spacer">
-                    <div class="span4"></div>
+                    <input type="text" class="form-control" id="oppervlakte" name="oppervlakte" >
                 </div>
                 
                 <br>
@@ -99,7 +95,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="monster">Monster:</label>
-                    <select class="form-control" id="monster">
+                    <select class="form-control" id="monster" name="monster" >
                         <option >Ja</option>
                         <option >Nee</option>
                     </select>
@@ -107,7 +103,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="label">Label: </label>
-                    <input type="text" class="form-control" id="label">
+                    <input type="text" class="form-control" id="label" name="label" >
                 </div>
                 
                 <br>
@@ -119,17 +115,17 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="perceel_naam_verzaaien">Perceel naam: </label>
-                    <input type="text" class="form-control" id="perceel_naam_verzaaien">
+                    <input type="text" class="form-control" id="perceel_naam_verzaaien" name="perceel_naam_verzaaien" >
                 </div>
                 
                 <div class="form-group">
                     <label for="perceel_plaats_verzaaien">Perceel plaats: </label>
-                    <input type="text" class="form-control" id="perceel_plaats_verzaaien">
+                    <input type="text" class="form-control" id="perceel_plaats_verzaaien" name="perceel_plaats_verzaaien" >
                 </div>
                 
                 <div class="form-group">
                     <label for="oppervlakte_verzaaien">Oppervlakte: </label>
-                    <input type="text" class="form-control" id="oppervlakte_verzaaien">
+                    <input type="text" class="form-control" id="oppervlakte_verzaaien" name="oppervlakte_verzaaien" >
                 </div>
                 
                 <br>
@@ -141,17 +137,17 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="busstukstal">Busstukstal: </label>
-                    <input type="text" class="form-control" id="busstukstal">
+                    <input type="text" class="form-control" id="busstukstal" name="busstukstal" >
                 </div>
                 
                 <div class="form-group">
                     <label for="mosselton">Mosselton: </label>
-                    <input type="text" class="form-control" id="mosselton">
+                    <input type="text" class="form-control" id="mosselton" name="mosselton" >
                 </div>
                 
                 <div class="form-group">
                     <label for="perceel_leeggevist">Perceel leeggevist?</label>
-                    <select class="form-control" id="perceel_leeggevist">
+                    <select class="form-control" id="perceel_leeggevist" name="perceel_leeggevist" >
                         <option >Ja</option>
                         <option >Nee</option>
                     </select>
@@ -159,7 +155,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="opmerkingen">Opmerkingen:</label>
-                    <textarea class="form-control" rows="5" id="opmerkingen"></textarea>
+                    <textarea class="form-control" rows="5" id="opmerkingen" name="opmerkingen" ></textarea>
                 </div>
 
                 <div class="form-group">
