@@ -40,6 +40,14 @@ function isValidNumber($input) {
 
 }
 
+// Function for validating the date
+function isValidDate($input, $format) {
+
+    $date = DateTime::createFromFormat($format, $input);
+    return $date && $date->format($format) == $input;
+
+}
+
 // Function for validating a form
 function isValidArray($rules, $array) {
 
@@ -75,11 +83,19 @@ function isValidArray($rules, $array) {
                     case 'numeric':
 
                         if(!isValidNumber($value)) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> (geldig) nummer in!</div>';
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in!</div>';
                             return false;
                         }
 
                         break;
+
+                    // Value needs to be checked as 'date'
+                    case 'date':
+
+                        if(!isValidDate($value, $rule['format'])) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
+                            return false;
+                        }
 
                 }
             }
