@@ -27,7 +27,7 @@ function isValidEmail($input) {
 
 }
 
-// Funciton for validating numeric inputs
+// Function for validating numeric inputs
 function isValidNumber($input) {
 
     $input = str_replace(',', '.', $input);
