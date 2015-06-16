@@ -37,6 +37,37 @@ require_once('includes/connectdb.php');
     <section id="content">
         <div class="container">
             <h2>Registratie kweekactiviteiten</h2>
+            
+            <?php
+            
+            	if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            		
+					$rules = array(
+						'datum' => array(
+                                    'label' => 'Datum',
+                                    'type' => 'date'
+                                ),
+                        
+					);
+					
+					if(isValidArray($rules, $_POST)) {
+						$array = array();
+						
+						// Array voor database vullen
+						
+						$insert = $database->insert('TABEL', $array);
+						
+						if($insert) {
+							// bootstrap succes melding
+						}
+						else {
+							// bootstrap foutmelding
+						}
+					}
+					
+            	}
+            
+            ?>
 
             <form role="form">
             	
