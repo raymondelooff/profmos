@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-fixed-top">
         <div>
-        <img src="Delta%20logo.jpg">
+        <img src="../Delta%20logo.jpg">
         </div>
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->

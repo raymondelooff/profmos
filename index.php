@@ -28,7 +28,7 @@
 <body>
 
 <?php
-    include('header.php');
+    include('includes/header.php');
 ?>
 
     <section id="content">
