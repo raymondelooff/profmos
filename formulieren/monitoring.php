@@ -26,7 +26,7 @@ require_once('../includes/connectdb.php');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>PROFMOS</title>
+    <title>PROFMOS monitoring</title>
 </head>
 
 <body>
