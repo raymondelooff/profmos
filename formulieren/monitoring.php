@@ -40,7 +40,7 @@ require_once('../includes/connectdb.php');
             Invullen monitoring gegevens <br>
             <input type="hidden" name="send" value="true"/><br>
             <label for="datum">Datum</label><br>
-            <input  type="text" id="datum" name="datum" value ="" maxlength="50" size="20"><br>
+            <input  type="date" id="datum" name="datum" value ="" maxlength="50" size="20"><br>
             <label for="comp">Comp</label><br>
             <select name="comp" id="comp"><br>
                 <option value="">Select one</option>
