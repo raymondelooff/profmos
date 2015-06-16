@@ -30,9 +30,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Invoeren data <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="formulieren/registratie_kweekactiviteiten.php">Registratie kweekactiviteiten</a></li>
-                            <li><a href="formulieren/monster.php">Monster data</a></li>
-                            <li><a href="formulieren/monitoring.php">Monitoring</a></li>
+                            <li><a href="/formulieren/registratie_kweekactiviteiten.php">Registratie kweekactiviteiten</a></li>
+                            <li><a href="/formulieren/monster.php">Monster data</a></li>
+                            <li><a href="/formulieren/monitoring.php">Monitoring</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Separated link</a></li>
                         </ul>
