@@ -8,9 +8,13 @@ require_once('../includes/connectdb.php');
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <!-- Bootstrap -->
     <link href="../css/screen.css" rel="stylesheet">
@@ -22,7 +26,7 @@ require_once('../includes/connectdb.php');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>PROFMOS</title>
+    <title>PROFMOS monitoring</title>
 </head>
 
 <body>
@@ -37,48 +41,72 @@ require_once('../includes/connectdb.php');
               id="input monitoring"
               action=""
               method="post">
-            Invullen monitoring gegevens <br>
-            <input type="hidden" name="send" value="true"/><br>
-            <label for="datum">Datum</label><br>
-            <input  type="text" id="datum" name="datum" value ="" maxlength="50" size="20"><br>
-            <label for="comp">Comp</label><br>
-            <select name="comp" id="comp"><br>
-                <option value="">Select one</option>
-                    <?php
-                        for($i = 1; $i <13; $i++){
-                            echo "<option value='".$i."''>".$i."</option>";
-                        }
-                    ?>
-            </select><br>
-            <label for="locatie">Locatie</label><br>
-            <input  type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20"><br>
-            <label for="type">Type</label><br>
-            <select name="type" id="type">
-                <option value="">Select one</option>
-                <option value="HW">HW</option>
-                <option value="cons">cons</option>
-                <option value="zaad">zaad</option>
-            </select><br>
-            <label for="lengte">Lengte</label><br>
-            <input  type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20"><br>
-            <label for="natgewicht">Natgewicht</label><br>
-            <input  type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20"><br>
-            <label for="visgewicht">Visgewicht</label><br>
-            <input  type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20"><br>
-            <label for="AFDW">AFDW</label><br>
-            <input  type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20"><br>
-            <label for="DWschelp">DWschelp</label><br>
-            <input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20"><br>
-            <input type="submit" value="Verstuur"><br>
+            <div class="form-group">
+                Invullen monitoring gegevens
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="hidden" name="send" value="true"/>
+            </div>
+            <div class="form-group">
+                <label for="datum">Datum</label>
+                <input class="form-control" type="date" id="datum" name="datum" value ="" maxlength="50" size="20">
+            </div>
+            <div class="form-group">
+                <label for="compartiment">Compartiment</label>
+                <select class="form-control" name="compartiment" id="compartiment">
+                    <option value="">Select one</option>
+                         <?php
+                            for($i = 1; $i <13; $i++){
+                               echo "<option value='".$i."''>".$i."</option>";
+                          }
+                      ?>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="locatie">Locatie</label>
+                <input class="form-control" type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20">
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select class="form-control" name="type" id="type">
+                    <option value="">Select one</option>
+                    <option value="Halfwas">Halfwas</option>
+                    <option value="consumptieFormaat">consumptie formaat</option>
+                    <option value="zaad">zaad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lengte">Lengte</label>
+                <input class="form-control" type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20">
+            </div>
+            <div class="form-group">
+                <label for="natgewicht">Natgewicht</label>
+                <input class="form-control" type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20">
+            </div>
+            <div class="form-group">
+                <label for="visgewicht">Visgewicht</label>
+                <input class="form-control" type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20">
+            </div>
+            <div class="form-group">
+                <label for="AFDW">AFDW</label>
+                <input class="form-control" type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20">
+            </div>
+            <div class="form-group">
+                <label for="DryWeightschelp">Dry Weight schelp</label>
+                <input class="form-control" type="text" id="DryWeightschelp" name="DryWeightschelp" value ="" maxlength="80" size="20">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="submit" value="Verstuur">
+            </div>
         </form>
     </div>
 </section>
 
-<footer>
-    <div class="container">
-        <span>&copy; 2015 Delta Academy</span>
-    </div>
-</footer>
+<?php
+
+include_once('../includes/footer.php');
+
+?>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
