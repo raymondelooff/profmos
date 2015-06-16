@@ -28,8 +28,8 @@ require_once ('../includes/connectdb.php');
 
 
 		<title>Registratie kweekactiviteiten</title>
-
 	</head>
+	
 	<body>
 
 		<?php
