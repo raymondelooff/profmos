@@ -1,7 +1,7 @@
 <?php
 
-require_once('includes/MysqliDb.php');
-require_once('includes/connectdb.php');
+require_once('../includes/MysqliDb.php');
+require_once('../includes/connectdb.php');
 
 ?>
 <!DOCTYPE html>
@@ -27,11 +27,9 @@ require_once('includes/connectdb.php');
 
 <body>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>PROFMOS</h1>
-    </div>
-</div>
+<?php
+    include ('../includes/header.php');
+?>
 
 <section id="content">
     <div class="container">
