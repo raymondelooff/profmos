@@ -37,65 +37,40 @@ require_once('../includes/connectdb.php');
               id="input monitoring"
               action=""
               method="post">
-            Invullen monitoring gegevens
-            <input type="hidden" name="send" value="true"/>
-            <table>
-                <tr>
-                    <td><label for="datum">Datum</label></td>
-                    <td><input  type="text" id="datum" name="datum" value ="" maxlength="50" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="comp">Comp</label></td>
-                    <td>
-                        <select name="comp" id="comp">
-                            <option value="">Select one</option>
-                            <?php
-                                for($i = 1; $i <13; $i++){
-                                    echo "<option value='".$i."''>".$i."</option>";
-                                }
-                            ?>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="locatie">Locatie</label></td>
-                    <td><input  type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="type">Type</label></td>
-                    <td>
-                        <select name="type" id="type">
-                            <option value="">Select one</option>
-                            <option value="HW">HW</option>
-                            <option value="cons">cons</option>
-                            <option value="zaad">zaad</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="lengte">Lengte</label></td>
-                    <td><input  type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="natgewicht">Natgewicht</label></td>
-                    <td><input  type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="visgewicht">Visgewicht</label></td>
-                    <td><input  type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="AFDW">AFDW</label></td>
-                    <td><input  type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><label for="DWschelp">DWschelp</label></td>
-                    <td><input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Verstuur"></td>
-                </tr>
-            </table>
+            Invullen monitoring gegevens <br>
+            <input type="hidden" name="send" value="true"/><br>
+            <label for="datum">Datum</label><br>
+            <input  type="text" id="datum" name="datum" value ="" maxlength="50" size="20"><br>
+            <label for="comp">Comp</label><br>
+            <select name="comp" id="comp"><br>
+                <option value="">Select one</option>
+                    <?php
+                        for($i = 1; $i <13; $i++){
+                            echo "<option value='".$i."''>".$i."</option>";
+                        }
+                    ?>
+            </select><br>
+            <label for="locatie">Locatie</label><br>
+            <input  type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20"><br>
+            <label for="type">Type</label><br>
+            <select name="type" id="type">
+                <option value="">Select one</option>
+                <option value="HW">HW</option>
+                <option value="cons">cons</option>
+                <option value="zaad">zaad</option>
+            </select><br>
+            <label for="lengte">Lengte</label><br>
+            <input  type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20"><br>
+            <label for="natgewicht">Natgewicht</label><br>
+            <input  type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20"><br>
+            <label for="visgewicht">Visgewicht</label><br>
+            <input  type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20"><br>
+            <label for="AFDW">AFDW</label><br>
+            <input  type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20"><br>
+            <label for="DWschelp">DWschelp</label><br>
+            <input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20"><br>
+            <input type="submit" value="Verstuur"><br>
+        </form>
     </div>
 </section>
 
