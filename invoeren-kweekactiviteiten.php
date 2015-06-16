@@ -45,8 +45,10 @@ require_once('includes/connectdb.php');
 					$rules = array(
 						'datum' => array(
                                     'label' => 'Datum',
-                                    'type' => 'date'
+                                    'type' => 'date',
+                                    'format' => 'm/d/Y'
                                 ),
+                        ''
                         
 					);
 					
