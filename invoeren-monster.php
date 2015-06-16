@@ -43,167 +43,146 @@ require_once('includes/connectdb.php');
                     <input type="text" class="form-control">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                 </div>
-                <label for="mosselgroep">Mosselgroep</label>
                 <br>
+                
+                <label for="mosselgroep">Mosselgroep</label>
+                
 
                 <div class="form-group">
                     <input  class="form-control" type="text" id="mosselgroep" name="mosselgroep" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="bedrijf">Bedrijf</label>
                     <br>
                     <input class="form-control" type="text" id="bedrijf" name="bedrijf" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="boot">Boot</label>
                     <br>
                     <input  class="form-control" type="text" id="boot" name="boot" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="perceel">Perceel</label>
                     <br>
                     <input  class="form-control" type="text" id="perceel" name="perceel" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="nummer">Nummer</label>
                     <br>
                     <input class="form-control" type="text" id="nummer" name="nummer" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="vak">Vak</label>
                     <br>
                     <input class="form-control" type="text" id="vak" name="vak" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="bruto monster (g)">Bruto monster (g)</label>
                     <br>
                     <input class="form-control" type="text" id="bruto monster (g)" name="bruto monster (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="bustal">Bustal</label>
                     <br>
                     <input class="form-control" type="text" id="bustal" name="bustal" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="slippers (g)">Slippers (g)</label>
                     <br>
                     <input class="form-control" type="text" id="slippers (g)" name="slippers (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="zeester (g)">Zeester (g)</label>
                     <br>
                     <input class="form-control" type="text" id="zeester (g)" name="zeester (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="pokken">Pokken</label>
                     <br>
                     <input class="form-control" type="text" id="pokken" name="pokken" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="bus netto">Bus netto</label>
                     <br>
                     <input class="form-control" type="text" id="bus netto" name="bus netto" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="kookmonster aantal">Kookmonster aantal</label>
                     <br>
                     <input class="form-control" type="text" id="kookmonster aantal" name="kookmonster aantal" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="netto kookmonster (g)">Netto kookmonster (g)</label>
                     <br>
                     <input class="form-control" type="text" id="netto kookmonster (g)" name="netto kookmonster (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="vis totale monster">Vis totale monster</label>
                     <br>
                     <input class="form-control" type="text" id="vis totale monster" name="vis totale monster" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="vis (%)">Vis (%)</label>
                     <br>
                     <input class="form-control" type="text" id="vis (%)" name="vis (%)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="opmerkingen">Opmerkingen</label>
                     <br>
                     <input class="form-control" type="text" id="opmerkingen" name="opmerkingen" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="kroesnummer">Kroesnummer</label>
                     <br>
                     <input class="form-control" type="text" id="kroesnummer" name="kroesnummer" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="kroes (g)">Kroes (g)</label>
                     <br>
                     <input class="form-control"  type="text" id="kroes (g)" name="kroes (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="kroes+vlees nat">Kroes+vlees nat</label>
                     <br>
                     <input class="form-control" type="text" id="kroes+vlees nat" name="kroes+vlees nat" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="droog gewicht (g)">Droog gewicht (g)</label>
                     <br>
                     <input class="form-control" type="text" id="droog gewicht (g)" name="droog gewicht (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="asvrij droog gewicht (g)">Asvrij droog gewicht (g)</label>
                     <br>
                     <input class="form-control" type="text" id="asvrij droog gewicht (g)" name="asvrij droog gewicht (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="schelpen droog (g)">Schelpen droog (g)</label>
                     <br>
                     <input class="form-control" type="text" id="schelpen droog (g)" name="schelpen droog (g)" value ="" maxlength="80" size="20">
                 </div>
-                <br>
 
                 <div class="form-group">
                     <label for="gemiddelde lengte">Gemiddelde lengte</label>
