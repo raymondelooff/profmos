@@ -48,8 +48,90 @@ require_once('includes/connectdb.php');
                                     'type' => 'date',
                                     'format' => 'm/d/Y'
                                 ),
-                        ''
-                        
+                        'activiteit' => array(
+									'label' => 'Activiteit',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100							
+								),
+						'perceel_naam' => array(
+									'label' => 'Perceel naam',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'perceel_plaats' => array(
+									'label' => 'Perceel plaats',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+                        'gezaaid_als' => array(
+									'label' => 'Gezaaid als',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'oppervlakte' => array(
+									'label' => 'Oppervlakte',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'monster' => array(
+									'label' => 'Monster',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'label' => array(
+									'label' => 'label',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'perceel_naam_verzaaien' => array(
+									'label' => 'Perceel naam verzaaien',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'perceel_plaats_verzaaien' => array(
+									'label' => 'Perceel plaats verzaaien',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'oppervlakte_verzaaien' => array(
+									'label' => 'Oppervlakte verzaaien',
+									'type' =>'text',
+									'minLength' => 1,
+                                    'maxLength' => 100 
+								),
+						'busstukstal' => array(
+									'label' => 'Busstukstal',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'mosselton' => array(
+									'label' => 'Mosselton',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'perceel_leeggevist' => array(
+									'label' => 'Perceel leeggevist',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 100
+								),
+						'opmerkingen' => array(
+									'label' => 'opmerkingen',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 500
+								)
 					);
 					
 					if(isValidArray($rules, $_POST)) {
