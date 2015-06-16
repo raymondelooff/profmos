@@ -52,8 +52,8 @@ require_once('../includes/connectdb.php');
                 <input class="form-control" type="date" id="datum" name="datum" value ="" maxlength="50" size="20">
             </div>
             <div class="form-group">
-                <label for="comp">Comp</label>
-                <select class="form-control" name="comp" id="comp">
+                <label for="compartiment">Compartiment</label>
+                <select class="form-control" name="compartiment" id="compartiment">
                     <option value="">Select one</option>
                          <?php
                             for($i = 1; $i <13; $i++){
@@ -70,8 +70,8 @@ require_once('../includes/connectdb.php');
                 <label for="type">Type</label>
                 <select class="form-control" name="type" id="type">
                     <option value="">Select one</option>
-                    <option value="HW">HW</option>
-                    <option value="cons">cons</option>
+                    <option value="Halfwas">Halfwas</option>
+                    <option value="consumptieFormaat">consumptie formaat</option>
                     <option value="zaad">zaad</option>
                 </select>
             </div>
@@ -92,8 +92,8 @@ require_once('../includes/connectdb.php');
                 <input class="form-control" type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
-                <label for="DWschelp">DWschelp</label>
-                <input class="form-control" type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20">
+                <label for="DryWeightschelp">Dry Weight schelp</label>
+                <input class="form-control" type="text" id="DryWeightschelp" name="DryWeightschelp" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
                 <input class="form-control" type="submit" value="Verstuur">
