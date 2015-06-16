@@ -36,10 +36,8 @@ require_once('includes/connectdb.php');
 
     <section id="content">
         <div class="container">
+        	<h2>Invullen monitoring gegevens</h2>
             <form name="input" id="input monitoring" action="" method="post">
-                <div class="form-group">
-                    Invullen monitoring gegevens
-                </div>
                 <div class="form-group">
                     <input class="form-control" type="hidden" name="send" value="true"/>
                 </div>
