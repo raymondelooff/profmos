@@ -13,7 +13,7 @@ require_once('includes/connectdb.php');
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Bootstrap -->
-    <link href="css/screen.css" rel="stylesheet">
+    <link href="../css/screen.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -123,7 +123,7 @@ require_once('includes/connectdb.php');
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
 </body>
 </html>
