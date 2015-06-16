@@ -7138,6 +7138,10 @@ button.close {
     display: none !important;
   }
 }
+body {
+  line-height: 1.5;
+}
+
 header nav #logo img {
   height: 50px;
   padding: 5px;
@@ -7154,6 +7158,10 @@ footer {
 footer span {
   text-align: center;
   display: block;
+}
+
+.col img {
+  width: 100%;
 }
 
 #content {

@@ -7,6 +7,10 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+body {
+	line-height: 1.5;
+}
+
 header {
 	nav {
 		#logo {
@@ -29,6 +33,12 @@ footer {
 	span {
 		text-align: center;
 		display: block;
+	}
+}
+
+.col {
+	img {
+		width: 100%;
 	}
 }
 
