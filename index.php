@@ -28,21 +28,37 @@
 
 <body>
 
-<?php
-    include('includes/header.php');
-?>
+    <?php
+
+        include_once('includes/header.php');
+
+    ?>
 
     <section id="content">
         <div class="container">
-            <h1>Hello, world!</h1>
+            <div class="row">
+                <div class="col col-md-6">
+                    <h1>PROFMOS</h1>
+                    <h3>Onderzoeksgroep Aquacultuur in Delta Gebieden</h3>
+                    <p>
+                        Aquacultuur in Delta Gebieden van de Delta Academy heeft zijn focus op duurzame zoute aquacultuur in en buiten de regio Zeeland.
+                        Aquacultuur is de gecontroleerde productie van zilte gewassen, algen, zeewier, zagers, schelpdieren en vis.
+                        De teelt van deze organismen kan plaatsvinden in verschillende (intensieve en extensieve) manieren.
+                        De onderzoeksgroep Aquaculture heeft een uitgebreid netwerk opgebouwd van kleine en middelgrote ondernemingen (MKB's), adviesbureaus en kennisinstellingen betrokken bij aquacultuur in en buiten Nederland.
+                    </p>
+                </div>
+                <div class="col col-md-6">
+                    <img src="/images/plattegrond.png" alt="Plattegrond PROFMOS" />
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <span>&copy; 2015 Delta Academy</span>
-        </div>
-    </footer>
+    <?php
+
+        include_once('includes/footer.php');
+
+    ?>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

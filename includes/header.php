@@ -12,7 +12,8 @@
 
                 <div id="logo">
                     <a href="#">
-                        <img src="images/delta-academy-logo.png">
+                        <img src="/images/delta-academy-logo.png">
+                        <span>Delta Academy</span>
                     </a>
                 </div>
             </div>
@@ -24,7 +25,7 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="over-profmos.php">Over PROFMOS</a>
+                        <a href="/over-profmos.php">Over PROFMOS</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Invoeren data <span class="caret"></span></a>
@@ -37,7 +38,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="exporteren.php">Exporteren</a>
+                        <a href="/exporteren.php">Exporteren</a>
                     </li>
                 </ul>
             </div>
