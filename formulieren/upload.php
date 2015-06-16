@@ -34,56 +34,83 @@ if(isset($_POST["submit"])) {
             $error_msg .= "Het bestand " . basename($_FILES["upload"]["name"]) . " is geüpload en verwerkt in de database.";
 
             $reader = new SpreadsheetReader($target_file);
-            $gets = array();
+            $insert = array();
             $i = 0;
+            $verzaaien = false;
+            $tabel = "";
+            $oppervlakte = 0;
             foreach ($reader as $row) {
                 if ($i == 1) {
-                    $gets['datum'] = $row[1];
+                    $insert['Datum'] = $row[1];
                 }
                 if ($i == 2) {
-                    $gets['activiteit'] = $row[1];
+                    $activiteit = $row[1];
+                    if ($activiteit == "Zaaien" || $activiteit == "Bijzaaien" || $activiteit == "Verzaaien") {
+                        $tabel = 'zaaiing';
+                    }
+                    else if ($activiteit == "Vissen voor veiling" || $activiteit == "Uitvissen") {
+                        $tabel = 'oogst';
+                    }
+                    else if ($activiteit == "Sterren rollen" || $activiteit == "Trekje op perceel") {
+                        $tabel = 'behandeling';
+                    }
+
+                    if ($activiteit == "Verzaaien") {
+                        $verzaaien = true;
+                    }
                 }
-                if ($i == 3) {
+                /**if ($i == 3) {
                     $gezaaidAls = $row[1];
                     if ($gezaaidAls == "Anders:") {
                         $gezaaidAls = $row[2];
                     }
-                    $gets['gezaaidAls'] = $gezaaidAls;
-                }
+                    $insert['gezaaidAls'] = $gezaaidAls;
+                }*/
                 if ($i == 4) {
-                    $gets['oppervlakte'] = $row[1];
+                    $oppervlakte = $row[1];
                 }
                 if ($i == 6) {
-                    $gets['monster'] = $row[1];
+                    $insert['Monster'] = $row[1];
                 }
                 if ($i == 7) {
-                    $gets['label'] = $row[1];
+                    $insert['MonsterLabel'] = $row[1];
                 }
-                if ($i == 10) {
-                    $gets['herkomstNaam'] = $row[1];
+                if ($i == 10 && $verzaaien) {
+                    $herkomstNaam = $row[1];
+
                 }
-                if ($i == 11) {
-                    $gets['herkomstPlaats'] = $row[1];
+                if ($i == 11 && $verzaaien) {
+                    $herkomstPlaats = $row[1];
                 }
-                if ($i == 12) {
-                    $gets['herkomstOppervlakte'] = $row[1];
+                if ($i == 12 && $verzaaien) {
+                    $herkomstOppervlakte = $row[1];
                 }
                 if ($i == 15) {
-                    $gets['busstukstal'] = $row[1];
+                    $insert['Bustal'] = $row[1];
                 }
-                if ($i == 16) {
-                    $gets['mosselton'] = $row[1];
+                if ($i == 16 && $tabel == 'zaaiing') {
+                    $insert['BrutoMton'] = $row[1];
                 }
                 if ($i == 17) {
-                    $gets['perceelLeeggevist'] = $row[1];
+                    $perceelLeeggevist = $row[1];
                 }
                 if ($i == 18) {
-                    $gets['opmerkingen'] = $row[1];
+                    $insert['Opmerking'] = $row[1];
                 }
                 $i++;
             }
 
+            $insert['Bedrijf_BedrijfID'] = $_POST['bedrijf'];
+            $insert['Vak_VakID'] = $_POST['vak'];
+            $insert['Perceel_PerceelID'] = $_POST['perceel'];
+            $database->insert('mosselgroep', array());
+            $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
+            $insert['Kilogram'] = $insert['BrutoMton'] * 100;
             unlink($target_file);
+
+            if ($tabel == "zaaiing" && !$verzaaien) {
+                $database->insert($tabel, $insert);
+            }
 
         }
 
@@ -129,6 +156,16 @@ if(isset($_POST["submit"])) {
                         <form action="upload.php" method="post" enctype="multipart/form-data">
                             Select image to upload:
                             <input type="file" name="upload" id="upload">
+                            <br>
+                            <select name="bedrijf">
+                                <option>1</option>
+                            </select>
+                            <select name="perceel">
+                                <option>2</option>
+                            </select>
+                            <select name="vak">
+                                <option>3</option>
+                            </select>
                             <input type="submit" value="Upload spreadsheet" name="submit">
                         </form>
                     </div>
