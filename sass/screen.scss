@@ -7,6 +7,34 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+body {
+	line-height: 1.5;
+}
+
+a {
+	@include transition(color .2s linear);
+}
+
+header {
+	nav {
+		#logo {
+			img {
+				height: 50px;
+				padding: 5px;
+			}
+
+			a {
+				color: $navbar-default-link-color;
+				text-decoration: none;
+
+				&:hover {
+					color: $navbar-default-link-hover-color;
+				}
+			}
+		}
+	}
+}
+
 section {
 	padding: 60px 0;
 }
@@ -21,6 +49,16 @@ footer {
 	}
 }
 
+.col {
+	img {
+		width: 100%;
+	}
+}
+
 #content {
-  padding-top: 70px;
+  padding-top: 100px;
+}
+
+.date {
+  width: 200px;
 }

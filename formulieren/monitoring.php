@@ -1,7 +1,7 @@
 <?php
 
-require_once('includes/MysqliDb.php');
-require_once('includes/connectdb.php');
+require_once('../includes/MysqliDb.php');
+require_once('../includes/connectdb.php');
 
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ require_once('includes/connectdb.php');
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Bootstrap -->
-    <link href="css/screen.css" rel="stylesheet">
+    <link href="../css/screen.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,11 +27,9 @@ require_once('includes/connectdb.php');
 
 <body>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>PROFMOS</h1>
-    </div>
-</div>
+<?php
+    include ('../includes/header.php');
+?>
 
 <section id="content">
     <div class="container">
@@ -49,7 +47,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="comp">Comp</label></td>
                     <td>
-                        <select name="comp">
+                        <select name="comp" id="comp">
                             <option value="">Select one</option>
                             <?php
                                 for($i = 1; $i <13; $i++){
@@ -66,7 +64,7 @@ require_once('includes/connectdb.php');
                 <tr>
                     <td><label for="type">Type</label></td>
                     <td>
-                        <select name="type">
+                        <select name="type" id="type">
                             <option value="">Select one</option>
                             <option value="HW">HW</option>
                             <option value="cons">cons</option>
@@ -95,19 +93,6 @@ require_once('includes/connectdb.php');
                     <td><input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20"></td>
                 </tr>
                 <tr>
-                    <td><label for="moment">moment</label></td>
-                    <td>
-                        <select name="moment">
-                            <option value="">Select one</option>
-                            <?php
-                            for($i = 1; $i <10; $i++){
-                                echo "<option value='".$i."''>".$i."</option>";
-                            }
-                            ?>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
                     <td><input type="submit" value="Verstuur"></td>
                 </tr>
             </table>
@@ -123,7 +108,7 @@ require_once('includes/connectdb.php');
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
 </body>
 </html>
