@@ -44,25 +44,63 @@ require_once('includes/connectdb.php');
             		
 					$rules = array(
 						'datum' => array(
-                                    'label' => 'Datum',
-                                    'type' => 'date',
-                                    'format' => 'm/d/Y'
-                                ),
-                        
+                            'label' => 'Datum',
+                            'type' => 'date',
+                            'format' => 'm/d/Y'
+                        ),
+                        'compartiment' => array(
+                            'label' => 'Compartiment',
+                            'type' => 'numeric',
+                        ),
+                        'locatie' => array(
+                            'label' => 'Locatie',
+                            'type' => 'text',
+                        ),
+                        'type' => array(
+                            'label' => 'Type',
+                            'type' => 'text',
+                        ),
+                        'lengte' => array(
+                            'label' => 'Lengte',
+                            'type' => 'numeric',
+                        ),
+                        'natgewicht' => array(
+                            'label' => 'Natgewicht',
+                            'type' => 'numeric',
+                        ),
+                        'visgewicht' => array(
+                            'label' => 'Visgewicht',
+                            'type' => 'numeric',
+                        ),
+                        'AFDW' => array(
+                            'label' => 'AFDW',
+                            'type' => 'numeric',
+                        ),
+                        'DryWeightSchelp' => array(
+                            'label' => 'DryWeightSchelp',
+                            'type' => 'numeric',
+                        )
 					);
 					
 					if(isValidArray($rules, $_POST)) {
-						$array = array();
-						
-						// Array voor database vullen
+						$array = array(
+                            'Datum' => $_POST['datum'],
+                            'Compartiment' => $_POST['compartiment'],
+                            'Type' => $_POST['type'],
+                            'Lengte' => $_POST['type'],
+                            'Natgewicht' => $_POST['natgewicht'],
+                            'Visgewicht' => $_POST['visgewicht'],
+                            'AFDW' => $_POST['AFDW'],
+                            'DW_Schelp' => $_POST['DryWeightSchelp']
+                        );
 						
 						$insert = $database->insert('TABEL', $array);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo 'victory';
 						}
 						else {
-							// bootstrap foutmelding
+							echo 'gefaald';
 						}
 					}
 					
@@ -116,8 +154,8 @@ require_once('includes/connectdb.php');
                     <input class="form-control" type="text" id="AFDW" name="AFDW" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
-                    <label for="DryWeightschelp">Dry Weight schelp</label>
-                    <input class="form-control" type="text" id="DryWeightschelp" name="DryWeightschelp" maxlength="80" size="20">
+                    <label for="DryWeightSchelp">Dry Weight schelp</label>
+                    <input class="form-control" type="text" id="DryWeightSchelp" name="DryWeightSchelp" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Verstuur">
