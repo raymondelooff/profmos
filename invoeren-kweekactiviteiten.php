@@ -42,10 +42,7 @@ require_once('includes/connectdb.php');
             	
                 <div class="form-group">
                     <label for="datum">Datum:</label>
-                    <div class="date">
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                    </div>
+                    <input type="text" class="form-control date" name="datum">
                 </div>
                 
                 <div class="form-group">
