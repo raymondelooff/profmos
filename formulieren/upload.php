@@ -112,7 +112,6 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         }*/
                                         if ($i == 4) {
                                             $oppervlakte = $row[1];
-                                            echo $oppervlakte;
                                         }
                                         if ($i == 6) {
                                             $insert['Monster'] = $row[1];
@@ -133,7 +132,7 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         if ($i == 15) {
                                             $insert['Bustal'] = $row[1];
                                         }
-                                        if ($i == 16) {
+                                        if ($i == 16 && $tabel == "zaaiing") {
                                             $insert['BrutoMton'] = $row[1];
                                             $insert['Kilogram'] = $insert['BrutoMton'] * 100;
                                             $insert['KilogramPerM2'] = ($insert['Kilogram'] / ($oppervlakte * 10000));
@@ -152,11 +151,8 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     $insert['Perceel_PerceelID'] = $_POST['perceel'];
                                     $database->insert('mosselgroep', array('ParentMosselgroepID' => null));
                                     $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
-
-                                    //if ($tabel == "zaaiing" && !$verzaaien) {
-                                        $database->insert('zaaiing', $insert);
-                                    //}
-
+                                    $database->insert('zaaiing', $insert);
+                                    print_r($insert);
                                 }
                                 else {
                                     $error .= "Het bestand kan niet geüpload worden.";
