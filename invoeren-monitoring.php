@@ -36,16 +36,12 @@ require_once('includes/connectdb.php');
 
     <section id="content">
         <div class="container">
-            <form name="input" id="input monitoring" action="" method="post">
-                <div class="form-group">
-                    <h2>Monitoring</h2>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="hidden" name="send" value="true"/>
-                </div>
+            <h2>Monitoring</h2>
+
+            <form name="input" method="post">
                 <div class="form-group">
                     <label for="datum">Datum</label>
-                    <input class="form-control" type="date" id="datum" name="datum" value ="" maxlength="50" size="20">
+                    <input class="form-control date" type="text" id="datum" name="datum" maxlength="50" size="20">
                 </div>
                 <div class="form-group">
                     <label for="compartiment">Compartiment</label>
@@ -60,7 +56,7 @@ require_once('includes/connectdb.php');
                 </div>
                 <div class="form-group">
                     <label for="locatie">Locatie</label>
-                    <input class="form-control" type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="locatie" name="locatie" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
@@ -73,26 +69,26 @@ require_once('includes/connectdb.php');
                 </div>
                 <div class="form-group">
                     <label for="lengte">Lengte</label>
-                    <input class="form-control" type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="lengte" name="lengte" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="natgewicht">Natgewicht</label>
-                    <input class="form-control" type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="natgewicht" name="natgewicht" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="visgewicht">Visgewicht</label>
-                    <input class="form-control" type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="visgewicht" name="visgewicht" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="AFDW">AFDW</label>
-                    <input class="form-control" type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="AFDW" name="AFDW" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="DryWeightschelp">Dry Weight schelp</label>
-                    <input class="form-control" type="text" id="DryWeightschelp" name="DryWeightschelp" value ="" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="DryWeightschelp" name="DryWeightschelp" maxlength="80" size="20">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="submit" value="Verstuur">
+                    <input class="btn btn-primary" type="submit" value="Verstuur">
                 </div>
             </form>
         </div>

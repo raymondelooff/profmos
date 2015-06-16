@@ -37,6 +37,7 @@ require_once('includes/connectdb.php');
     <section id="content">
         <div class="container">
             <h2>Registratie kweekactiviteiten</h2>
+
             <form role="form">
             	
                 <div class="form-group">
@@ -159,6 +160,10 @@ require_once('includes/connectdb.php');
                 <div class="form-group">
                     <label for="opmerkingen">Opmerkingen:</label>
                     <textarea class="form-control" rows="5" id="opmerkingen"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Verstuur">
                 </div>
                 
             </form>
