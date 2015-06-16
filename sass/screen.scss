@@ -7,6 +7,17 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+header {
+	nav {
+		#logo {
+			img {
+				height: 50px;
+				padding: 5px;
+			}
+		}
+	}
+}
+
 section {
 	padding: 60px 0;
 }
@@ -22,5 +33,5 @@ footer {
 }
 
 #content {
-  padding-top: 70px;
+  padding-top: 100px;
 }
