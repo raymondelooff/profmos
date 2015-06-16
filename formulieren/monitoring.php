@@ -93,19 +93,6 @@ require_once('../includes/connectdb.php');
                     <td><input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20"></td>
                 </tr>
                 <tr>
-                    <td><label for="moment">moment</label></td>
-                    <td>
-                        <select name="moment" id="moment">
-                            <option value="">Select one</option>
-                            <?php
-                            for($i = 1; $i <10; $i++){
-                                echo "<option value='".$i."''>".$i."</option>";
-                            }
-                            ?>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
                     <td><input type="submit" value="Verstuur"></td>
                 </tr>
             </table>
