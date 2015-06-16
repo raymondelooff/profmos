@@ -13,8 +13,10 @@ function isValidText($input, $minLength, $maxLength) {
         return false;
     }
 
+    $input = filter_var($input, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+
     // Check if the string contains legit characters
-    return preg_match('/[^.,_-a-zA-Z0-9 ]/', $input);
+    return !preg_match('/[^[:alnum:][:space:].]/ui', $input);
 
 }
 
@@ -63,6 +65,8 @@ function isValidArray($rules, $array) {
             echo '<div class="alert alert-danger">Veld <strong>' . $name . '</strong> wordt niet gevalideerd! Voeg regels toe aan de validatie rules array.</div>';
             return false;
         }
+
+        var_dump($value);
     }
 
     return true;
