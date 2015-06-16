@@ -2442,17 +2442,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Delta logo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30218,
-		"inputAbbreviatedPath": "\/Delta logo.jpg",
-		"outputAbbreviatedPath": "\/Delta logo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/formulieren\/monitoring.php": {
 		"fileType": 8192,
 		"ignore": 0,
