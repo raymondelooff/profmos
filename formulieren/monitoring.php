@@ -41,15 +41,15 @@ require_once('../includes/connectdb.php');
                 Invullen monitoring gegevens
             </div>
             <div class="form-group">
-                <input type="hidden" name="send" value="true"/>
+                <input class="form-control" type="hidden" name="send" value="true"/>
             </div>
             <div class="form-group">
                 <label for="datum">Datum</label>
-                <input  type="date" id="datum" name="datum" value ="" maxlength="50" size="20">
+                <input class="form-control" type="date" id="datum" name="datum" value ="" maxlength="50" size="20">
             </div>
             <div class="form-group">
                 <label for="comp">Comp</label>
-                <select name="comp" id="comp">
+                <select class="form-control" name="comp" id="comp">
                     <option value="">Select one</option>
                          <?php
                             for($i = 1; $i <13; $i++){
@@ -60,11 +60,11 @@ require_once('../includes/connectdb.php');
             </div>
             <div class="form-group">
                 <label for="locatie">Locatie</label>
-                <input  type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20">
+                <input class="form-control" type="text" id="locatie" name="locatie" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
                 <label for="type">Type</label>
-                <select name="type" id="type">
+                <select class="form-control" name="type" id="type">
                     <option value="">Select one</option>
                     <option value="HW">HW</option>
                     <option value="cons">cons</option>
@@ -73,26 +73,26 @@ require_once('../includes/connectdb.php');
             </div>
             <div class="form-group">
                 <label for="lengte">Lengte</label>
-                <input  type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20">
+                <input class="form-control" type="text" id="lengte" name="lengte" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
                 <label for="natgewicht">Natgewicht</label>
-                <input  type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20">
+                <input class="form-control" type="text" id="natgewicht" name="natgewicht" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
                 <label for="visgewicht">Visgewicht</label>
-                <input  type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20">
+                <input class="form-control" type="text" id="visgewicht" name="visgewicht" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
                 <label for="AFDW">AFDW</label>
-                <input  type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20">
+                <input class="form-control" type="text" id="AFDW" name="AFDW" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
                 <label for="DWschelp">DWschelp</label>
-                <input  type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20">
+                <input class="form-control" type="text" id="DWschelp" name="DWschelp" value ="" maxlength="80" size="20">
             </div>
             <div class="form-group">
-                <input type="submit" value="Verstuur">
+                <input class="form-control" type="submit" value="Verstuur">
             </div>
         </form>
     </div>
