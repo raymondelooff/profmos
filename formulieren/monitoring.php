@@ -26,7 +26,7 @@ require_once('../includes/connectdb.php');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>PROFMOS</title>
+    <title>PROFMOS monitoring</title>
 </head>
 
 <body>
@@ -102,11 +102,11 @@ require_once('../includes/connectdb.php');
     </div>
 </section>
 
-<footer>
-    <div class="container">
-        <span>&copy; 2015 Delta Academy</span>
-    </div>
-</footer>
+<?php
+
+include_once('../includes/footer.php');
+
+?>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
