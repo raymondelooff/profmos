@@ -74,7 +74,7 @@ require_once('includes/functions.php');
                         //'type' => 'text',
                         //minLength => 1,
                         //maxLength => 30
-                    //)
+                    //),
 
                     'nummer' => array(
                         'label' => 'Nummer',
