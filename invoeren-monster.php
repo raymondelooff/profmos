@@ -77,14 +77,14 @@ require_once('includes/connectdb.php');
 
                     'nummer' => array(
                         'label' => 'Nummer',
-                        'type' => 'int',
+                        'type' => 'numeric',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
 
                     'vak' => array(
                         'label' => 'Vak',
-                        'type' => 'int',
+                        'type' => 'numeric',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
@@ -96,7 +96,7 @@ require_once('includes/connectdb.php');
 
                     'bustal' => array(
                         'label' => 'Bustal',
-                        'type' => 'int',
+                        'type' => 'numeric',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
@@ -118,7 +118,7 @@ require_once('includes/connectdb.php');
 
                     'kookmonsteraantal' => array(
                         'label' => 'KookMonsterAantal',
-                        'type' => 'int',
+                        'type' => 'numeric',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
@@ -147,7 +147,7 @@ require_once('includes/connectdb.php');
 
                     'kroesnummer' => array(
                         'label' => 'Kroesnummer',
-                        'type' => 'int',
+                        'type' => 'numeric',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
