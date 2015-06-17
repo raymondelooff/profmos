@@ -13,6 +13,7 @@ require_once('includes/connectdb.php');
             $vakken = $database->get('vak');
 
             foreach ($vakken as $vak) {
+                echo '<option value="' . $vak['VakID'] . '">' . $vak['Omschrijving'] . '</option>';
                 echo '<option value ='.$vak['VakID'].'>' . $vak['Omschrijving'] . '</option>';
             }
         }
