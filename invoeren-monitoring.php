@@ -115,13 +115,13 @@ require_once('includes/connectdb.php');
                         );
 						
 						$insert = $database->insert('meting', $array);
-						
-						if($insert) {
-							echo 'victory';
-						}
-						else {
-							echo 'gefaald';
-						}
+
+                        if($insert) {
+                            echo '<div class="alert alert-success text-center">Monitoring data toegevoegd</div>';
+                        }
+                        else {
+                            echo '<div class="alert alert-warning text-center">Het is niet gelukt de monitoring data toe te voegen, probeer het later opnieuw</div>';
+                        }
 					}
 					
             	}
