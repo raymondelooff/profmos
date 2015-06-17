@@ -52,13 +52,27 @@ require_once('includes/connectdb.php');
                             'label' => 'Compartiment',
                             'type' => 'numeric',
                         ),
-                        'locatie' => array(
-                            'label' => 'Locatie',
+                        'perceelnaam' => array(
+                            'label' => 'Perceelnaam',
                             'type' => 'text',
+                            'minLength' => 1,
+                            'maxLength' => 4
+                        ),
+                        'perceelnummer' => array(
+                            'label' => 'Perceelnummer',
+                            'type' => 'numeric'
+                        ),
+                        'vaknaam' => array(
+                            'label' => 'Vaknaam',
+                            'type' => 'text',
+                            'minLength' => 1,
+                            'maxLength' => 8
                         ),
                         'type' => array(
                             'label' => 'Type',
                             'type' => 'text',
+                            'minLength' => 1,
+                            'maxLength' => 45
                         ),
                         'lengte' => array(
                             'label' => 'Lengte',
@@ -125,8 +139,14 @@ require_once('includes/connectdb.php');
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="locatie">Locatie</label>
-                    <input class="form-control" type="text" id="locatie" name="locatie" maxlength="80" size="20">
+                    <table>
+                        <tr>
+                            <td><label for="perceelnaam">Perceelnaam</label></td><td><label for="perceelnummer">Perceelnummer</label></td><td><label for="vaknaam">Vaknaam</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control" type="text" id="perceelnaam" name="perceelnaam" maxlength="80" size="20"></td><td><input class="form-control" type="text" id="perceelnummer" name="perceelnummer" maxlength="80" size="20"></td><td><input class="form-control" type="text" id="vaknaam" name="vaknaam" maxlength="80" size="20"></td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
