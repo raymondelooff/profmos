@@ -59,14 +59,14 @@ require_once('includes/connectdb.php');
                         'type' => 'text',
                         'minLength' => 1,
                         'maxLength' => 20
-                    )
+                    ),
 
                     'boot' => array(
                         'label' => 'Boot',
                         'type' => 'text',
                         'minLength' => 1,
                         'maxLength' => 20
-                    )
+                    ),
 
                     //'perceel' => array(
                         //'label' => 'Perceel',
@@ -80,108 +80,110 @@ require_once('includes/connectdb.php');
                         'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
-                    )
+                    ),
 
                     'vak' => array(
                         'label' => 'Vak',
                         'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
-                    )
+                    ),
 
                     'brutomonster' => array(
                         'label' => 'Brutomonster',
                         'type' => 'float'
-                    )
+                    ),
 
                     'bustal' => array(
                         'label' => 'Bustal',
                         'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
-                    )
+                    ),
 
                     'slippers' => array(
                         'label' => 'Slippers',
                         'type' => 'float'
-                    )
+                    ),
 
                      'zeester' => array(
                         'label' => 'zeester',
                         'type' => 'float'
-                    )
+                    ),
 
                     'pokken' => array(
                         'label' => 'Pokken',
                         'type' => 'float'
-                    )
+                    ),
 
                     'kookmonsteraantal' => array(
                         'label' => 'KookMonsterAantal',
                         'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
-                    )
+                    ),
 
                     'nettokookmonster' => array(
                         'label' => 'nettomonsteraantal',
                         'type' => 'float'
-                    )
+                    ),
 
                     'vistotalemonster' => array(
                         'label' => 'vistotalemonster',
                         'type' => 'float'
-                    )
+                    ),
 
                     'vispercentage' => array(
                         'label' => 'Vispercentage',
                         'type' => 'float'
-                    )
+                    ),
 
                     'opmerkingen' => array(
                         'label' => 'Opmerkingen',
                         'type' => 'text',
                         'minLength' => 5,
                         'maxLength' => 200
-                    )
+                    ),
 
                     'kroesnummer' => array(
                         'label' => 'Kroesnummer',
                         'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
-                    )
+                    ),
 
                     'kroes' => array(
                         'label' => 'Kroes',
                         'type' => 'float'
-                    )
+                    ),
 
                     'kroesvleesnat' => array(
                         'label' => 'Kroesvleesnat',
                         'type' => 'float'
-                    )
+                    ),
 
                     'drooggewicht' => array(
                         'label' => 'Drooggewicht',
                         'type' => 'float'
-                    )
+                    ),
 
                     'asvrijdrooggewicht' => array(
                         'label' => 'Asvrijdrooggewicht',
                         'type' => 'float'
-                    )
+                    ),
 
                     'schelpendroog' => array(
                         'label' => 'Schelpendroog',
                         'type' => 'float'
-                    )
+                    ),
 
                     'gemiddeldelengte' => array(
                         'label' => 'Gemiddeldelengte',
                         'type' => 'float'
                     )
+                );
             }
+            ?>
 
             <form role="form">
                 <div class="form-group">
