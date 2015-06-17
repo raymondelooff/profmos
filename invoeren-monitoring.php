@@ -37,7 +37,7 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Monitoring</h2>
+            <h1>Monitoring</h1>
             
             <?php
             

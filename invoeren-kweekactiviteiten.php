@@ -35,7 +35,7 @@ require_once ('includes/functions.php');
 
 		<section id="content">
 			<div class="container">
-				<h2>Registratie kweekactiviteiten</h2>
+				<h1>Registratie kweekactiviteiten</h1>
 
 				<?php
 

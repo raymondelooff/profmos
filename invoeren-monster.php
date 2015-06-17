@@ -37,7 +37,7 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Monster data</h2>
+            <h1>Monster data</h1>
 
             <?php
 

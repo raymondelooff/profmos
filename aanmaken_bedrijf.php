@@ -37,7 +37,7 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Toevoegen bedrijf</h2>
+            <h1>Toevoegen bedrijf</h1>
             
             <?php
             

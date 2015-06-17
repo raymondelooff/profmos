@@ -37,7 +37,7 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Aanmaken vak</h2>
+            <h1>Aanmaken vak</h1>
             
             <?php
             
