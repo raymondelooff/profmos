@@ -78,14 +78,14 @@ require_once('includes/functions.php');
 
                     'nummer' => array(
                         'label' => 'Nummer',
-                        'type' => 'numeric',
+                        'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
 
                     'vak' => array(
                         'label' => 'Vak',
-                        'type' => 'numeric',
+                        'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
@@ -97,7 +97,7 @@ require_once('includes/functions.php');
 
                     'bustal' => array(
                         'label' => 'Bustal',
-                        'type' => 'numeric',
+                        'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
@@ -119,7 +119,7 @@ require_once('includes/functions.php');
 
                     'kookmonsteraantal' => array(
                         'label' => 'KookMonsterAantal',
-                        'type' => 'numeric',
+                        'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
@@ -148,7 +148,7 @@ require_once('includes/functions.php');
 
                     'kroesnummer' => array(
                         'label' => 'Kroesnummer',
-                        'type' => 'numeric',
+                        'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
                     ),
