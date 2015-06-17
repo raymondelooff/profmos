@@ -97,6 +97,8 @@ function isValidArray($rules, $array) {
                             return false;
                         }
 
+                        break;
+
                 }
             }
         }
