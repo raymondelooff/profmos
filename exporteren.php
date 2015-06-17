@@ -54,7 +54,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-md-3">
+                    <div class="col col-md-5">
                         <div class="form-group">
                             <label for="bedrijf">Bedrijf (meerdere mogelijk):</label>
                             <select class="form-control" id="bedrijf" name="bedrijf[]" multiple>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-md-3">
+                    <div class="col col-md-4">
                         <div class="form-group">
                             <label for="vak">Vakken (meerdere mogelijk):</label>
                             <select class="form-control" id="vak" name="vak[]" multiple>
@@ -89,8 +89,10 @@
                             </select>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col col-md-3">
+                <div class="row">
+                    <div class="col col-md-12 text-right">
                         <button type="submit" class="btn btn-primary">Toon gegevens</button>
                     </div>
                 </div>
@@ -116,23 +118,121 @@
 
                     if(isset($_POST['bedrijf'])) {
                         foreach($_POST['bedrijf'] as $bedrijf) {
-                            print_r($bedrijf);
-                            $database->orWhere('Bedrijf_BedrijfID', $bedrijf);
+                            $database->where('Bedrijf_BedrijfID', $bedrijf);
                         }
                     }
 
                     if(isset($_POST['vak'])) {
                         foreach($_POST['vak'] as $vak) {
-                            $database->orWhere('Vak_VakID', $vak);
+                            $database->where('Vak_VakID', $vak);
                         }
                     }
 
                     // Switch between tables
                     switch($_POST['type']) {
                         case '1':
-                            $result = $database->get('monster');
 
-                            print_r($result);
+                            // Join other tables
+                            $database->join('bedrijf b', 'm.Bedrijf_BedrijfID = b.BedrijfID', 'LEFT');
+                            $database->join('perceel p', 'm.Perceel_PerceelID = p.PerceelID', 'LEFT');
+                            $database->join('vak v', 'm.Vak_VakID = v.VakID', 'LEFT');
+                            $result = $database->get('monster m', null, '
+                                m.*,
+
+                                b.Naam as b_Naam,
+                                b.Afkorting as b_Afkorting,
+
+                                p.Plaats as p_Plaats,
+                                p.Nummer as p_Nummer,
+
+                                v.VakID as v_VakID,
+                                v.Omschrijving as v_Omschrijving,
+                                v.Oppervlakte as v_Oppervlakte
+                            ');
+
+                            if($result) {
+                                echo '<div class="table-responsive">';
+                                    echo '<table class="table table-bordered table-striped table-hover">';
+
+                                    echo '<thead>';
+                                        echo '<tr>';
+                                            echo '<th>Monster ID</th>';
+                                            echo '<th>Bedrijf</th>';
+                                            echo '<th>Perceel</th>';
+                                            echo '<th>Nummer</th>';
+                                            echo '<th>Vak</th>';
+                                            echo '<th>Datum</th>';
+                                            echo '<th>Bruto monster</th>';
+                                            echo '<th>Netto monster</th>';
+                                            echo '<th>Tarra</th>';
+                                            echo '<th>Busstal</th>';
+                                            echo '<th>Gewicht mossel</th>';
+                                            echo '<th>Slippers</th>';
+                                            echo '<th>Zeester</th>';
+                                            echo '<th>Pokken</th>';
+                                            echo '<th>Bus netto</th>';
+                                            echo '<th>Aantal kookmonsters</th>';
+                                            echo '<th>Netto kookmonsters</th>';
+                                            echo '<th>Vis totale monster</th>';
+                                            echo '<th>Vispercentage</th>';
+                                            echo '<th>Stukstal</th>';
+                                            echo '<th>Kroesnummer</th>';
+                                            echo '<th>Kroes</th>';
+                                            echo '<th>Kroes en vlees</th>';
+                                            echo '<th>DW</th>';
+                                            echo '<th>AFDW</th>';
+                                            echo '<th>AFDWpM</th>';
+                                            echo '<th>Schelpen droog</th>';
+                                            echo '<th>Gemiddelde lengte</th>';
+                                            echo '<th>GrGewicht</th>';
+                                            echo '<th>GrLengte</th>';
+                                            echo '<th>GrAFDW</th>';
+                                            echo '<th>Opmerking</th>';
+                                        echo '</tr>';
+                                    echo '</thead>';
+
+                                foreach ($result as $row) {
+                                    echo '<tr>';
+                                        echo '<th>' . $row['MonsterID'] . '</th>';
+                                        echo '<th>' . $row['b_Naam'] . '</th>';
+                                        echo '<th>' . $row['p_Plaats'] . '</th>';
+                                        echo '<th>' . $row['p_Nummer'] . '</th>';
+                                        echo '<th>' . $row['v_Omschrijving'] . '</th>';
+                                        echo '<th>' . date('d-m-Y', $row['Datum']) . '</th>';
+                                        echo '<th>' . $row['BrutoMonster'] . '</th>';
+                                        echo '<th>' . $row['NettoMonster'] . '</th>';
+                                        echo '<th>' . $row['Tarra'] . '</th>';
+                                        echo '<th>' . $row['Busstal'] . '</th>';
+                                        echo '<th>' . $row['GewichtMossel'] . '</th>';
+                                        echo '<th>' . $row['Slippers'] . '</th>';
+                                        echo '<th>' . $row['Zeester'] . '</th>';
+                                        echo '<th>' . $row['Pokken'] . '</th>';
+                                        echo '<th>' . $row['BusNetto'] . '</th>';
+                                        echo '<th>' . $row['AantalKookmonsters'] . '</th>';
+                                        echo '<th>' . $row['NettoKookmonster'] . '</th>';
+                                        echo '<th>' . $row['VisTotaleMonster'] . '</th>';
+                                        echo '<th>' . $row['VisPercentage'] . '</th>';
+                                        echo '<th>' . $row['Stukstal'] . '</th>';
+                                        echo '<th>' . $row['Kroesnr'] . '</th>';
+                                        echo '<th>' . $row['Kroes'] . '</th>';
+                                        echo '<th>' . $row['KroesEnVlees'] . '</th>';
+                                        echo '<th>' . $row['DW'] . '</th>';
+                                        echo '<th>' . $row['AFDW'] . '</th>';
+                                        echo '<th>' . $row['AFDWpM'] . '</th>';
+                                        echo '<th>' . $row['SchelpenDroog'] . '</th>';
+                                        echo '<th>' . $row['GemiddeldeLengte'] . '</th>';
+                                        echo '<th>' . $row['GrGewicht'] . '</th>';
+                                        echo '<th>' . $row['GrLengte'] . '</th>';
+                                        echo '<th>' . $row['GrAFDW'] . '</th>';
+                                        echo '<th>' . $row['Opmerking'] . '</th>';
+                                    echo '</tr>';
+                                }
+
+                                echo '</table>';
+                            }
+                            else {
+                                echo '<p class="alert alert-danger">Kon geen gegevens vinden.</p>';
+                            }
 
                             break;
 
@@ -239,7 +339,7 @@
                                             echo '<th>' . $row['p_Nummer'] . '</th>';
                                             echo '<th>' . $row['v_Omschrijving'] . '</th>';
 
-                                            echo '<th>' . $row['z_Datum'] . '</th>';
+                                            echo '<th>' . date('d-m-Y', $row['z_Datum']) . '</th>';
                                             echo '<th>' . $row['z_Activiteit'] . '</th>';
                                             echo '<th>' . $row['z_BrutoMton'] . '</th>';
                                             echo '<th>' . $row['z_Kilogram'] . '</th>';
