@@ -178,8 +178,8 @@ require_once('includes/functions.php');
                         'Vak_VakID' => $_POST['vak'],
                         'mosselgroep_MosselgroepID' => $_POST['mosselgroep'],
                         'Datum' => $_POST['date'],
-                        'Bruto monster' => $_POST['brutomonster'],
-                        'Netto monster' => $_POST['nettomonster'],
+                        'BrutoMonster' => $_POST['brutomonster'],
+                        'NettoMonster' => $_POST['nettomonster'],
                         'Tarra' => $tarra,
                         'Busstal' => $_POST['bustal'],
                         'GewichtMossel' => $gewichtMossel,
@@ -191,13 +191,13 @@ require_once('includes/functions.php');
                         'NettoKookmonster' => $_POST['nettokookmonster'],
                         'VisTotalemonster' => $_POST['vistotalemonster'],
                         'VisPercentage' => $_POST['vispercentage'],
-                        'Stuktal' => $stuktal,
+                        'Stukstal' => $stuktal,
                         'Kroesnr' => $_POST['kroesnummer'],
                         'Kroes' => $_POST['kroes'],
                         'KroesEnVlees' => $_POST['kroesvleesnat'],
                         'DW' => $_POST['drooggewicht'],
                         'AFDW' => $_POST['asvrijdrooggewicht'],
-                        'AFDW pm' => $afdwpm,
+                        'AFDW pM' => $afdwpm,
                         'SchelpenDroog' => $_POST['schelpendroog'],
                         'GemiddeldeLengte' => $_POST['gemiddeldelengte'],
                         'GrGewicht' => 0,
@@ -229,18 +229,34 @@ require_once('includes/functions.php');
                 </div>
                 <div class="form-group">
                     <label for="bedrijf">Bedrijf</label>
-                    <input class="form-control" type="text" id="bedrijf" name="bedrijf" maxlength="80" size="20">
+                    <select id="bedrijf" name="bedrijf" class="form-control">
+                        <?php
+                        $bedrijven = $database->get('bedrijf');
+                        echo '<option selected disabled>Select one</option>';
+                        foreach($bedrijven as $bedrijf) {
+                            echo '<option value=" ' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="boot">Boot</label>
-                    <input  class="form-control" type="text" id="boot" name="boot" maxlength="80" size="20">
+                    <select id="boot" name="boot" class="form-control">
+                        <?php
+                        $boten = $database->get('boot');
+                        echo '<option selected disabled>Select one</option>';
+                        foreach($boten as $boot) {
+                            echo '<option value=" ' . $boot['BootID'] . '">' . $boot['Naam'] . '</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="perceel">Perceel: </label>
                     <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
                         <?php
                         $percelen = $database->get('perceel');
-                        echo '<option>Select one</option>';
+                        echo '<option selected disabled>Select one</option>';
                         foreach($percelen as $perceel) {
                             echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
                         }

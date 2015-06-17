@@ -101,7 +101,7 @@ require_once('includes/functions.php');
 							
 							$percelen = $database->get('perceel');
 							
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach($percelen as $perceel) {
 								echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . $perceel['Nummer'] . '</option>';	
 							}

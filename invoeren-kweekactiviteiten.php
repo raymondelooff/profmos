@@ -110,7 +110,7 @@ require_once ('includes/functions.php');
 						<select id="bedrijf" name="bedrijf" class="form-control">
 							<?php
 							$bedrijven = $database -> get('bedrijf');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($bedrijven as $bedrijf) {
 								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
 							}
@@ -123,7 +123,7 @@ require_once ('includes/functions.php');
 						<select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
 							<?php
 							$percelen = $database -> get('perceel');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($percelen as $perceel) {
 								echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
 							}
@@ -166,7 +166,7 @@ require_once ('includes/functions.php');
 						<select id="bedrijf_verzaaien" name="bedrijf_verzaaien" class="form-control">
 							<?php
 							$bedrijven = $database -> get('bedrijf');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($bedrijven as $bedrijf) {
 								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
 							}
@@ -179,7 +179,7 @@ require_once ('includes/functions.php');
 						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVakVerzaaid()">
 							<?php
 							$percelen = $database -> get('perceel');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($percelen as $perceel) {
 								echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
 							}

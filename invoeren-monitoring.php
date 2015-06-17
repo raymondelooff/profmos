@@ -146,7 +146,7 @@ require_once('includes/functions.php');
                     <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
                         <?php
                         $percelen = $database->get('perceel');
-                        echo '<option>Select one</option>';
+                        echo '<option selected disabled>Select one</option>';
                         foreach($percelen as $perceel) {
                             echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
                         }

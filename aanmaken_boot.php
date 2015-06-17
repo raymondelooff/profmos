@@ -86,7 +86,7 @@ require_once('includes/functions.php');
 							
 							$bedrijven = $database->get('bedrijf');
 							
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach($bedrijven as $bedrijf) {
 								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';	
 							}
