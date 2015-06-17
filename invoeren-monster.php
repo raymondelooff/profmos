@@ -106,7 +106,7 @@ require_once('includes/functions.php');
                         'type' => 'float'
                     ),
                     'busnetto' => array(
-                        'label' => 'Pokken',
+                        'label' => 'Busnetto',
                         'type' => 'float'
                     ),
                     'kookmonsteraantal' => array(
