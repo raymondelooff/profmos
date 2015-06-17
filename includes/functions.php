@@ -27,8 +27,29 @@ function isValidEmail($input) {
 
 }
 
-// Function for validating numeric inputs
-function isValidNumber($input) {
+// Function for validating integer inputs
+function isValidInteger($input, $minLength, $maxLength) {
+
+    // Check if the length of the input is not shorter than the minimum length
+    if(strlen($input) < $minLength) {
+        return false;
+    }
+
+    // Check if the length of the input is not longer than the maximum length
+    if(strlen($input) > $maxLength) {
+        return false;
+    }
+
+    if(!is_numeric($input)) {
+        return false;
+    }
+
+    return true;
+
+}
+
+// Function for validating float inputs
+function isValidFloat($input) {
 
     $input = str_replace(',', '.', $input);
 
@@ -78,7 +99,7 @@ function isValidArray($rules, $array) {
                     case 'text':
 
                         if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in!</div>';
+                            echo '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
                             return false;
                         }
 
@@ -94,10 +115,20 @@ function isValidArray($rules, $array) {
 
                         break;
 
-                    // Value needs to be checked as 'numeric'
-                    case 'numeric':
+                    // Value needs to be checked as 'int'
+                    case 'int':
 
-                        if (!isValidNumber($value)) {
+                        if (!isValidInteger($value, $rule['minLength'], $rule['maxLength'])) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
+                            return false;
+                        }
+
+                        break;
+
+                    // Value needs to be checked as 'int'
+                    case 'float':
+
+                        if (!isValidFloat($value)) {
                             echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in!</div>';
                             return false;
                         }
