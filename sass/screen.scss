@@ -11,6 +11,10 @@ body {
 	line-height: 1.5;
 }
 
+h1, h2, .h1, .h2 {
+	margin-bottom: 20px;
+}
+
 p {
 	margin-bottom: 20px;
 }
@@ -57,6 +61,12 @@ footer {
 	}
 }
 
+form {
+	label {
+		display: block;
+	}
+}
+
 .col {
 	img {
 		width: 100%;
@@ -66,10 +76,6 @@ footer {
 
 #content {
   padding-top: 100px;
-}
-
-.date {
-  width: 200px;
 }
 
 /*==========  Mobile First Method  ==========*/

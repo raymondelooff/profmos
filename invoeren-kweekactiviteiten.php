@@ -5,23 +5,13 @@ require_once ('includes/connectdb.php');
 require_once ('includes/functions.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<?php
 
-		<!-- CSS -->
-		<link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-		<link href="css/screen.css" rel="stylesheet">
+			include_once('includes/head.php');
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		?>
 
 		<title>PROFMOS</title>
 	</head>
@@ -30,19 +20,20 @@ require_once ('includes/functions.php');
 
 		<?php
 
-		include_once ('includes/header.php');
+			include_once ('includes/header.php');
+
 		?>
 
 		<section id="content">
 			<div class="container">
-				<h2>Registratie kweekactiviteiten</h2>
+				<h1>Registratie kweekactiviteiten</h1>
 
 				<?php
 
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 					$rules = array(
-						'datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'm/d/Y'), 
+						'datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'd-m-Y'),
 						'activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100),
 						'bedrijf' => array('label' => 'Bedrijf', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
 						'perceel' => array('label' => 'Perceel', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
@@ -110,7 +101,7 @@ require_once ('includes/functions.php');
 						<select id="bedrijf" name="bedrijf" class="form-control">
 							<?php
 							$bedrijven = $database -> get('bedrijf');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($bedrijven as $bedrijf) {
 								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
 							}
@@ -123,7 +114,7 @@ require_once ('includes/functions.php');
 						<select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
 							<?php
 							$percelen = $database -> get('perceel');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($percelen as $perceel) {
 								echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
 							}
@@ -166,7 +157,7 @@ require_once ('includes/functions.php');
 						<select id="bedrijf_verzaaien" name="bedrijf_verzaaien" class="form-control">
 							<?php
 							$bedrijven = $database -> get('bedrijf');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($bedrijven as $bedrijf) {
 								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
 							}
@@ -179,7 +170,7 @@ require_once ('includes/functions.php');
 						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVakVerzaaid()">
 							<?php
 							$percelen = $database -> get('perceel');
-							echo '<option selected disabled></option>';
+							echo '<option selected disabled>Select one</option>';
 							foreach ($percelen as $perceel) {
 								echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
 							}
@@ -234,14 +225,12 @@ require_once ('includes/functions.php');
 
 		<?php
 
-		include_once ('includes/footer.php');
+			include_once('includes/footer.php');
+			include_once('includes/scripts.php');
+
 		?>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-		<script src="/js/bootstrap-datepicker.min.js"></script>
+		<!-- Specific JS files here -->
 		<script src="/js/invulformulieren.js"></script>
 
 	</body>

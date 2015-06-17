@@ -6,23 +6,13 @@ require_once('includes/functions.php');
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<?php
 
-    <!-- CSS -->
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="css/screen.css" rel="stylesheet">
+		include_once('includes/head.php');
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	?>
 
     <title>PROFMOS monitoring</title>
 </head>
@@ -31,13 +21,13 @@ require_once('includes/functions.php');
 
     <?php
 
-    include_once('includes/header.php');
+    	include_once('includes/header.php');
 
     ?>
 
     <section id="content">
         <div class="container">
-            <h2>Monitoring</h2>
+            <h1>Monitoring</h1>
             
             <?php
             
@@ -47,7 +37,7 @@ require_once('includes/functions.php');
 						'datum' => array(
                             'label' => 'Datum',
                             'type' => 'date',
-                            'format' => 'm/d/Y'
+                            'format' => 'd-m-Y'
                         ),
                         'compartiment' => array(
                             'label' => 'Compartiment',
@@ -146,7 +136,7 @@ require_once('includes/functions.php');
                     <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
                         <?php
                         $percelen = $database->get('perceel');
-                        echo '<option>Select one</option>';
+                        echo '<option selected disabled>Select one</option>';
                         foreach($percelen as $perceel) {
                             echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
                         }
@@ -191,18 +181,15 @@ require_once('includes/functions.php');
         </div>
     </section>
 
-    <?php
+	<?php
 
-    include_once('includes/footer.php');
+		include_once('includes/footer.php');
+		include_once('includes/scripts.php');
 
-    ?>
+	?>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-    <script src="/js/bootstrap-datepicker.min.js"></script>
-    <script src="/js/invulformulieren.js"></script>
+	<!-- Specific JS files here -->
+	<script src="/js/invulformulieren.js"></script>
 
 </body>
 </html>
