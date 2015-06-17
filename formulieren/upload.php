@@ -77,8 +77,6 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     // Remove file
                                     unlink($target_file);
 
-                                    $insert['Zaaiing_ZaaiingID'] = 13;
-                                    $zaaiingRow = $database->rawQuery('SELECT * FROM zaaiing WHERE ZaaiingID = ' . $insert['Zaaiing_ZaaiingID']);
                                     $insert = array();
                                     $i = 0;
                                     $verzaaien = false;
@@ -87,31 +85,26 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
 
                                     foreach ($reader as $row) {
                                         if ($i == 1) {
-                                            $insert['Datum'] = $row[1];
+                                            $insert['Datum'] = time($row[1]);
                                         }
                                         if ($i == 2) {
                                             $activiteit = $row[1];
                                             if ($activiteit == "Zaaien" || $activiteit == "Bijzaaien" || $activiteit == "Verzaaien") {
                                                 $tabel = 'zaaiing';
                                             }
-                                            else if ($activiteit == "Vissen voor veiling" || $activiteit == "Uitvissen") {
+                                            if ($activiteit == "Leegvissen" || $activiteit == "Vissen voor veiling") {
                                                 $tabel = 'oogst';
                                             }
-                                            else if ($activiteit == "Sterren rollen" || $activiteit == "Trekje op perceel") {
+                                            if ($activiteit == "Sterren rollen" || $activiteit == "Trekje op perceel") {
                                                 $tabel = 'behandeling';
                                             }
 
                                             if ($activiteit == "Verzaaien") {
                                                 $verzaaien = true;
                                             }
+                                            $insert['Activiteit'] = $activiteit;
                                         }
-                                        /**if ($i == 3) {
-                                        $gezaaidAls = $row[1];
-                                        if ($gezaaidAls == "Anders:") {
-                                        $gezaaidAls = $row[2];
-                                        }
-                                        $insert['gezaaidAls'] = $gezaaidAls;
-                                        }*/
+
                                         if ($i == 4) {
                                             $oppervlakte = $row[1];
                                         }
@@ -134,32 +127,33 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         if ($i == 15) {
                                             $insert['Bustal'] = $row[1];
                                         }
-                                        if ($i == 16) {
+                                        if ($i == 16 && $tabel == 'oogst') {
+                                            $insert['Stukstal'] = $row[1];
+                                        }
+                                        if ($i == 17) {
                                             $insert['BrutoMton'] = $row[1];
                                             $insert['Kilogram'] = $insert['BrutoMton'] * 100;
-                                            if ($tabel == 'oogst') {
-                                                $insert['Rendement'] = $insert['Kilogram'] / $zaaiingRow['Kilogram'];
-                                                echo $insert['Rendement'];
-                                            }
                                             if ($tabel == 'zaaiing') {
                                                 $insert['KilogramPerM2'] = ($insert['Kilogram'] / ($oppervlakte * 10000));
                                             }
 
                                         }
-                                        if ($i == 17) {
+                                        if ($i == 18) {
                                             $perceelLeeggevist = $row[1];
                                         }
-                                        if ($i == 18) {
+                                        if ($i == 19) {
                                             $insert['Opmerking'] = $row[1];
                                         }
                                         $i++;
                                     }
 
-                                    $insert['Bedrijf_BedrijfID'] = $_POST['bedrijf'];
-                                    $insert['Vak_VakID'] = $_POST['vak'];
-                                    $insert['Perceel_PerceelID'] = $_POST['perceel'];
-                                    $database->insert('mosselgroep', array('ParentMosselgroepID' => null));
-                                    $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
+                                    if ($tabel == 'zaaiing') {
+                                        $insert['Bedrijf_BedrijfID'] = $_POST['bedrijf'];
+                                        $insert['Vak_VakID'] = $_POST['vak'];
+                                        $insert['Perceel_PerceelID'] = $_POST['perceel'];
+                                        $database->insert('mosselgroep', array('ParentMosselgroepID' => null));
+                                        $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
+                                    }
                                     if (!$verzaaien) {
                                         $database->insert($tabel, $insert);
                                     }
@@ -183,20 +177,44 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                             Select image to upload:
                             <input type="file" name="upload" id="upload">
                             <br>
-                            <select name="bedrijf">
-                                <option>1</option>
-                            </select>
-                            <select name="perceel">
-                                <option>1</option>
-                            </select>
-                            <select name="vak">
-                                <option>1</option>
-                            </select>
+                            <div class="form-group">
+                                <label for="bedrijf">Bedrijf: </label>
+                                <select id="bedrijf" name="bedrijf" class="form-control">
+                                    <?php
+                                        $bedrijven = $database->get('bedrijf');
+                                        echo '<option></option>';
+                                        foreach($bedrijven as $bedrijf) {
+                                            echo '<option>' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="perceel">Perceel: </label>
+                                <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
+                                    <?php
+                                    $percelen = $database->get('perceel');
+                                    echo '<option></option>';
+                                    foreach($percelen as $perceel) {
+                                        echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group" id="vak">
+                            </div>
+                            <br>
                             <input type="submit" value="Upload spreadsheet" name="submit">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+        <script src="/js/bootstrap-datepicker.min.js"></script>
+        <script src="/js/invulformulieren.js"></script>
     </body>
 </html>
