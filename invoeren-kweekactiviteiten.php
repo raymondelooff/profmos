@@ -2,6 +2,7 @@
 
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
+require_once('includes/functions.php');
 
 ?>
 <!DOCTYPE html>
@@ -180,7 +181,18 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="bedrijf">Bedrijf: </label>
-                    <input type="text" class="form-control" id="bedrijf" name="bedrijf" >
+                    <select class="form-control" id="bedrijf" name="bedrijf" >
+        				<?php 
+							
+							$bedrijven = $database->get('bedrijf');
+							
+							echo '<option selected disabled></option>';
+							foreach($bedrijven as $bedrijf) {
+								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';	
+							}
+							
+						?>
+						</select>
                 </div>
                 
                 <div class="form-group">
