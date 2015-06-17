@@ -100,22 +100,22 @@
                     <form method="post">
                         <div class="form-group">
                             <label for="name">Naam:</label>
-                            <input type="text" class="form-control" name="name" id="name">
+                            <input type="text" class="form-control" name="name" id="name" <?php getTextFieldValue('name'); ?>>
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-mail:</label>
-                            <input type="text" class="form-control" name="email" id="email">
+                            <input type="text" class="form-control" name="email" id="email" <?php getTextFieldValue('email'); ?>>
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Onderwerp:</label>
-                            <input type="text" class="form-control" name="subject" id="subject">
+                            <input type="text" class="form-control" name="subject" id="subject" <?php getTextFieldValue('subject'); ?>>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Bericht:</label>
-                            <textarea class="form-control" name="message" id="message" rows="10"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="10"><?php getTextAreaValue('message'); ?></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Verzenden</button>
