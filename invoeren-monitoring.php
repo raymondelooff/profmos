@@ -56,13 +56,13 @@ require_once('includes/functions.php');
                             'maxLength' => 11
                         ),
                         'perceel' => array(
-                            'label' => 'Perceelnummer',
+                            'label' => 'Perceel',
                             'type' => 'int',
                             'minLength' => 1,
                             'maxLength' => 11
                         ),
                         'vak' => array(
-                            'label' => 'Vaknaam',
+                            'label' => 'Vak',
                             'type' => 'int',
                             'minLength' => 1,
                             'maxLength' => 11
