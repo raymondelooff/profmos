@@ -176,7 +176,7 @@ require_once ('includes/functions.php');
 					
 					<div class="form-group">
 						<label for="perceel_verzaaien">Perceel: </label>
-						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVak()">
+						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVakVerzaaid()">
 							<?php
 							$percelen = $database -> get('perceel');
 							echo '<option selected disabled></option>';
@@ -187,7 +187,7 @@ require_once ('includes/functions.php');
 						</select>
 					</div>
 					
-					<div class="form-group" id="vak"></div>
+					<div class="form-group" id="vak_verzaaien"></div>
 
 					<div class="form-group">
 						<label for="oppervlakte_verzaaien">Oppervlakte: </label>

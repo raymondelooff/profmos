@@ -28,7 +28,7 @@
                         <a href="/over-profmos.php">Over PROFMOS</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Aanmaken data <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Toevoegen nieuwe gegevens <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/aanmaken_bedrijf.php">Toevoegen nieuw bedrijf</a></li>
                             <li><a href="/aanmaken_boot.php">Toevoegen nieuwe boot</a></li>

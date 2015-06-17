@@ -58,12 +58,19 @@ require_once('includes/functions.php');
 					);
 					
 					if(isValidArray($rules, $_POST)) {
-						$array = array();
+						$arrayperceel = array();
+						$arrayvak = array();
 						
-						$array['Plaats'] = $_POST['plaats'];
-						$array['Nummer'] = $_POST['nummer'];
+						$arrayperceel['Plaats'] = $_POST['plaats'];
+						$arrayperceel['Nummer'] = $_POST['nummer'];
 						
-						$insert = $database->insert('perceel', $array);
+						$insert = $database->insert('perceel', $arrayperceel);
+						
+						$arrayvak['Omschrijving'] = "Geheel";
+						$arrayvak['Oppervlakte'] = $_POST['oppervlakte'];
+						$arrayvak['Perceel_PerceelID'] = $database->getInsertId();
+
+						$insert = $database->insert('vak', $arrayvak);
 						
 						if($insert) {
 							// bootstrap succes melding
@@ -87,6 +94,11 @@ require_once('includes/functions.php');
                 <div class="form-group">
                     <label for="bedrijf">Nummer: </label>
                     <input type="text" class="form-control" id="nummer" name="nummer" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="oppervlakte">Oppervlakte: </label>
+                    <input type="text" class="form-control" id="oppervlakte" name="oppervlakte" >
                 </div>
                 
                  <div class="form-group">
