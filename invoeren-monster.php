@@ -106,7 +106,7 @@ require_once('includes/functions.php');
                         'type' => 'float'
                     ),
                     'busnetto' => array(
-                        'label' => 'Pokken',
+                        'label' => 'Busnetto',
                         'type' => 'float'
                     ),
                     'kookmonsteraantal' => array(
@@ -197,7 +197,7 @@ require_once('includes/functions.php');
                         'KroesEnVlees' => $_POST['kroesvleesnat'],
                         'DW' => $_POST['drooggewicht'],
                         'AFDW' => $_POST['asvrijdrooggewicht'],
-                        'AFDW pM' => $afdwpm,
+                        'AFDWpM' => $afdwpm,
                         'SchelpenDroog' => $_POST['schelpendroog'],
                         'GemiddeldeLengte' => $_POST['gemiddeldelengte'],
                         'GrGewicht' => 0,
@@ -229,7 +229,7 @@ require_once('includes/functions.php');
                 </div>
                 <div class="form-group">
                     <label for="bedrijf">Bedrijf</label>
-                    <select id="bedrijf" name="bedrijf" class="form-control">
+                    <select id="bedrijf" name="bedrijf" class="form-control" onchange="fillBoot()">
                         <?php
                         $bedrijven = $database->get('bedrijf');
                         echo '<option selected disabled>Select one</option>';
@@ -239,17 +239,7 @@ require_once('includes/functions.php');
                         ?>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="boot">Boot</label>
-                    <select id="boot" name="boot" class="form-control">
-                        <?php
-                        $boten = $database->get('boot');
-                        echo '<option selected disabled>Select one</option>';
-                        foreach($boten as $boot) {
-                            echo '<option value=" ' . $boot['BootID'] . '">' . $boot['Naam'] . '</option>';
-                        }
-                        ?>
-                    </select>
+                <div class="form-group" id="boot">
                 </div>
                 <div class="form-group">
                     <label for="perceel">Perceel: </label>

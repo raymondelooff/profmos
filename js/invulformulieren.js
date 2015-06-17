@@ -23,3 +23,13 @@ function fillVakVerzaaid() {
 
 $('.date').datepicker({
 });
+
+function fillBoot() {
+
+    var url;
+    url = "getBoot.php?bedrijfID=" + $( "#bedrijf" ).val();
+    console.log($( "#boot" ).val());
+    $.ajax({url: url , success: function(result){
+        $("#boot").html(result);
+    }});
+}
