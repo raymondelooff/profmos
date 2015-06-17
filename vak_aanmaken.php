@@ -52,6 +52,10 @@ require_once('includes/functions.php');
                         'oppervlakte' => array(
 									'label' => 'Oppervlakte',
 									'type' => 'float'						
+								),
+						'perceel_perceelID' => array(
+									'label' => 'Perceel_PerceelID',
+									'type' => 'int'
 								)
 					);
 					
@@ -60,6 +64,7 @@ require_once('includes/functions.php');
 						
 						$array['Omschrijving'] = $_POST['omschrijving'];
 						$array['Oppervlakte'] = $_POST['oppervlakte'];
+						$array['Perceel_PerceelID'] = $_POST['perceel_perceelID'];
 						
 						$insert = $database->insert('vak', $array);
 						
@@ -84,7 +89,7 @@ require_once('includes/functions.php');
                 
                 <div class="form-group">
                     <label for="oppervlakte">Oppervlakte: </label>
-                    <input type="text" class="form-control" id="oppervlakte" name="oppervlakte" >
+                    <input type="float" class="form-control" id="oppervlakte" name="oppervlakte" >
                 </div>
                 
                 <div class="form-group">

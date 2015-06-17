@@ -43,6 +43,10 @@ require_once('includes/functions.php');
             
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
+						'bedrijf_bedrijfID' => array(
+									'label' => 'Bedrijf_BedrijfID',
+									'type' => 'int'
+								),
 						'naam' => array(
                                     'label' => 'Naam',
                                     'type' => 'text',
@@ -54,10 +58,10 @@ require_once('includes/functions.php');
 					if(isValidArray($rules, $_POST)) {
 						$array = array();
 						
-						$array['Omschrijving'] = $_POST['omschrijving'];
-						$array['Oppervlakte'] = $_POST['oppervlakte'];
+						$array['Bedrijf_BedrijfID'] = $_POST['bedrijf_bedrijfID'];
+						$array['Naam'] = $_POST['naam'];
 						
-						$insert = $database->insert('vak', $array);
+						$insert = $database->insert('boot', $array);
 						
 						if($insert) {
 							// bootstrap succes melding
