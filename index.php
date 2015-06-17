@@ -41,7 +41,7 @@
                     <h1>PROFMOS</h1>
                     <h2>Onderzoeksgroep Aquacultuur in Delta Gebieden</h2>
                     <p>
-                        Aquacultuur in Delta Gebieden van de Delta Academy heeft zijn focus op duurzame zoute aquacultuur in en buiten de regio Zeeland.
+                        Aquacultuur in Delta Gebieden van de Delta Academy richt zijn focus op duurzame zoute aquacultuur in en buiten de regio Zeeland.
                         Aquacultuur is de gecontroleerde productie van zilte gewassen, algen, zeewier, zagers, schelpdieren en vis.
                         De teelt van deze organismen kan plaatsvinden in verschillende (intensieve en extensieve) manieren.
                         De onderzoeksgroep Aquaculture heeft een uitgebreid netwerk opgebouwd van kleine en middelgrote ondernemingen (MKB's), adviesbureaus en kennisinstellingen betrokken bij aquacultuur in en buiten Nederland.
