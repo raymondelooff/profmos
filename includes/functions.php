@@ -72,13 +72,14 @@ function isValidDate($input, $format) {
 // Function for validating a form
 function isValidArray($rules, $array) {
 
+	$errors = '';
+
     // Check if all the required fields are sent
     foreach($rules as $key => $rule) {
 
         if($rule != 'optional') {
-            if (!isset($array[$key]) || empty($array[$key])) {
-                echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> in!</div>';
-                return false;
+            if (!isset($array[$key])) {
+                $errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> in!</div>';
             }
         }
 
@@ -99,8 +100,7 @@ function isValidArray($rules, $array) {
                     case 'text':
 
                         if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
-                            return false;
+							$errors .= '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
                         }
 
                         break;
@@ -109,8 +109,7 @@ function isValidArray($rules, $array) {
                     case 'email':
 
                         if (!isValidEmail($value)) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!</div>';
-                            return false;
+							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!</div>';
                         }
 
                         break;
@@ -119,18 +118,16 @@ function isValidArray($rules, $array) {
                     case 'int':
 
                         if (!isValidInteger($value, $rule['minLength'], $rule['maxLength'])) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
-                            return false;
+							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
                         }
 
                         break;
 
-                    // Value needs to be checked as 'int'
+                    // Value needs to be checked as 'float'
                     case 'float':
 
                         if (!isValidFloat($value)) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in!</div>';
-                            return false;
+							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) getal in!</div>';
                         }
 
                         break;
@@ -139,16 +136,14 @@ function isValidArray($rules, $array) {
                     case 'date':
 
                         if (!isValidDate($value, $rule['format'])) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
-                            return false;
+							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
                         }
 
                         break;
 
                     default:
 
-                        echo '<div class="alert alert-danger">Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!</div>';
-                        return false;
+						$errors .= '<div class="alert alert-danger">Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!</div>';
 
                         break;
 
@@ -156,10 +151,16 @@ function isValidArray($rules, $array) {
             }
         }
         else {
-            echo '<div class="alert alert-danger">Veld <strong>' . $name . '</strong> wordt niet gevalideerd! Voeg regels toe aan de validatie rules array.</div>';
-            return false;
+			$errors .= '<div class="alert alert-danger">Veld <strong>' . $name . '</strong> wordt niet gevalideerd! Voeg regels toe aan de validatie rules array.</div>';
         }
     }
+
+	if(!empty($errors)) {
+
+		echo $errors;
+		return false;
+
+	}
 
     return true;
 
