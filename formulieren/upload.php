@@ -77,6 +77,8 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     // Remove file
                                     unlink($target_file);
 
+                                    $insert['Zaaiing_ZaaiingID'] = 13;
+                                    $zaaiingRow = $database->rawQuery('SELECT * FROM zaaiing WHERE ZaaiingID = ' . $insert['Zaaiing_ZaaiingID']);
                                     $insert = array();
                                     $i = 0;
                                     $verzaaien = false;
@@ -132,10 +134,17 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         if ($i == 15) {
                                             $insert['Bustal'] = $row[1];
                                         }
-                                        if ($i == 16 && $tabel == "zaaiing") {
+                                        if ($i == 16) {
                                             $insert['BrutoMton'] = $row[1];
                                             $insert['Kilogram'] = $insert['BrutoMton'] * 100;
-                                            $insert['KilogramPerM2'] = ($insert['Kilogram'] / ($oppervlakte * 10000));
+                                            if ($tabel == 'oogst') {
+                                                $insert['Rendement'] = $insert['Kilogram'] / $zaaiingRow['Kilogram'];
+                                                echo $insert['Rendement'];
+                                            }
+                                            if ($tabel == 'zaaiing') {
+                                                $insert['KilogramPerM2'] = ($insert['Kilogram'] / ($oppervlakte * 10000));
+                                            }
+
                                         }
                                         if ($i == 17) {
                                             $perceelLeeggevist = $row[1];
@@ -151,8 +160,10 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     $insert['Perceel_PerceelID'] = $_POST['perceel'];
                                     $database->insert('mosselgroep', array('ParentMosselgroepID' => null));
                                     $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
-                                    $database->insert('zaaiing', $insert);
-                                    print_r($insert);
+                                    if (!$verzaaien) {
+                                        $database->insert($tabel, $insert);
+                                    }
+
                                 }
                                 else {
                                     $error .= "Het bestand kan niet geüpload worden.";
@@ -176,10 +187,10 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                 <option>1</option>
                             </select>
                             <select name="perceel">
-                                <option>2</option>
+                                <option>1</option>
                             </select>
                             <select name="vak">
-                                <option>3</option>
+                                <option>1</option>
                             </select>
                             <input type="submit" value="Upload spreadsheet" name="submit">
                         </form>
