@@ -39,18 +39,32 @@
             <div class="row">
                 <div class="col col-md-6">
                     <h1>PROFMOS</h1>
-                    <h3>Wat staat profmos voor?</h3>
+                    <h3>Waar staat ProfMos voor?</h3>
                     <p>
-                        
-                    
-                   	</p>
-                    
-                   	<br>
+                    PROFMOS staat voor Productie factoren Mosselcultuur Oosterschelde
+                    </p>
                    	
-                   	<h3>Wat is profmos?</h3>
+                   	<h3>Wat is het doel van het ProfMos - project?</h3>
                    	<p>
-                   		
-                   	</p>
+                        Welke factoren bepalen het kweekrendement op percelen in de Oosterschelde en hoe kan dit verbeterd worden? <br>
+                        • Kweekrendement = groei x overleving <br>
+                        • Optimalisatie rendement = verbeteren groei + verbeteren overleving = verminderen verlies
+                    </p>
+
+                    <h3>Van welke data wordt gebruik gemaakt?</h3>
+                    <p>
+                        1. Data van de monitoring <br>
+                        2. Kweekgegevens (logboeken)<br>
+                        3. Aangeleverde mosselmonsters
+                    </p>
+
+                    <h3>Data van monitoring</h3>
+                    <p>
+                    Uitgezet in maart 2014 en maart 2015. Per jaar 9 keer bemonsterd:<br>
+                    •	1 keer per maand in het groeiseizoen (apr, mei, jun, jul, aug, sept)<br>
+                    •	1 keer per 2 maanden buiten groeiseizoen (dec, jan, mrt)
+                    </p>
+
                 </div>
                 <div class="col col-md-6">
                     <img src="/images/mosselboot.jpg" alt="Mosselboot PROFMOS" />
