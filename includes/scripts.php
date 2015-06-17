@@ -3,3 +3,4 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 	<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js"></script>

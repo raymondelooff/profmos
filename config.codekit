@@ -47,18 +47,18 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/bower.json": {
+	"\/bower_components\/bootstrap-datepicker\/bower.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/bower.json",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/bower.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/bower-min.json",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/bower-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/build\/build.less": {
+	"\/bower_components\/bootstrap-datepicker\/build\/build.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -66,8 +66,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/build\/build.less",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/css\/build.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/build\/build.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/css\/build.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -78,7 +78,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/build\/build3.less": {
+	"\/bower_components\/bootstrap-datepicker\/build\/build3.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -86,8 +86,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/build\/build3.less",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/css\/build3.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/build\/build3.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/css\/build3.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -98,7 +98,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/build\/build_standalone.less": {
+	"\/bower_components\/bootstrap-datepicker\/build\/build_standalone.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -106,8 +106,8 @@
 		"ieCompatibility": 1,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/build\/build_standalone.less",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/css\/build_standalone.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/build\/build_standalone.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/css\/build_standalone.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -118,7 +118,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/build\/build_standalone3.less": {
+	"\/bower_components\/bootstrap-datepicker\/build\/build_standalone3.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -126,8 +126,8 @@
 		"ieCompatibility": 1,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/build\/build_standalone3.less",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/css\/build_standalone3.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/build\/build_standalone3.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/css\/build_standalone3.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -138,7 +138,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/CHANGELOG.md": {
+	"\/bower_components\/bootstrap-datepicker\/CHANGELOG.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -147,9 +147,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/CHANGELOG.md",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/CHANGELOG.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/CHANGELOG.html",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/CHANGELOG.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -159,18 +159,18 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/composer.json": {
+	"\/bower_components\/bootstrap-datepicker\/composer.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/composer.json",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/composer.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/composer-min.json",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/composer-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/CONTRIBUTING.md": {
+	"\/bower_components\/bootstrap-datepicker\/CONTRIBUTING.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -179,9 +179,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/CONTRIBUTING.md",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/CONTRIBUTING.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/CONTRIBUTING.html",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/CONTRIBUTING.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -191,1136 +191,1136 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.min.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.min.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.standalone.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.standalone.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.standalone.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.standalone.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.standalone.min.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.standalone.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker.standalone.min.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker.standalone.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.min.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.min.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.min.css": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.min.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/css\/bootstrap-datepicker3.standalone.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/js\/bootstrap-datepicker.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/js\/bootstrap-datepicker.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/js\/bootstrap-datepicker.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/js\/min\/bootstrap-datepicker-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/js\/bootstrap-datepicker.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/js\/min\/bootstrap-datepicker-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/js\/bootstrap-datepicker.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/js\/bootstrap-datepicker.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/js\/bootstrap-datepicker.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/js\/min\/bootstrap-datepicker.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/js\/bootstrap-datepicker.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/js\/min\/bootstrap-datepicker.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ar.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ar.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ar.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ar.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ar.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ar.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.az.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.az.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.az.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.az.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.az.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.az.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.bg.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.bg.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.bg.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.bg.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.bg.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.bg.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.bs.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.bs.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.bs.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.bs.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.bs.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.bs.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ca.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ca.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ca.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ca.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ca.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ca.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.cs.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.cs.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.cs.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.cs.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.cs.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.cs.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.cy.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.cy.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.cy.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.cy.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.cy.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.cy.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.da.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.da.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.da.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.da.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.da.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.da.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.de.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.de.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.de.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.de.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.de.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.de.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.el.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.el.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.el.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.el.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.el.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.el.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.en-GB.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.en-GB.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.en-GB.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.en-GB.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.en-GB.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.en-GB.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.es.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.es.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.es.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.es.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.es.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.es.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.et.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.et.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.et.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.et.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.et.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.et.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.eu.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.eu.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.eu.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.eu.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.eu.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.eu.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fa.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fa.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fa.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fa.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fa.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fa.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fi.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fi.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fi.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fi.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fi.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fi.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fo.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fo.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fo.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fo.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fo.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fo.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fr-CH.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fr-CH.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fr-CH.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fr-CH.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fr-CH.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fr-CH.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fr.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fr.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.fr.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fr.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.fr.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.fr.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.gl.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.gl.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.gl.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.gl.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.gl.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.gl.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.he.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.he.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.he.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.he.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.he.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.he.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.hr.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.hr.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.hr.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.hr.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.hr.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.hr.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.hu.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.hu.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.hu.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.hu.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.hu.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.hu.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.hy.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.hy.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.hy.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.hy.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.hy.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.hy.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.id.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.id.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.id.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.id.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.id.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.id.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.is.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.is.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.is.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.is.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.is.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.is.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.it-CH.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.it-CH.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.it-CH.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.it-CH.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.it-CH.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.it-CH.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.it.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.it.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.it.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.it.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.it.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.it.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ja.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ja.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ja.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ja.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ja.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ja.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ka.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ka.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ka.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ka.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ka.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ka.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.kh.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.kh.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.kh.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.kh.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.kh.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.kh.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.kk.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.kk.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.kk.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.kk.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.kk.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.kk.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.kr.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.kr.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.kr.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.kr.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.kr.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.kr.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.lt.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.lt.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.lt.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.lt.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.lt.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.lt.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.lv.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.lv.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.lv.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.lv.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.lv.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.lv.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.me.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.me.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.me.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.me.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.me.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.me.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.mk.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.mk.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.mk.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.mk.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.mk.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.mk.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ms.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ms.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ms.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ms.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ms.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ms.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.nb.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.nb.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.nb.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.nb.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.nb.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.nb.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.nl-BE.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.nl-BE.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.nl-BE.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.nl-BE.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.nl-BE.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.nl-BE.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.nl.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.nl.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.nl.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.nl.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.nl.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.nl.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.no.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.no.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.no.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.no.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.no.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.no.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.pl.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.pl.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.pl.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.pl.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.pl.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.pl.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.pt-BR.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.pt-BR.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.pt-BR.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.pt-BR.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.pt-BR.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.pt-BR.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.pt.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.pt.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.pt.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.pt.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.pt.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.pt.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ro.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ro.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ro.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ro.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ro.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ro.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.rs-latin.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.rs-latin.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.rs-latin.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.rs-latin.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.rs-latin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.rs-latin.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.rs.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.rs.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.rs.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.rs.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.rs.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.rs.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ru.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ru.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.ru.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ru.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.ru.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.ru.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sk.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sk.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sk.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sk.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sk.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sk.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sl.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sl.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sl.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sl.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sl.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sl.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sq.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sq.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sq.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sq.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sq.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sq.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sr-latin.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sr-latin.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sr-latin.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sr-latin.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sr-latin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sr-latin.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sr.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sr.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sr.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sr.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sr.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sr.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sv.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sv.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sv.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sv.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sv.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sv.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sw.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sw.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.sw.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sw.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.sw.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.sw.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.th.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.th.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.th.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.th.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.th.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.th.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.tr.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.tr.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.tr.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.tr.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.tr.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.tr.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.uk.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.uk.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.uk.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.uk.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.uk.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.uk.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.vi.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.vi.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.vi.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.vi.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.vi.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.vi.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.zh-CN.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.zh-CN.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.zh-CN.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.zh-CN.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.zh-CN.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.zh-CN.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.zh-TW.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.zh-TW.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/bootstrap-datepicker.zh-TW.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/dist\/locales\/min\/bootstrap-datepicker.zh-TW.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/bootstrap-datepicker.zh-TW.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/dist\/locales\/min\/bootstrap-datepicker.zh-TW.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/demo_head.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/demo_head.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/demo_head.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/demo_head.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_component.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_component.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_component.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_component.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_daterange.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_daterange.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_daterange.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_daterange.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_inline.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_inline.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_inline.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_inline.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_input.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_input.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/markup_input.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/markup_input.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_calendarweeks.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_calendarweeks.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_calendarweeks.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_calendarweeks.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_clearbtn.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_clearbtn.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_clearbtn.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_clearbtn.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_daysofweekdisabled.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_daysofweekdisabled.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_daysofweekdisabled.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_daysofweekdisabled.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_enddate.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_enddate.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_enddate.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_enddate.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_language.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_language.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_language.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_language.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_multidate.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_multidate.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_multidate.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_multidate.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_startdate.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_startdate.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_startdate.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_startdate.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_todaybtn.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_todaybtn.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_todaybtn.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_todaybtn.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_todayhighlight.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_todayhighlight.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_todayhighlight.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_todayhighlight.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_weekstart.html": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_weekstart.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/option_weekstart.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/option_weekstart.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/common.css": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/common.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/common.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/common.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/common.js": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/common.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/common.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/min\/common-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/common.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/min\/common-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/debug.js": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/debug.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/debug.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/min\/debug-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/debug.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/min\/debug-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/html-imports.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/html-imports.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/html-imports.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/min\/html-imports.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/html-imports.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/min\/html-imports.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/screenshot.js": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/screenshot.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/screenshot.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_screenshots\/script\/min\/screenshot-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/screenshot.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_screenshots\/script\/min\/screenshot-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/demo_head.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/demo_head.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 35214,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/demo_head.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/demo_head.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/demo_head.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/demo_head.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_component.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_component.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 12899,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_component.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_component.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_component.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_component.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_daterange.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_daterange.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 18503,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_daterange.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_daterange.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_daterange.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_daterange.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_inline.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_inline.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 12398,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_inline.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_inline.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_inline.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_inline.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_input.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_input.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 13085,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_input.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/markup_input.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_input.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/markup_input.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_calendarweeks.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_calendarweeks.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 19901,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_calendarweeks.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_calendarweeks.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_calendarweeks.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_calendarweeks.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_clearbtn.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_clearbtn.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 13180,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_clearbtn.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_clearbtn.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_clearbtn.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_clearbtn.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_daysofweekdisabled.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_daysofweekdisabled.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 12861,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_daysofweekdisabled.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_daysofweekdisabled.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_daysofweekdisabled.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_daysofweekdisabled.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_enddate.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_enddate.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 12162,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_enddate.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_enddate.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_enddate.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_enddate.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_language.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_language.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47404,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_language.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_language.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_language.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_language.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_multidate.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_multidate.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 26853,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_multidate.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_multidate.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_multidate.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_multidate.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_startdate.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_startdate.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 12901,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_startdate.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_startdate.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_startdate.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_startdate.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_todaybtn.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_todaybtn.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 13420,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_todaybtn.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_todaybtn.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_todaybtn.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_todaybtn.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_todayhighlight.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_todayhighlight.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 17533,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_todayhighlight.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_todayhighlight.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_todayhighlight.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_todayhighlight.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_weekstart.png": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_weekstart.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 22478,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_weekstart.png",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/_static\/screenshots\/option_weekstart.png",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_weekstart.png",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/_static\/screenshots\/option_weekstart.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/docs\/README.md": {
+	"\/bower_components\/bootstrap-datepicker\/docs\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -1329,9 +1329,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/README.md",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/README.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/docs\/README.html",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/docs\/README.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -1341,711 +1341,711 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/Gruntfile.js": {
+	"\/bower_components\/bootstrap-datepicker\/Gruntfile.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/Gruntfile.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/min\/Gruntfile-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/Gruntfile.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/min\/Gruntfile-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/bootstrap-datepicker.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/bootstrap-datepicker.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/bootstrap-datepicker.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/min\/bootstrap-datepicker-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/bootstrap-datepicker.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/min\/bootstrap-datepicker-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ar.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ar.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ar.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ar-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ar.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ar-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.az.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.az.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.az.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.az-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.az.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.az-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.bg.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.bg.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.bg.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.bg-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.bg.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.bg-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.bs.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.bs.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.bs.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.bs-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.bs.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.bs-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ca.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ca.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ca.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ca-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ca.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ca-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.cs.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.cs.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.cs.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.cs-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.cs.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.cs-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.cy.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.cy.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.cy.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.cy-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.cy.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.cy-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.da.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.da.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.da.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.da-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.da.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.da-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.de.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.de.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.de.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.de-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.de.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.de-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.el.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.el.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.el.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.el-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.el.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.el-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.en-GB.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.en-GB.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.en-GB.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.en-GB-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.en-GB.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.en-GB-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.es.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.es.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.es.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.es-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.es.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.es-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.et.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.et.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.et.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.et-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.et.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.et-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.eu.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.eu.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.eu.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.eu-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.eu.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.eu-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fa.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fa.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fa.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.fa-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fa.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.fa-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fi.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fi.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fi.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.fi-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fi.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.fi-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fo.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fo.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fo.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.fo-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fo.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.fo-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fr-CH.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fr-CH.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fr-CH.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.fr-CH-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fr-CH.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.fr-CH-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fr.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.fr.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.fr-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.fr.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.fr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.gl.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.gl.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.gl.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.gl-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.gl.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.gl-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.he.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.he.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.he.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.he-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.he.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.he-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.hr.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.hr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.hr.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.hr-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.hr.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.hr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.hu.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.hu.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.hu.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.hu-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.hu.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.hu-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.hy.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.hy.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.hy.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.hy-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.hy.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.hy-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.id.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.id.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.id.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.id-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.id.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.id-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.is.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.is.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.is.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.is-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.is.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.is-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.it-CH.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.it-CH.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.it-CH.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.it-CH-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.it-CH.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.it-CH-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.it.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.it.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.it.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.it-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.it.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.it-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ja.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ja.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ja.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ja-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ja.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ja-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ka.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ka.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ka.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ka-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ka.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ka-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.kh.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.kh.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.kh.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.kh-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.kh.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.kh-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.kk.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.kk.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.kk.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.kk-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.kk.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.kk-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.kr.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.kr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.kr.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.kr-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.kr.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.kr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.lt.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.lt.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.lt.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.lt-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.lt.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.lt-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.lv.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.lv.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.lv.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.lv-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.lv.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.lv-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.me.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.me.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.me.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.me-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.me.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.me-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.mk.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.mk.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.mk.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.mk-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.mk.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.mk-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ms.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ms.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ms.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ms-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ms.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ms-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.nb.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.nb.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.nb.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.nb-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.nb.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.nb-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.nl-BE.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.nl-BE.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.nl-BE.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.nl-BE-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.nl-BE.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.nl-BE-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.nl.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.nl.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.nl.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.nl-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.nl.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.nl-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.no.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.no.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.no.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.no-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.no.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.no-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.pl.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.pl.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.pl.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.pl-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.pl.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.pl-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.pt-BR.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.pt-BR.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.pt-BR.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.pt-BR-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.pt-BR.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.pt-BR-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.pt.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.pt.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.pt.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.pt-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.pt.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.pt-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ro.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ro.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ro.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ro-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ro.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ro-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.rs-latin.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.rs-latin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.rs-latin.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.rs-latin-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.rs-latin.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.rs-latin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.rs.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.rs.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.rs.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.rs-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.rs.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.rs-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ru.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ru.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.ru.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.ru-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.ru.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.ru-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sk.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sk.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sk.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sk-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sk.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sk-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sl.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sl.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sl.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sl-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sl.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sl-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sq.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sq.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sq.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sq-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sq.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sq-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sr-latin.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sr-latin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sr-latin.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sr-latin-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sr-latin.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sr-latin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sr.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sr.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sr-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sr.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sv.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sv.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sv.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sv-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sv.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sv-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sw.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sw.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.sw.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.sw-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.sw.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.sw-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.th.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.th.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.th.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.th-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.th.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.th-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.tr.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.tr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.tr.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.tr-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.tr.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.tr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.uk.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.uk.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.uk.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.uk-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.uk.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.uk-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.vi.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.vi.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.vi.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.vi-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.vi.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.vi-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.zh-CN.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.zh-CN.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.zh-CN.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.zh-CN-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.zh-CN.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.zh-CN-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.zh-TW.js": {
+	"\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.zh-TW.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/bootstrap-datepicker.zh-TW.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/js\/locales\/min\/bootstrap-datepicker.zh-TW-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/bootstrap-datepicker.zh-TW.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/js\/locales\/min\/bootstrap-datepicker.zh-TW-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/less\/datepicker.less": {
+	"\/bower_components\/bootstrap-datepicker\/less\/datepicker.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -2053,8 +2053,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/less\/datepicker.less",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/css\/datepicker.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/less\/datepicker.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/css\/datepicker.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2065,7 +2065,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/less\/datepicker3.less": {
+	"\/bower_components\/bootstrap-datepicker\/less\/datepicker3.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -2073,8 +2073,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/less\/datepicker3.less",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/css\/datepicker3.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/less\/datepicker3.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/css\/datepicker3.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2085,18 +2085,18 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/package.json": {
+	"\/bower_components\/bootstrap-datepicker\/package.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/package.json",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/package.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/package-min.json",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/package-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/README.md": {
+	"\/bower_components\/bootstrap-datepicker\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -2105,9 +2105,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/README.md",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/README.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/README.html",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/README.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2117,82 +2117,82 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/coverage.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/coverage.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/coverage.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/min\/coverage-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/coverage.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/min\/coverage-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/jquery-1.7.1.min.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/jquery-1.7.1.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/jquery-1.7.1.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/min\/jquery-1.7.1.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/jquery-1.7.1.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/min\/jquery-1.7.1.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/mock.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/mock.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/mock.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/min\/mock-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/mock.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/min\/mock-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/qunit-logging.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/qunit-logging.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/qunit-logging.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/min\/qunit-logging-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/qunit-logging.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/min\/qunit-logging-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/qunit.css": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/qunit.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/qunit.css",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/qunit.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/qunit.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/qunit.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/qunit.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/min\/qunit-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/qunit.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/min\/qunit-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/utils.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/assets\/utils.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/utils.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/assets\/min\/utils-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/utils.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/assets\/min\/utils-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/README.md": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -2201,9 +2201,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/README.md",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/README.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/README.html",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/README.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2213,176 +2213,176 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/calendar-weeks.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/calendar-weeks.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/calendar-weeks.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/calendar-weeks-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/calendar-weeks.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/calendar-weeks-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/component.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/component.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/component.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/component-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/component.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/component-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/data-api.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/data-api.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/data-api.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/data-api-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/data-api.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/data-api-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/events.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/events.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/events.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/events-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/events.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/events-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/formats.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/formats.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/formats.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/formats-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/formats.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/formats-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/inline.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/inline.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/inline.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/inline-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/inline.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/inline-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/2011.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/2011.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/2011.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/min\/2011-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/2011.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/min\/2011-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/2012.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/2012.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/2012.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/min\/2012-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/2012.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/min\/2012-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/all.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/all.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/all.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/keyboard_navigation\/min\/all-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/all.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/keyboard_navigation\/min\/all-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/methods.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/methods.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/methods.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/methods-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/methods.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/methods-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/2011.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/2011.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/2011.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/min\/2011-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/2011.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/min\/2011-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/2012.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/2012.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/2012.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/min\/2012-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/2012.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/min\/2012-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/all.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/all.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/all.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/mouse_navigation\/min\/all-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/all.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/mouse_navigation\/min\/all-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/noconflict.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/noconflict.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/noconflict.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/noconflict-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/noconflict.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/noconflict-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/options.js": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/suites\/options.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/options.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/suites\/min\/options-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/options.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/suites\/min\/options-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap-3-datepicker\/tests\/tests.html": {
+	"\/bower_components\/bootstrap-datepicker\/tests\/tests.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap-3-datepicker\/tests\/tests.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap-datepicker\/tests\/tests.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

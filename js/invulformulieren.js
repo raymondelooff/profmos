@@ -1,3 +1,10 @@
+$('.date').datepicker({
+    format: "dd-mm-yyyy",
+    todayBtn: "linked",
+    language: "nl",
+    todayHighlight: true
+});
+
 function fillVak() {
 
     var url;
@@ -8,12 +15,6 @@ function fillVak() {
     }});
 }
 
-$('.date').datepicker({
-    format: "dd-mm-yyyy",
-    todayBtn: "linked",
-    language: "nl"
-});
-
 function fillVakVerzaaid() {
 
     var url;
@@ -23,9 +24,6 @@ function fillVakVerzaaid() {
         $("#vak").html(result);
     }});
 }
-
-$('.date').datepicker({
-});
 
 function fillBoot() {
 
