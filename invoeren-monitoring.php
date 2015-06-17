@@ -97,8 +97,14 @@ require_once('includes/connectdb.php');
 					);
 					
 					if(isValidArray($rules, $_POST)) {
+                        /*$database->where ("Plaats", $_POST['perceelnaam']);
+                        $database->where ("Nummer", $_POST['perceelnummer']);
+                        $results = $database->get ('perceel');*/
+
 						$array = array(
                             'Datum' => $_POST['datum'],
+                            'Vak_VakID' => $_POST[''],
+                            'Perceel_PerceelID' => $_POST[''],
                             'Compartiment' => $_POST['compartiment'],
                             'Type' => $_POST['type'],
                             'Lengte' => $_POST['type'],
@@ -108,7 +114,7 @@ require_once('includes/connectdb.php');
                             'DW_Schelp' => $_POST['DryWeightSchelp']
                         );
 						
-						$insert = $database->insert('TABEL', $array);
+						$insert = $database->insert('meting', $array);
 						
 						if($insert) {
 							echo 'victory';
