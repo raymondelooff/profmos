@@ -9,6 +9,9 @@ function fillVak() {
 }
 
 $('.date').datepicker({
+    format: "dd-mm-yyyy",
+    todayBtn: "linked",
+    language: "nl"
 });
 
 function fillVakVerzaaid() {
