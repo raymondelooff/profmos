@@ -139,64 +139,6 @@
                         case '2':
 
                             // Join other tables
-                            /*$result = $database->rawQuery('
-
-                                SELECT
-                                    z.ZaaiingID,
-                                    z.Bedrijf_BedrijfID,
-                                    z.Perceel_PerceelID,
-                                    z.Mosselgroep_MosselgroepID,
-                                    z.Activiteit as z_Activiteit,
-                                    z.Datum as z_Datum,
-                                    z.BrutoMton as z_BrutoMton,
-                                    z.Kilogram as z_Kilogram,
-                                    z.KilogramPerM2,
-                                    z.Bustal as z_Bustal,
-                                    z.Monster as z_Monster,
-                                    z.MonsterLabel as z_MonsterLabel,
-                                    z.Opmerking as z_Opmerking,
-
-                                    o.OogstID,
-                                    o.Activiteit as o_Activiteit,
-                                    o.Datum as o_Datum,
-                                    o.BrutoMton as o_BrutoMton,
-                                    o.Kilogram as o_Kilogram,
-                                    o.Rendement,
-                                    o.Stukstal,
-                                    o.Bustal as o_Bustal,
-                                    o.Oppervlakte,
-                                    o.Monster as o_Monster,
-                                    o.MonsterLabel as o_MonsterLabel,
-                                    o.Opmerking as o_Opmerking,
-
-                                    b.Naam as b_Naam,
-                                    b.Afkorting as b_Afkorting,
-
-                                    p.Plaats as p_Plaats,
-                                    p.Nummer as p_Nummer,
-
-                                    v.VakID as v_VakID,
-                                    v.Omschrijving as v_Omschrijving,
-                                    v.Oppervlakte as v_Oppervlakte
-
-                                FROM
-                                    zaaiing as z,
-                                    oogst as o,
-                                    bedrijf as b,
-                                    perceel as p,
-                                    vak as v
-
-                                WHERE
-                                    z.ZaaiingID = o.Zaaiing_ZaaiingID AND
-                                    z.Bedrijf_BedrijfID = b.BedrijfID AND
-                                    z.Perceel_PerceelID = p.PerceelID AND
-                                    z.Vak_VakID = v.VakID
-                            ');*/
-
-
-                            //$database->where('o.Zaaiing_ZaaiingID', 'z.ZaaiingID');
-                            //$database->join('zaaiing z', 'o.Zaaiing_ZaaiingID = z.ZaaiingID', 'LEFT');
-                            //$database->join('oogst o', 'o.Zaaiing_ZaaiingID = z.ZaaiingID', 'LEFT');
                             $database->join('bedrijf b', 'z.Bedrijf_BedrijfID = b.BedrijfID', 'LEFT');
                             $database->join('perceel p', 'z.Perceel_PerceelID = p.PerceelID', 'LEFT');
                             $database->join('vak v', 'z.Vak_VakID = v.VakID', 'LEFT');
