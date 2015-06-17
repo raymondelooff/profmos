@@ -48,6 +48,12 @@ require_once('includes/connectdb.php');
                                     'type' => 'date',
                                     'format' => 'm/d/Y'
                                 ),
+                        'bedrijf' => array(
+									'label' => 'Bedrijf',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 45							
+								),
                         'activiteit' => array(
 									'label' => 'Activiteit',
 									'type' => 'text',
@@ -64,7 +70,7 @@ require_once('includes/connectdb.php');
 									'label' => 'Perceel plaats',
 									'type' => 'text',
 									'minLength' => 1,
-                                    'maxLength' => 100
+                                    'maxLength' => 45
 								),
                         'gezaaid_als' => array(
 									'label' => 'Gezaaid als',
@@ -74,9 +80,8 @@ require_once('includes/connectdb.php');
 								),
 						'oppervlakte' => array(
 									'label' => 'Oppervlakte',
-									'type' => 'text',
-									'minLength' => 1,
-                                    'maxLength' => 100
+									'type' => 'float',
+									'minLength' => 1
 								),
 						'monster' => array(
 									'label' => 'Monster',
@@ -104,15 +109,14 @@ require_once('includes/connectdb.php');
 								),
 						'oppervlakte_verzaaien' => array(
 									'label' => 'Oppervlakte verzaaien',
-									'type' =>'text',
-									'minLength' => 1,
-                                    'maxLength' => 100 
+									'type' =>'float',
+									'minLength' => 1
 								),
 						'busstukstal' => array(
 									'label' => 'Busstukstal',
-									'type' => 'text',
+									'type' => 'int',
 									'minLength' => 1,
-                                    'maxLength' => 100
+                                    'maxLength' => 11
 								),
 						'mosselton' => array(
 									'label' => 'Mosselton',
@@ -175,6 +179,11 @@ require_once('includes/connectdb.php');
                 </div>
                 
                 <div class="form-group">
+                    <label for="bedrijf">Bedrijf: </label>
+                    <input type="text" class="form-control" id="bedrijf" name="bedrijf" >
+                </div>
+                
+                <div class="form-group">
                     <label for="perceel_naam">Perceel naam: </label>
                     <input type="text" class="form-control" id="perceel_naam" name="perceel_naam" >
                 </div>
@@ -199,7 +208,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="oppervlakte">Oppervlakte: </label>
-                    <input type="text" class="form-control" id="oppervlakte" name="oppervlakte" >
+                    <input type="float" class="form-control" id="oppervlakte" name="oppervlakte" >
                 </div>
                 
                 <br>
@@ -237,7 +246,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="oppervlakte_verzaaien">Oppervlakte: </label>
-                    <input type="text" class="form-control" id="oppervlakte_verzaaien" name="oppervlakte_verzaaien" >
+                    <input type="float" class="form-control" id="oppervlakte_verzaaien" name="oppervlakte_verzaaien" >
                 </div>
                 
                 <br>
@@ -249,7 +258,7 @@ require_once('includes/connectdb.php');
                 
                 <div class="form-group">
                     <label for="busstukstal">Busstukstal: </label>
-                    <input type="text" class="form-control" id="busstukstal" name="busstukstal" >
+                    <input type="int" class="form-control" id="busstukstal" name="busstukstal" >
                 </div>
                 
                 <div class="form-group">
