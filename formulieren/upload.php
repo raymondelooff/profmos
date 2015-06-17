@@ -187,7 +187,7 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         die();
                                     }
                                     if ($tabel == 'behandeling') {
-                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
+                                        header("Location: selectZaaiing.php?behandelingID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
                                         die();
                                     }
 
