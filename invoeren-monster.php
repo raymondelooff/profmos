@@ -241,7 +241,15 @@ require_once('includes/functions.php');
                 </div>
                 <div class="form-group">
                     <label for="boot">Boot</label>
-                    <input  class="form-control" type="text" id="boot" name="boot" maxlength="80" size="20">
+                    <select id="boot" name="boot" class="form-control">
+                        <?php
+                        $boten = $database->get('boot');
+                        echo '<option selected disabled>Select one</option>';
+                        foreach($boten as $boot) {
+                            echo '<option value=" ' . $boot['BootID'] . '">' . $boot['Naam'] . '</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="perceel">Perceel: </label>
