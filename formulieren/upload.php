@@ -40,7 +40,7 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                     <div class="col col-md-6">
 
                         <?php
-
+                        $error = "";
                         if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             $error = "";
                             $target_dir = "../uploads/";
@@ -99,8 +99,8 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                                 $tabel = 'behandeling';
                                             }
 
-                                            if ($activiteit == "Verzaaien") {
-                                                $verzaaien = true;
+                                            if ($activiteit == "Verzaaien" && $_POST['verzaaien']) {
+                                                $verzaaien = TRUE;
                                             }
                                             $insert['Activiteit'] = $activiteit;
                                         }
@@ -162,8 +162,25 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         }
 
                                     }
-                                    if (!$verzaaien) {
                                         $database->insert($tabel, $insert);
+                                        if ($verzaaien) {
+                                            $database->insert('zaaiing', array(
+                                                'Bedrijf_BedrijfID' => $_POST['bedrijf'],
+                                                'Vak_VakID' => $_POST['verzaaienVakSelect'],
+                                                'Perceel_PerceelID' => $_POST['verzaaienPerceelSelect'],
+                                                'Mosselgroep_MosselgroepID' => 18,
+                                                'Activiteit' => $insert['Activiteit'],
+                                                'Datum' => $insert['Datum'],
+                                                'BrutoMton' => $insert['Activiteit'],
+                                                'Kilogram' => $insert['Kilogram'],
+                                                'KilogramPerM2' => $insert['KilogramPerM2'],
+                                                'Bustal' => $insert['Bustal'],
+                                                'Monster' => $insert['Monster'],
+                                                'MonsterLabel' => $insert['MonsterLabel'],
+                                                'Opmerking' => $insert['Opmerking']
+                                            ));
+                                        }
+
                                     }
                                     if ($tabel == 'oogst') {
                                         header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
@@ -185,7 +202,6 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                             }
 
                             echo $error;
-                        }
 
                         ?>
                         <h1>Uploaden spreadsheet</h1>
