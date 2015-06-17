@@ -164,14 +164,16 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     }
                                     if (!$verzaaien) {
                                         $database->insert($tabel, $insert);
-                                        echo $database->getLastQuery();
+                                    }
+                                    else {
+
                                     }
                                     if ($tabel == 'oogst') {
-                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $insert['Bedrijf_BedrijfID']);
+                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
                                         die();
                                     }
                                     if ($tabel == 'behandeling') {
-                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $insert['Bedrijf_BedrijfID']);
+                                        header("Location: selectZaaiing.php?behandelingID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
                                         die();
                                     }
 
