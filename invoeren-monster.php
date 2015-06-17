@@ -45,9 +45,9 @@ require_once('includes/functions.php');
 
                 $rules = array(
                     'datum' => array(
-                        'label' => 'Datum', //Naam van het veld
-                        'type' => 'date', //Type van opslaan
-                        'format' => 'm/d/Y' //formaat
+                        'label' => 'Datum',
+                        'type' => 'date',
+                        'format' => 'm/d/Y'
                     ),
 
                     //'mosselgroep' => array(
@@ -74,7 +74,7 @@ require_once('includes/functions.php');
                         //'type' => 'text',
                         //minLength => 1,
                         //maxLength => 30
-                    //)
+                    //),
 
                     'nummer' => array(
                         'label' => 'Nummer',
@@ -183,6 +183,31 @@ require_once('includes/functions.php');
                         'type' => 'float'
                     )
                 );
+
+                if(isValidArray($rules, $_POST)) {
+
+                    $array = array(
+                        'Datum' => $_POST['datum'],
+                       // 'mosselgroep_MosselgroepID' => $_POST['mosselgroep'],
+                        'Bedrijf_BedrijfID' => $_POST['bedrijf'],
+                        'Boot_BootID' => $_POST['boot'],
+                        'Perceel_PerceelID' => $_POST['perceel'],
+                        'Nummer' => $_POST['nummer'],
+                        'Vak_VakID' => $_POST['vak'],
+                        '' => $_POST['brutomonster'],
+                        '' => $_POST[''],
+                        '' => $_POST['']
+                    );
+
+                    $insert = $database->insert('meting', $array);
+
+                    if($insert) {
+                        echo '<div class="alert alert-success text-center">Monitoring data toegevoegd</div>';
+                    }
+                    else {
+                        echo '<div class="alert alert-warning text-center">Het is niet gelukt de monitoring data toe te voegen, probeer het later opnieuw</div>';
+                    }
+                }
             }
             ?>
 

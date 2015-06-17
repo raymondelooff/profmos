@@ -2,7 +2,7 @@
 
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
-require_once('includes/connectdb.php');
+require_once('includes/functions.php');
 
 ?>
 <!DOCTYPE html>
@@ -51,23 +51,21 @@ require_once('includes/connectdb.php');
                         ),
                         'compartiment' => array(
                             'label' => 'Compartiment',
-                            'type' => 'numeric',
-                        ),
-                        'perceelnaam' => array(
-                            'label' => 'Perceelnaam',
-                            'type' => 'text',
+                            'type' => 'int',
                             'minLength' => 1,
-                            'maxLength' => 4
+                            'maxLength' => 11
                         ),
-                        'perceelnummer' => array(
-                            'label' => 'Perceelnummer',
-                            'type' => 'numeric'
-                        ),
-                        'vaknaam' => array(
-                            'label' => 'Vaknaam',
-                            'type' => 'text',
+                        'perceel' => array(
+                            'label' => 'Perceel',
+                            'type' => 'int',
                             'minLength' => 1,
-                            'maxLength' => 8
+                            'maxLength' => 11
+                        ),
+                        'vak' => array(
+                            'label' => 'Vak',
+                            'type' => 'int',
+                            'minLength' => 1,
+                            'maxLength' => 11
                         ),
                         'type' => array(
                             'label' => 'Type',
@@ -77,35 +75,33 @@ require_once('includes/connectdb.php');
                         ),
                         'lengte' => array(
                             'label' => 'Lengte',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'natgewicht' => array(
                             'label' => 'Natgewicht',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'visgewicht' => array(
                             'label' => 'Visgewicht',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'AFDW' => array(
                             'label' => 'AFDW',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'DryWeightSchelp' => array(
                             'label' => 'DryWeightSchelp',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         )
 					);
 					
 					if(isValidArray($rules, $_POST)) {
-                        /*$database->where ("Plaats", $_POST['perceelnaam']);
-                        $database->where ("Nummer", $_POST['perceelnummer']);
-                        $results = $database->get ('perceel');*/
+                        $datum = strtotime($_POST['datum']);
 
 						$array = array(
-                            'Datum' => $_POST['datum'],
-                            'Vak_VakID' => $_POST[''],
-                            'Perceel_PerceelID' => $_POST[''],
+                            'Datum' => $datum,
+                            'Vak_VakID' => $_POST['vak'],
+                            'Perceel_PerceelID' => $_POST['perceel'],
                             'Compartiment' => $_POST['compartiment'],
                             'Type' => $_POST['type'],
                             'Lengte' => $_POST['type'],
@@ -146,14 +142,18 @@ require_once('includes/connectdb.php');
                     </select>
                 </div>
                 <div class="form-group">
-                    <table>
-                        <tr>
-                            <td><label for="perceelnaam">Perceelnaam</label></td><td><label for="perceelnummer">Perceelnummer</label></td><td><label for="vaknaam">Vaknaam</label></td>
-                        </tr>
-                        <tr>
-                            <td><input class="form-control" type="text" id="perceelnaam" name="perceelnaam" maxlength="80" size="20"></td><td><input class="form-control" type="text" id="perceelnummer" name="perceelnummer" maxlength="80" size="20"></td><td><input class="form-control" type="text" id="vaknaam" name="vaknaam" maxlength="80" size="20"></td>
-                        </tr>
-                    </table>
+                    <label for="perceel">Perceel: </label>
+                    <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
+                        <?php
+                        $percelen = $database->get('perceel');
+                        echo '<option>Select one</option>';
+                        foreach($percelen as $perceel) {
+                            echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+                        }
+                        ?>
+                    </select>
+                </div>
+                <div class="form-group" id="vak">
                 </div>
                 <div class="form-group">
                     <label for="type">Type</label>
