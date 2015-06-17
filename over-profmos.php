@@ -39,16 +39,35 @@
             <div class="row">
                 <div class="col col-md-6">
                     <h1>PROFMOS</h1>
-                    <h2>Onderzoeksgroep Aquacultuur in Delta Gebieden</h2>
+                    <h3>Waar staat ProfMos voor?</h3>
                     <p>
-                        Aquacultuur in Delta Gebieden van de Delta Academy richt zijn focus op duurzame zoute aquacultuur in en buiten de regio Zeeland.
-                        Aquacultuur is de gecontroleerde productie van zilte gewassen, algen, zeewier, zagers, schelpdieren en vis.
-                        De teelt van deze organismen kan plaatsvinden in verschillende (intensieve en extensieve) manieren.
-                        De onderzoeksgroep Aquaculture heeft een uitgebreid netwerk opgebouwd van kleine en middelgrote ondernemingen (MKB's), adviesbureaus en kennisinstellingen betrokken bij aquacultuur in en buiten Nederland.
+                    PROFMOS staat voor Productie factoren Mosselcultuur Oosterschelde
                     </p>
+                   	
+                   	<h3>Wat is het doel van het ProfMos - project?</h3>
+                   	<p>
+                        Welke factoren bepalen het kweekrendement op percelen in de Oosterschelde en hoe kan dit verbeterd worden? <br>
+                        • Kweekrendement = groei x overleving <br>
+                        • Optimalisatie rendement = verbeteren groei + verbeteren overleving = verminderen verlies
+                    </p>
+
+                    <h3>Van welke data wordt gebruik gemaakt?</h3>
+                    <p>
+                        1. Data van de monitoring <br>
+                        2. Kweekgegevens (logboeken)<br>
+                        3. Aangeleverde mosselmonsters
+                    </p>
+
+                    <h3>Data van monitoring</h3>
+                    <p>
+                    Uitgezet in maart 2014 en maart 2015. Per jaar 9 keer bemonsterd:<br>
+                    •	1 keer per maand in het groeiseizoen (apr, mei, jun, jul, aug, sept)<br>
+                    •	1 keer per 2 maanden buiten groeiseizoen (dec, jan, mrt)
+                    </p>
+
                 </div>
                 <div class="col col-md-6">
-                    <img src="/images/plattegrond.png" alt="Plattegrond PROFMOS" />
+                    <img src="/images/mosselboot.jpg" alt="Mosselboot PROFMOS" />
                 </div>
             </div>
         </div>

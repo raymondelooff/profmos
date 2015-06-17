@@ -2,6 +2,7 @@
 
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
+require_once('includes/functions.php');
 
 ?>
 <!DOCTYPE html>
@@ -37,6 +38,153 @@ require_once('includes/connectdb.php');
     <section id="content">
         <div class="container">
             <h2>Monster data</h2>
+
+            <?php
+
+            if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+                $rules = array(
+                    'datum' => array(
+                        'label' => 'Datum', //Naam van het veld
+                        'type' => 'date', //Type van opslaan
+                        'format' => 'm/d/Y' //formaat
+                    ),
+
+                    //'mosselgroep' => array(
+                    //    'label' => 'Mosselgroep',
+                    //    'type' =>
+                    //),
+
+                    'bedrijf' => array(
+                        'label' => 'Bedrijf',
+                        'type' => 'text',
+                        'minLength' => 1,
+                        'maxLength' => 20
+                    ),
+
+                    'boot' => array(
+                        'label' => 'Boot',
+                        'type' => 'text',
+                        'minLength' => 1,
+                        'maxLength' => 20
+                    ),
+
+                    //'perceel' => array(
+                        //'label' => 'Perceel',
+                        //'type' => 'text',
+                        //minLength => 1,
+                        //maxLength => 30
+                    //)
+
+                    'nummer' => array(
+                        'label' => 'Nummer',
+                        'type' => 'int',
+                        'minLength' => 1,
+                        'maxLength' => 11
+                    ),
+
+                    'vak' => array(
+                        'label' => 'Vak',
+                        'type' => 'int',
+                        'minLength' => 1,
+                        'maxLength' => 11
+                    ),
+
+                    'brutomonster' => array(
+                        'label' => 'Brutomonster',
+                        'type' => 'float'
+                    ),
+
+                    'bustal' => array(
+                        'label' => 'Bustal',
+                        'type' => 'int',
+                        'minLength' => 1,
+                        'maxLength' => 11
+                    ),
+
+                    'slippers' => array(
+                        'label' => 'Slippers',
+                        'type' => 'float'
+                    ),
+
+                     'zeester' => array(
+                        'label' => 'zeester',
+                        'type' => 'float'
+                    ),
+
+                    'pokken' => array(
+                        'label' => 'Pokken',
+                        'type' => 'float'
+                    ),
+
+                    'kookmonsteraantal' => array(
+                        'label' => 'KookMonsterAantal',
+                        'type' => 'int',
+                        'minLength' => 1,
+                        'maxLength' => 11
+                    ),
+
+                    'nettokookmonster' => array(
+                        'label' => 'nettomonsteraantal',
+                        'type' => 'float'
+                    ),
+
+                    'vistotalemonster' => array(
+                        'label' => 'vistotalemonster',
+                        'type' => 'float'
+                    ),
+
+                    'vispercentage' => array(
+                        'label' => 'Vispercentage',
+                        'type' => 'float'
+                    ),
+
+                    'opmerkingen' => array(
+                        'label' => 'Opmerkingen',
+                        'type' => 'text',
+                        'minLength' => 5,
+                        'maxLength' => 200
+                    ),
+
+                    'kroesnummer' => array(
+                        'label' => 'Kroesnummer',
+                        'type' => 'int',
+                        'minLength' => 1,
+                        'maxLength' => 11
+                    ),
+
+                    'kroes' => array(
+                        'label' => 'Kroes',
+                        'type' => 'float'
+                    ),
+
+                    'kroesvleesnat' => array(
+                        'label' => 'Kroesvleesnat',
+                        'type' => 'float'
+                    ),
+
+                    'drooggewicht' => array(
+                        'label' => 'Drooggewicht',
+                        'type' => 'float'
+                    ),
+
+                    'asvrijdrooggewicht' => array(
+                        'label' => 'Asvrijdrooggewicht',
+                        'type' => 'float'
+                    ),
+
+                    'schelpendroog' => array(
+                        'label' => 'Schelpendroog',
+                        'type' => 'float'
+                    ),
+
+                    'gemiddeldelengte' => array(
+                        'label' => 'Gemiddeldelengte',
+                        'type' => 'float'
+                    )
+                );
+            }
+            ?>
 
             <form role="form">
                 <div class="form-group">
@@ -110,8 +258,8 @@ require_once('includes/connectdb.php');
                 </div>
 
                 <div class="form-group">
-                    <label for="netto kookmonster (g)">Netto kookmonster (g)</label>
-                    <input class="form-control" type="text" id="netto kookmonster (g)" name="netto kookmonster (g)" maxlength="80" size="20">
+                    <label for="nettokookmonster">Netto kookmonster (g)</label>
+                    <input class="form-control" type="text" id="nettokookmonster" name="netto kookmonster" maxlength="80" size="20">
                 </div>
 
                 <div class="form-group">
@@ -120,8 +268,8 @@ require_once('includes/connectdb.php');
                 </div>
 
                 <div class="form-group">
-                    <label for="vis">Vis (%)</label>
-                    <input class="form-control" type="text" id="vis" name="vis" maxlength="80" size="20">
+                    <label for="vispercentage">Vis (%)</label>
+                    <input class="form-control" type="text" id="vispercentage" name="vispercentage" maxlength="80" size="20">
                 </div>
 
                 <div class="form-group">
