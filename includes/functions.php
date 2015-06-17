@@ -51,56 +51,76 @@ function isValidDate($input, $format) {
 // Function for validating a form
 function isValidArray($rules, $array) {
 
+    // Check if all the required fields are sent
+    foreach($rules as $key => $rule) {
+
+        if($rule != 'optional') {
+            if (!isset($array[$key]) || empty($array[$key])) {
+                echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> in!</div>';
+                return false;
+            }
+        }
+
+    }
+
+    // Check the values of the sent fields
     foreach($array as $name => $value) {
 
+        // Check if the rules for the field are set
         if(isset($rules[$name])) {
             $rule = $rules[$name];
 
-            if($rule != null) {
-                if($rule != 'optional') {
-                    switch ($rule['type']) {
+            // Check if the rule is optional
+            if($rule != 'optional') {
+                switch ($rule['type']) {
 
-                        // Value needs to be checked as 'text'
-                        case 'text':
+                    // Value needs to be checked as 'text'
+                    case 'text':
 
-                            if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
-                                echo '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in!</div>';
-                                return false;
-                            }
+                        if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in!</div>';
+                            return false;
+                        }
 
-                            break;
+                        break;
 
-                        // Value needs to be checked as 'email'
-                        case 'email':
+                    // Value needs to be checked as 'email'
+                    case 'email':
 
-                            if (!isValidEmail($value)) {
-                                echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!</div>';
-                                return false;
-                            }
+                        if (!isValidEmail($value)) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!</div>';
+                            return false;
+                        }
 
-                            break;
+                        break;
 
-                        // Value needs to be checked as 'numeric'
-                        case 'numeric':
+                    // Value needs to be checked as 'numeric'
+                    case 'numeric':
 
-                            if (!isValidNumber($value)) {
-                                echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in!</div>';
-                                return false;
-                            }
+                        if (!isValidNumber($value)) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in!</div>';
+                            return false;
+                        }
 
-                            break;
+                        break;
 
-                        // Value needs to be checked as 'date'
-                        case 'date':
+                    // Value needs to be checked as 'date'
+                    case 'date':
 
-                            if (!isValidDate($value, $rule['format'])) {
-                                echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
-                                return false;
-                            }
+                        if (!isValidDate($value, $rule['format'])) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
+                            return false;
+                        }
 
-                            break;
+                        break;
 
-                    }
+                    default:
+
+                        echo '<div class="alert alert-danger">Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!</div>';
+                        return false;
+
+                        break;
+
                 }
             }
         }
