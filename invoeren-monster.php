@@ -45,9 +45,9 @@ require_once('includes/functions.php');
 
                 $rules = array(
                     'datum' => array(
-                        'label' => 'Datum', //Naam van het veld
-                        'type' => 'date', //Type van opslaan
-                        'format' => 'm/d/Y' //formaat
+                        'label' => 'Datum',
+                        'type' => 'date',
+                        'format' => 'm/d/Y'
                     ),
 
                     //'mosselgroep' => array(
