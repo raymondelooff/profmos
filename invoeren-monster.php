@@ -229,7 +229,15 @@ require_once('includes/functions.php');
                 </div>
                 <div class="form-group">
                     <label for="bedrijf">Bedrijf</label>
-                    <input class="form-control" type="text" id="bedrijf" name="bedrijf" maxlength="80" size="20">
+                    <select id="bedrijf" name="bedrijf" class="form-control">
+                        <?php
+                        $bedrijven = $database->get('bedrijf');
+                        echo '<option selected disabled>Select one</option>';
+                        foreach($bedrijven as $bedrijf) {
+                            echo '<option value=" ' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="boot">Boot</label>
@@ -240,7 +248,7 @@ require_once('includes/functions.php');
                     <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
                         <?php
                         $percelen = $database->get('perceel');
-                        echo '<option>Select one</option>';
+                        echo '<option selected disabled>Select one</option>';
                         foreach($percelen as $perceel) {
                             echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
                         }
