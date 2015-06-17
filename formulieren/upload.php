@@ -164,14 +164,13 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     }
                                     if (!$verzaaien) {
                                         $database->insert($tabel, $insert);
-                                        echo $database->getLastQuery();
                                     }
                                     if ($tabel == 'oogst') {
-                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $insert['Bedrijf_BedrijfID']);
+                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
                                         die();
                                     }
                                     if ($tabel == 'behandeling') {
-                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $insert['Bedrijf_BedrijfID']);
+                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
                                         die();
                                     }
 
@@ -189,10 +188,10 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                         }
 
                         ?>
-
+                        <h1>Uploaden spreadsheet</h1>
                         <form method="post" enctype="multipart/form-data">
-                            Select image to upload:
-                            <input type="file" name="upload" id="upload">
+                            Selecteer een bestand om te uploaden.
+                            <input type="file" class="file" name="upload" id="upload">
                             <br>
                             <div class="form-group">
                                 <label for="bedrijf">Bedrijf: </label>
@@ -221,9 +220,48 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                             <div class="form-group" id="vak">
                             </div>
                             <br>
+                            <div class="form-group">
+                                <label for="verzaaien">Verzaaien?: </label>
+                                <select name="verzaaien" id="verzaaien" class="form-control" onchange="toggleVerzaaien()">
+                                    <option value="Ja">Ja</option>
+                                    <option value="Nee" selected>Nee</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group" id="verzaaienBedrijf">
+                                <label for="verzaaienBedrijfSelect">Bedrijf: </label>
+                                <select id="verzaaienBedrijfSelect" name="verzaaienBedrijfSelect" class="form-control">
+                                    <?php
+                                    $bedrijven = $database->get('bedrijf');
+                                    echo '<option></option>';
+                                    foreach($bedrijven as $bedrijf) {
+                                        echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group" id="verzaaienPerceel">
+                                <label for="verzaaienPerceelSelect">Perceel: </label>
+                                <select id="verzaaienPerceelSelect" name="verzaaienPerceelSelect" class="form-control" onchange="fillVakVerzaaid()">
+                                    <?php
+                                    $percelen = $database->get('perceel');
+                                    echo '<option></option>';
+                                    foreach($percelen as $perceel) {
+                                        echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group" id="verzaaienVak">
+                            </div>
+                            <br>
+                            <div id="verzaaienOppervlakte" class="form-group">
+                                <label for="verzaaienOppervlakte">Oppervlakte: </label>
+                                <input type="text" id="verzaaienOppervlakte" class="form-control">
+                            </div>
+                            <br>
                             <input type="submit" value="Upload spreadsheet" name="submit">
                         </form>
-                    </div>
                 </div>
             </div>
         </section>
@@ -231,7 +269,11 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-        <script src="/js/bootstrap-datepicker.min.js"></script>
+        <script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
         <script src="/js/invulformulieren.js"></script>
+        <!-- For file input box. -->
+        <script src="/bower_components/bootstrap-file/js/fileinput.min.js"></script>
+        <link href="/bower_components/bootstrap-file/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="/bower_components/bootstrap-file/js/fileinput_locale_nl.js"></script>
     </body>
 </html>

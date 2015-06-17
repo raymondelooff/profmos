@@ -1,3 +1,7 @@
+$( document ).ready(function(){
+    toggleVerzaaien();
+});
+
 $('.date').datepicker({
     format: "dd-mm-yyyy",
     todayBtn: "linked",
@@ -10,7 +14,6 @@ function fillVak() {
 
     var url;
     url = "getVak.php?perceelID=" + $( "#perceel" ).val();
-    console.log($( "#perceel" ).val());
     $.ajax({url: url , success: function(result){
         $("#vak").html(result);
     }});
@@ -19,10 +22,9 @@ function fillVak() {
 function fillVakVerzaaid() {
 
     var url;
-    url = "getVakVerzaaid.php?perceelID=" + $( "#perceel" ).val();
-    console.log($( "#perceel" ).val());
+    url = "getVakVerzaaid.php?perceelID=" + $( "#verzaaienPerceelSelect" ).val();
     $.ajax({url: url , success: function(result){
-        $("#vak").html(result);
+        $("#verzaaienVak").html(result);
     }});
 }
 
@@ -30,8 +32,22 @@ function fillBoot() {
 
     var url;
     url = "getBoot.php?bedrijfID=" + $( "#bedrijf" ).val();
-    console.log($( "#boot" ).val());
     $.ajax({url: url , success: function(result){
         $("#boot").html(result);
     }});
+}
+
+function toggleVerzaaien() {
+    if( $( "#verzaaien" ).val() === "Ja" ) {
+        $( "#verzaaienBedrijf" ).show();
+        $( "#verzaaienPerceel" ).show();
+        $( "#verzaaienVak" ).show();
+        $( "#verzaaienOppervlakte" ).show();
+    }
+    else if ($( "#verzaaien" ).val() === "Nee" ) {
+        $( "#verzaaienBedrijf" ).hide();
+        $( "#verzaaienPerceel" ).hide();
+        $( "#verzaaienVak" ).hide();
+        $( "#verzaaienOppervlakte" ).hide();
+    }
 }
