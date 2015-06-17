@@ -16,7 +16,7 @@ function isValidText($input, $minLength, $maxLength) {
     $input = filter_var($input, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
     // Check if the string contains legit characters
-    return !preg_match('/[^[:alnum:][:space:].]/ui', $input);
+    return !preg_match('/[^[:alnum:][:space:].,?!]/ui', $input);
 
 }
 
@@ -37,6 +37,14 @@ function isValidNumber($input) {
     }
 
     return true;
+
+}
+
+// Function for validating the date
+function isValidDate($input, $format) {
+
+    $date = DateTime::createFromFormat($format, $input);
+    return $date && $date->format($format) == $input;
 
 }
 
@@ -75,11 +83,19 @@ function isValidArray($rules, $array) {
                     case 'numeric':
 
                         if(!isValidNumber($value)) {
-                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> (geldig) nummer in!</div>';
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in!</div>';
                             return false;
                         }
 
                         break;
+
+                    // Value needs to be checked as 'date'
+                    case 'date':
+
+                        if(!isValidDate($value, $rule['format'])) {
+                            echo '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
+                            return false;
+                        }
 
                 }
             }
