@@ -95,7 +95,7 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                             if ($activiteit == "Leegvissen" || $activiteit == "Vissen voor veiling") {
                                                 $tabel = 'oogst';
                                             }
-                                            if ($activiteit == "Sterren rollen" || $activiteit == "Trekje op perceel") {
+                                            if ($activiteit == "Trekje op perceel" || $activiteit == "Sterren Dweilen" || $activiteit == "Sterren Rapen" || $activiteit == "Sterren" || $activiteit == "Onder Zoet Water" || $activiteit == "Onder Warm Water" || $activiteit == "Peulen" || $activiteit == "Groen" || $activiteit == "Droog Leggen" || $activiteit == "Over Spoelerij") {
                                                 $tabel = 'behandeling';
                                             }
 
@@ -105,32 +105,37 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                             $insert['Activiteit'] = $activiteit;
                                         }
 
-                                        if ($i == 4) {
+                                        if ($i == 3) {
                                             $oppervlakte = $row[1];
                                         }
-                                        if ($i == 6) {
-                                            $insert['Monster'] = $row[1];
+                                        if ($i == 5) {
+                                            if ($row[1] == "Ja") {
+                                                $insert['Monster'] = TRUE;
+                                            }
+                                            else if ($row[1] == "Nee") {
+                                                $insert['Monster'] = FALSE;
+                                            }
                                         }
-                                        if ($i == 7) {
+                                        if ($i == 6) {
                                             $insert['MonsterLabel'] = $row[1];
                                         }
-                                        if ($i == 10 && $verzaaien) {
+                                        if ($i == 9 && $verzaaien) {
                                             $herkomstNaam = $row[1];
 
                                         }
-                                        if ($i == 11 && $verzaaien) {
+                                        if ($i == 10 && $verzaaien) {
                                             $herkomstPlaats = $row[1];
                                         }
-                                        if ($i == 12 && $verzaaien) {
+                                        if ($i == 11 && $verzaaien) {
                                             $herkomstOppervlakte = $row[1];
                                         }
-                                        if ($i == 15) {
+                                        if ($i == 14 && $tabel != "behandeling") {
                                             $insert['Bustal'] = $row[1];
                                         }
-                                        if ($i == 16 && $tabel == 'oogst') {
+                                        if ($i == 15 && $tabel == 'oogst') {
                                             $insert['Stukstal'] = $row[1];
                                         }
-                                        if ($i == 17) {
+                                        if ($i == 16  && $tabel != "behandeling") {
                                             $insert['BrutoMton'] = $row[1];
                                             $insert['Kilogram'] = $insert['BrutoMton'] * 100;
                                             if ($tabel == 'zaaiing') {
@@ -138,24 +143,36 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                             }
 
                                         }
-                                        if ($i == 18) {
+                                        if ($i == 17) {
                                             $perceelLeeggevist = $row[1];
                                         }
-                                        if ($i == 19) {
+                                        if ($i == 18) {
                                             $insert['Opmerking'] = $row[1];
                                         }
                                         $i++;
                                     }
 
-                                    if ($tabel == 'zaaiing') {
+                                    if ($tabel != 'oogst') {
                                         $insert['Bedrijf_BedrijfID'] = $_POST['bedrijf'];
                                         $insert['Vak_VakID'] = $_POST['vak'];
                                         $insert['Perceel_PerceelID'] = $_POST['perceel'];
-                                        $database->insert('mosselgroep', array('ParentMosselgroepID' => null));
-                                        $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
+                                        if ($tabel == 'zaaiing') {
+                                            $database->insert('mosselgroep', array('ParentMosselgroepID' => null));
+                                            $insert['Mosselgroep_MosselgroepID'] = $database->getInsertId();
+                                        }
+
                                     }
                                     if (!$verzaaien) {
                                         $database->insert($tabel, $insert);
+                                        echo $database->getLastQuery();
+                                    }
+                                    if ($tabel == 'oogst') {
+                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $insert['Bedrijf_BedrijfID']);
+                                        die();
+                                    }
+                                    if ($tabel == 'behandeling') {
+                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $insert['Bedrijf_BedrijfID']);
+                                        die();
                                     }
 
                                 }
@@ -184,7 +201,7 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         $bedrijven = $database->get('bedrijf');
                                         echo '<option></option>';
                                         foreach($bedrijven as $bedrijf) {
-                                            echo '<option>' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
+                                            echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
                                         }
                                     ?>
                                 </select>

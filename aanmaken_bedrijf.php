@@ -37,42 +37,39 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Aanmaken vak</h2>
+            <h2>Toevoegen bedrijf</h2>
             
             <?php
             
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
-						'omschrijving' => array(
-                                    'label' => 'Omschrijving',
+						'naam' => array(
+                                    'label' => 'Naam',
                                     'type' => 'text',
 									'minLength' => 1,
                                     'maxLength' => 45
                                 ),
-                        'oppervlakte' => array(
-									'label' => 'Oppervlakte',
-									'type' => 'float'						
-								),
-						'perceel_perceelID' => array(
-									'label' => 'Perceel_PerceelID',
-									'type' => 'int'
+                        'afkorting' => array(
+									'label' => 'Afkorting',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 10							
 								)
 					);
 					
 					if(isValidArray($rules, $_POST)) {
 						$array = array();
 						
-						$array['Omschrijving'] = $_POST['omschrijving'];
-						$array['Oppervlakte'] = $_POST['oppervlakte'];
-						$array['Perceel_PerceelID'] = $_POST['perceel_perceelID'];
+						$array['Naam'] = $_POST['naam'];
+						$array['Afkorting'] = $_POST['afkorting'];
 						
-						$insert = $database->insert('vak', $array);
+						$insert = $database->insert('bedrijf', $array);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Bedrijf toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuw bedrijf is niet gelukt.</div>';
 						}
 					}
 					
@@ -83,32 +80,16 @@ require_once('includes/functions.php');
             <form role="form" method="post">
             	
                 <div class="form-group">
-                    <label for="omschrijving">Omschrijving:</label>
-                    <input type="text" class="form-control" id="omschrijving" name="omschrijving">
+                    <label for="naam">Naam:</label>
+                    <input type="text" class="form-control" id="naam" name="naam">
                 </div>
                 
                 <div class="form-group">
-                    <label for="oppervlakte">Oppervlakte: </label>
-                    <input type="float" class="form-control" id="oppervlakte" name="oppervlakte" >
+                    <label for="afkorting">Afkorting: </label>
+                    <input type="text" class="form-control" id="afkorting" name="afkorting" >
                 </div>
                 
-                <div class="form-group">
-                    <label for="perceel_perceelID">Perceel: </label>
-                    <select class="form-control" id="perceel_perceelID" name="perceel_perceelID" >
-        				<?php 
-							
-							$percelen = $database->get('perceel');
-							
-							echo '<option selected disabled></option>';
-							foreach($percelen as $perceel) {
-								echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . $perceel['Nummer'] . '</option>';	
-							}
-							
-						?>
-						</select>
-                </div>
-                
-                <div class="form-group">
+                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Verstuur" id="submit">
                 </div>
                 

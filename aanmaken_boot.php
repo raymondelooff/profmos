@@ -37,39 +37,39 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Aanmaken perceel</h2>
+            <h2>Aanmaken boot</h2>
             
             <?php
             
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
-						'plaats' => array(
-                                    'label' => 'Plaats',
+						'bedrijf_bedrijfID' => array(
+									'label' => 'Bedrijf_BedrijfID',
+									'type' => 'int',
+									'minLength' => 1,
+                                    'maxLength' => 10
+								),
+						'naam' => array(
+                                    'label' => 'Naam',
                                     'type' => 'text',
 									'minLength' => 1,
                                     'maxLength' => 45
-                                ),
-                        'nummer' => array(
-									'label' => 'Nummer',
-									'type' => 'text',
-									'minLength' => 1,
-                                    'maxLength' => 10							
-								)
+                                )
 					);
 					
 					if(isValidArray($rules, $_POST)) {
 						$array = array();
 						
-						$array['Plaats'] = $_POST['plaats'];
-						$array['Nummer'] = $_POST['nummer'];
+						$array['Bedrijf_BedrijfID'] = $_POST['bedrijf_bedrijfID'];
+						$array['Naam'] = $_POST['naam'];
 						
-						$insert = $database->insert('perceel', $array);
+						$insert = $database->insert('boot', $array);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Boot toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuwe boot is niet gelukt.</div>';
 						}
 					}
 					
@@ -78,18 +78,29 @@ require_once('includes/functions.php');
             ?>
 
             <form role="form" method="post">
-            	
+                
                 <div class="form-group">
-                    <label for="plaats">Plaats:</label>
-                    <input type="text" class="form-control" id="plaats" name="plaats">
+                    <label for="bedrijf_bedrijfID">Bedrijf: </label>
+                    <select class="form-control" id="bedrijf_bedrijfID" name="bedrijf_bedrijfID" >
+        				<?php 
+							
+							$bedrijven = $database->get('bedrijf');
+							
+							echo '<option selected disabled></option>';
+							foreach($bedrijven as $bedrijf) {
+								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';	
+							}
+							
+						?>
+						</select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="bedrijf">Nummer: </label>
-                    <input type="text" class="form-control" id="nummer" name="nummer" >
+                    <label for="naam">Naam:</label>
+                    <input type="text" class="form-control" id="naam" name="naam">
                 </div>
                 
-                 <div class="form-group">
+                <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Verstuur" id="submit">
                 </div>
                 

@@ -10,3 +10,16 @@ function fillVak() {
 
 $('.date').datepicker({
 });
+
+function fillVakVerzaaid() {
+
+    var url;
+    url = "getVakVerzaaid.php?perceelID=" + $( "#perceel" ).val();
+    console.log($( "#perceel" ).val());
+    $.ajax({url: url , success: function(result){
+        $("#vak").html(result);
+    }});
+}
+
+$('.date').datepicker({
+});

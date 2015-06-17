@@ -37,37 +37,52 @@ require_once('includes/functions.php');
 
     <section id="content">
         <div class="container">
-            <h2>Aanmaken boot</h2>
+            <h2>Aanmaken perceel</h2>
             
             <?php
             
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
-						'bedrijf_bedrijfID' => array(
-									'label' => 'Bedrijf_BedrijfID',
-									'type' => 'int'
-								),
-						'naam' => array(
-                                    'label' => 'Naam',
+						'plaats' => array(
+                                    'label' => 'Plaats',
                                     'type' => 'text',
 									'minLength' => 1,
                                     'maxLength' => 45
-                                )
+                                ),
+                        'nummer' => array(
+									'label' => 'Nummer',
+									'type' => 'text',
+									'minLength' => 1,
+                                    'maxLength' => 10							
+								),
+						'oppervlakte' => array(
+									'label' => 'Oppervlakte',
+									'type' => 'int',
+									'minLength' => 1,
+                                    'maxLength' => 10					
+								)
 					);
 					
 					if(isValidArray($rules, $_POST)) {
-						$array = array();
+						$arrayperceel = array();
+						$arrayvak = array();
 						
-						$array['Bedrijf_BedrijfID'] = $_POST['bedrijf_bedrijfID'];
-						$array['Naam'] = $_POST['naam'];
+						$arrayperceel['Plaats'] = $_POST['plaats'];
+						$arrayperceel['Nummer'] = $_POST['nummer'];
 						
-						$insert = $database->insert('boot', $array);
+						$insert = $database->insert('perceel', $arrayperceel);
+						
+						$arrayvak['Omschrijving'] = "Geheel";
+						$arrayvak['Oppervlakte'] = $_POST['oppervlakte'];
+						$arrayvak['Perceel_PerceelID'] = $database->getInsertId();
+
+						$insert = $database->insert('vak', $arrayvak);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Perceel toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuw perceel is niet gelukt.</div>';
 						}
 					}
 					
@@ -76,29 +91,23 @@ require_once('includes/functions.php');
             ?>
 
             <form role="form" method="post">
-                
+            	
                 <div class="form-group">
-                    <label for="bedrijf_bedrijfID">Bedrijf: </label>
-                    <select class="form-control" id="bedrijf_bedrijfID" name="bedrijf_bedrijfID" >
-        				<?php 
-							
-							$bedrijven = $database->get('bedrijf');
-							
-							echo '<option selected disabled></option>';
-							foreach($bedrijven as $bedrijf) {
-								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';	
-							}
-							
-						?>
-						</select>
+                    <label for="plaats">Plaats:</label>
+                    <input type="text" class="form-control" id="plaats" name="plaats">
                 </div>
                 
                 <div class="form-group">
-                    <label for="naam">Naam:</label>
-                    <input type="text" class="form-control" id="naam" name="naam">
+                    <label for="bedrijf">Nummer: </label>
+                    <input type="text" class="form-control" id="nummer" name="nummer" >
                 </div>
                 
                 <div class="form-group">
+                    <label for="oppervlakte">Oppervlakte: </label>
+                    <input type="int" class="form-control" id="oppervlakte" name="oppervlakte" >
+                </div>
+                
+                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Verstuur" id="submit">
                 </div>
                 
