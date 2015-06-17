@@ -2,6 +2,7 @@ $('.date').datepicker({
     format: "dd-mm-yyyy",
     todayBtn: "linked",
     language: "nl",
+    calendarWeeks: true,
     todayHighlight: true
 });
 
