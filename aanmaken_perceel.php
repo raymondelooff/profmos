@@ -54,6 +54,12 @@ require_once('includes/functions.php');
 									'type' => 'text',
 									'minLength' => 1,
                                     'maxLength' => 10							
+								),
+						'oppervlakte' => array(
+									'label' => 'Oppervlakte',
+									'type' => 'int',
+									'minLength' => 1,
+                                    'maxLength' => 10					
 								)
 					);
 					
@@ -98,7 +104,7 @@ require_once('includes/functions.php');
                 
                 <div class="form-group">
                     <label for="oppervlakte">Oppervlakte: </label>
-                    <input type="text" class="form-control" id="oppervlakte" name="oppervlakte" >
+                    <input type="int" class="form-control" id="oppervlakte" name="oppervlakte" >
                 </div>
                 
                  <div class="form-group">
