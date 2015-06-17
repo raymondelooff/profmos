@@ -51,15 +51,21 @@ require_once('includes/functions.php');
                         ),
                         'compartiment' => array(
                             'label' => 'Compartiment',
-                            'type' => 'numeric',
+                            'type' => 'int',
+                            'minLength' => 1,
+                            'maxLength' => 11
                         ),
                         'perceel' => array(
                             'label' => 'Perceelnummer',
-                            'type' => 'numeric'
+                            'type' => 'int',
+                            'minLength' => 1,
+                            'maxLength' => 11
                         ),
                         'vak' => array(
                             'label' => 'Vaknaam',
-                            'type' => 'numeric'
+                            'type' => 'int',
+                            'minLength' => 1,
+                            'maxLength' => 11
                         ),
                         'type' => array(
                             'label' => 'Type',
@@ -69,23 +75,23 @@ require_once('includes/functions.php');
                         ),
                         'lengte' => array(
                             'label' => 'Lengte',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'natgewicht' => array(
                             'label' => 'Natgewicht',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'visgewicht' => array(
                             'label' => 'Visgewicht',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'AFDW' => array(
                             'label' => 'AFDW',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         ),
                         'DryWeightSchelp' => array(
                             'label' => 'DryWeightSchelp',
-                            'type' => 'numeric',
+                            'type' => 'float',
                         )
 					);
 					
