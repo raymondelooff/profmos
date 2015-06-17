@@ -33,7 +33,7 @@ require_once ('includes/functions.php');
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 					$rules = array(
-						'datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'm/d/Y'), 
+						'datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'd-m-Y'),
 						'activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100),
 						'bedrijf' => array('label' => 'Bedrijf', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
 						'perceel' => array('label' => 'Perceel', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 

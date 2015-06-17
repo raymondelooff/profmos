@@ -37,7 +37,7 @@ require_once('includes/functions.php');
 						'datum' => array(
                             'label' => 'Datum',
                             'type' => 'date',
-                            'format' => 'm/d/Y'
+                            'format' => 'd-m-Y'
                         ),
                         'compartiment' => array(
                             'label' => 'Compartiment',

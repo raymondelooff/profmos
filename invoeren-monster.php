@@ -37,7 +37,7 @@ require_once('includes/functions.php');
                     'date' => array(
                         'label' => 'Datum',
                         'type' => 'date',
-                        'format' => 'm/d/Y'
+                        'format' => 'd-m-Y'
                     ),
                     'mosselgroep' => array(
                         'label' => 'Mosselgroep',
