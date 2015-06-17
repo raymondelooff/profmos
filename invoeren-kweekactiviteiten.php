@@ -158,7 +158,7 @@ require_once('includes/functions.php');
             
             ?>
 
-            <form role="form">
+            <form role="form" method="post">
             	
                 <div class="form-group">
                     <label for="datum">Datum:</label>
