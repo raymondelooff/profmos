@@ -79,10 +79,10 @@ require_once('includes/functions.php');
 						$insert = $database->insert('vak', $arrayvak);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Perceel toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuw perceel is niet gelukt.</div>';
 						}
 					}
 					

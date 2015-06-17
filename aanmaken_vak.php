@@ -55,7 +55,9 @@ require_once('includes/functions.php');
 								),
 						'perceel_perceelID' => array(
 									'label' => 'Perceel_PerceelID',
-									'type' => 'int'
+									'type' => 'int',
+									'minLength' => 1,
+                                    'maxLength' => 10
 								)
 					);
 					
@@ -69,10 +71,10 @@ require_once('includes/functions.php');
 						$insert = $database->insert('vak', $array);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Vak toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuw vak is niet gelukt.</div>';
 						}
 					}
 					

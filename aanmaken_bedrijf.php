@@ -66,10 +66,10 @@ require_once('includes/functions.php');
 						$insert = $database->insert('bedrijf', $array);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Bedrijf toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuw bedrijf is niet gelukt.</div>';
 						}
 					}
 					

@@ -45,7 +45,9 @@ require_once('includes/functions.php');
 					$rules = array(
 						'bedrijf_bedrijfID' => array(
 									'label' => 'Bedrijf_BedrijfID',
-									'type' => 'int'
+									'type' => 'int',
+									'minLength' => 1,
+                                    'maxLength' => 10
 								),
 						'naam' => array(
                                     'label' => 'Naam',
@@ -64,10 +66,10 @@ require_once('includes/functions.php');
 						$insert = $database->insert('boot', $array);
 						
 						if($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Boot toegevoegd</div>';
 						}
 						else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het toevoegen van een nieuwe boot is niet gelukt.</div>';
 						}
 					}
 					
