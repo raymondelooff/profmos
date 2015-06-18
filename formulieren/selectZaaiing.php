@@ -117,7 +117,7 @@
                                         $error_msg .= "De zaaiing kon niet toegevoegd worden.";
                                     }
                                 }
-                                    //header("Location: ./upload.php");
+                                    //header("Location: ./invoeren-upload.php");
                                     //die();
                             }
                             date_default_timezone_set("Europe/Amsterdam");
