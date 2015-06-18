@@ -45,12 +45,14 @@ require_once ('includes/functions.php');
 						'perceel_verzaaien' => array('label' => 'Perceel plaats verzaaien', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
 						'vak_verzaaien' => array('label' => 'Vak', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
 						'oppervlakte_verzaaien' => array('label' => 'Oppervlakte verzaaien', 'type' => 'float'), 
-						'busstukstal' => array('label' => 'Busstukstal', 'type' => 'int'), 
+						'busstukstal' => array('label' => 'Busstukstal', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10), 
 						'mosselton' => array('label' => 'Mosselton', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
 						'perceel_leeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
 						'opmerkingen' => array('label' => 'opmerkingen', 'type' => 'text', 'minLength' => 1, 'maxLength' => 500));
 
 					if (isValidArray($rules, $_POST)) {
+						$datum = strtotime($_POST['datum']);	
+						
 						$array = array();
 
 						// Array voor database vullen
