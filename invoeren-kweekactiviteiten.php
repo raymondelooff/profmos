@@ -60,9 +60,9 @@ require_once ('includes/functions.php');
 						$insert = $database -> insert('TABEL', $array);
 
 						if ($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Data is succesvol toegevoegd</div>';
 						} else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het is niet gelukt om de data toe te voegen, probeer het later opnieuw</div>';
 						}
 					}
 
