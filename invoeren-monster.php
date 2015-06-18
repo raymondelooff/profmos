@@ -227,8 +227,8 @@ require_once('includes/functions.php');
 
             <form role="form" method="post">
                 <div class="form-group">
-                    <label for="datum">Datum</label>
-                    <input type="text" class="form-control date" name="date" <?php getTextFieldValue('date'); ?>>
+                    <label for="date">Datum</label>
+                    <input type="text" class="form-control date" id="date" name="date" <?php getTextFieldValue('date'); ?>>
                 </div>
                 <div class="form-group">
                     <label for="mosselgroep">Mosselgroep</label>
@@ -327,7 +327,7 @@ require_once('includes/functions.php');
                     <input class="form-control" type="text" id="drooggewicht" name="drooggewicht" <?php getTextFieldValue('drooggewicht'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
-                    <label for="asvrijdroogewicht">Asvrij droog gewicht (g)</label>
+                    <label for="asvrijdrooggewicht">Asvrij droog gewicht (g)</label>
                     <input class="form-control" type="text" id="asvrijdrooggewicht" name="asvrijdrooggewicht" <?php getTextFieldValue('asvrijdrooggewicht'); ?> maxlength="80" size="20">
                 </div>
 
