@@ -1,7 +1,8 @@
 <?php
-//includes
-require_once('includes/MysqliDb.php');
-require_once('includes/connectdb.php');
+
+    // Includes
+    require_once('includes/MysqliDb.php');
+    require_once('includes/connectdb.php');
 
 ?>
 

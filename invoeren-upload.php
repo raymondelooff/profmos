@@ -1,5 +1,6 @@
 <?php
 
+    // Includes
     require_once('includes/MysqliDb.php');
     require_once('includes/connectdb.php');
     require_once('includes/functions.php');
@@ -31,6 +32,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-md-6">
+                        <h1>Uploaden spreadsheet</h1>
+
                         <?php
 
 
@@ -72,7 +75,7 @@
 
                                         // Remove file
                                         unlink($target_file);
-
+                                        
                                         $insert = array();
                                         $check = array();
                                         $i = 0;
@@ -80,6 +83,7 @@
                                         $tabel = "";
                                         $oppervlakte = 0;
                                         $kilogramPerM2 = NULL;
+
                                         foreach ($reader as $row) {
                                             $insert['Datum'] = strtotime($row[1]);
                                             //if ($i == 1) {
@@ -315,9 +319,9 @@
                             if (isset($error_count)) {
                                 if ($error_count > 0) {
                                     $error .= "</ul>";
+
                                     echo '<div class="alert alert-danger">';
-                                    echo $error;
-                                    echo $error_count;
+                                        echo $error;
                                     echo '</div>';
                                 }
                                 else {
@@ -327,11 +331,13 @@
                                 }
                             }
                         ?>
-                        <h1>Uploaden spreadsheet</h1>
+
                         <form method="post" enctype="multipart/form-data">
-                            Selecteer een bestand om te uploaden.
-                            <input type="file" class="file" name="upload" id="upload">
-                            <br>
+                            <div class="form-group">
+                                <label for="file">Selecteer een bestand om te uploaden</label>
+                                <input type="file" class="file" name="upload" id="upload">
+                            </div>
+
                             <div class="form-group">
                                 <label for="bedrijf">Bedrijf: </label>
                                 <select id="bedrijf" name="bedrijf" class="form-control">
@@ -344,6 +350,7 @@
                                     ?>
                                 </select>
                             </div>
+
                             <div class="form-group">
                                 <label for="perceel">Perceel: </label>
                                 <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
@@ -356,17 +363,17 @@
                                     ?>
                                 </select>
                             </div>
-                            <div class="form-group" id="vak">
-                            </div>
-                            <br>
+
+                            <div class="form-group" id="vak"></div>
+
                             <div class="form-group">
                                 <label for="verzaaien">Verzaaien?: </label>
                                 <select name="verzaaien" id="verzaaien" class="form-control" onchange="toggleVerzaaien()">
                                     <option value="Ja">Ja</option>
                                     <option value="Nee" selected>Nee</option>
                                 </select>
-
                             </div>
+
                             <div class="form-group" id="verzaaienBedrijf">
                                 <label for="verzaaienBedrijfSelect">Bedrijf: </label>
                                 <select id="verzaaienBedrijfSelect" name="verzaaienBedrijfSelect" class="form-control">
@@ -379,6 +386,7 @@
                                     ?>
                                 </select>
                             </div>
+
                             <div class="form-group" id="verzaaienPerceel">
                                 <label for="verzaaienPerceelSelect">Perceel: </label>
                                 <select id="verzaaienPerceelSelect" name="verzaaienPerceelSelect" class="form-control" onchange="fillVakVerzaaid()">
@@ -391,15 +399,15 @@
                                     ?>
                                 </select>
                             </div>
-                            <div class="form-group" id="verzaaienVak">
-                            </div>
-                            <br>
+
+                            <div class="form-group" id="verzaaienVak"></div>
+
                             <div id="verzaaienOppervlakte" class="form-group">
                                 <label for="verzaaienOppervlakte">Oppervlakte: </label>
                                 <input type="text" id="verzaaienOppervlakte" class="form-control">
                             </div>
-                            <br>
-                            <input type="submit" value="Upload spreadsheet" name="submit">
+
+                            <button type="submit" class="btn btn-primary">Upload spreadsheet</button>
                         </form>
                 </div>
             </div>
