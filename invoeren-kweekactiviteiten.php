@@ -32,23 +32,24 @@ require_once ('includes/functions.php');
 
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-					$rules = array(
-						'datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'd-m-Y'),
-						'activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100),
-						'bedrijf' => array('label' => 'Bedrijf', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
-						'perceel' => array('label' => 'Perceel', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'vak' => array('label' => 'Vak', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
-						'oppervlakte' => array('label' => 'Oppervlakte', 'type' => 'float'), 
-						'monster' => array('label' => 'Monster', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'label' => array('label' => 'label', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'bedrijf_verzaaien' => array('label' => 'Perceel naam verzaaien', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'perceel_verzaaien' => array('label' => 'Perceel plaats verzaaien', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'vak_verzaaien' => array('label' => 'Vak', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
-						'oppervlakte_verzaaien' => array('label' => 'Oppervlakte verzaaien', 'type' => 'float'), 
-						'busstukstal' => array('label' => 'Busstukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10), 
-						'mosselton' => array('label' => 'Mosselton', 'type' => 'text', 'minLength' => 0, 'maxLength' => 100), 
-						'perceel_leeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 100), 
-						'opmerkingen' => array('label' => 'opmerkingen', 'type' => 'text', 'minLength' => 0, 'maxLength' => 500));
+                    $rules = array(
+                        'Bedrijf' => array('label' => 'Bedrijf', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
+                        'Perceel' => array('label' => 'Perceel', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
+                        'Vak' => array('label' => 'Vak', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
+                        'VerzaaienPerceel' => array('label' => 'Perceel (verzaaien)', 'type' => 'int', 'minLength' => 1, 'maxLength' => 100),
+                        'VerzaaienVak' => array('label' => 'Vak (verzaaien)', 'type' => 'int', 'minLength' => 1, 'maxLength' => 45),
+                        'VerzaaienOppervlakte' => array('label' => 'Oppervlakte (verzaaien)', 'type' => 'float'),
+                        'Datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'd/m/Y'),
+                        'Activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200),
+                        'Oppervlakte' => array('label' => 'Oppervlakte', 'type' => 'float'),
+                        'Monster' => array('label' => 'Monster', 'type' => 'text', 'minLength' => 1, 'maxLength' => 1),
+                        'MonsterLabel' => array('label' => 'label', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200),
+                        'Bustal' => array('label' => 'Bustal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
+                        'Stukstal' => array('label' => 'Stukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
+                        'Mosselton' => array('label' => 'Mosselton', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
+                        'PerceelLeeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 5),
+                        'Opmerking' => array('label' => 'Opmerking', 'type' => 'text', 'minLength' => 0, 'maxLength' => 200)
+                    );
 
 					if (isValidArray($rules, $_POST)) {
 						$datum = strtotime($_POST['datum']);	
