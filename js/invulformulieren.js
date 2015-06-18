@@ -1,5 +1,6 @@
 $( document ).ready(function(){
     toggleVerzaaien();
+    toggleMonster();
 });
 
 $('.date').datepicker({
@@ -22,9 +23,9 @@ function fillVak() {
 function fillVakVerzaaien() {
 
     var url;
-    url = "getVakVerzaaien.php?perceelID=" + $( "#perceel_verzaaien" ).val();
+    url = "getVakVerzaaien.php?perceelID=" + $( "#VerzaaienPerceel" ).val();
     $.ajax({url: url , success: function(result){
-        $("#vak_verzaaien").html(result);
+        $("#VerzaaienVak").html(result);
     }});
 }
 
@@ -35,6 +36,15 @@ function fillBoot() {
     $.ajax({url: url , success: function(result){
         $("#boot").html(result);
     }});
+}
+
+function toggleMonster() {
+    if( $( "#monster" ).val() === "Ja" ) {
+        $( "#labelDiv" ).show();
+    }
+    else {
+        $( "#labelDiv" ).hide();
+    }
 }
 
 function toggleVerzaaien() {

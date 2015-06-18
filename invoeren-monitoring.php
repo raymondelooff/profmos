@@ -84,21 +84,23 @@ require_once('includes/functions.php');
                             'type' => 'float',
                         )
 					);
-					
-					if(isValidArray($rules, $_POST)) {
-                        $datum = strtotime($_POST['datum']);
+
+                    $post = isValidArray($rules, $_POST);
+
+                    if($post !== FALSE) {
+                        $datum = strtotime($post['datum']);
 
 						$array = array(
                             'Datum' => $datum,
-                            'Vak_VakID' => $_POST['vak'],
-                            'Perceel_PerceelID' => $_POST['perceel'],
-                            'Compartiment' => $_POST['compartiment'],
-                            'Type' => $_POST['type'],
-                            'Lengte' => $_POST['lengte'],
-                            'Natgewicht' => $_POST['natgewicht'],
-                            'Visgewicht' => $_POST['visgewicht'],
-                            'AFDW' => $_POST['AFDW'],
-                            'DW_Schelp' => $_POST['DryWeightSchelp']
+                            'Vak_VakID' => $post['vak'],
+                            'Perceel_PerceelID' => $post['perceel'],
+                            'Compartiment' => $post['compartiment'],
+                            'Type' => $post['type'],
+                            'Lengte' => $post['lengte'],
+                            'Natgewicht' => $post['natgewicht'],
+                            'Visgewicht' => $post['visgewicht'],
+                            'AFDW' => $post['AFDW'],
+                            'DW_Schelp' => $post['DryWeightSchelp']
                         );
 						
 						$insert = $database->insert('meting', $array);

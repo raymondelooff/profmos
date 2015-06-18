@@ -32,23 +32,24 @@ require_once ('includes/functions.php');
 
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-					$rules = array(
-						'datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'd-m-Y'),
-						'activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100),
-						'bedrijf' => array('label' => 'Bedrijf', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
-						'perceel' => array('label' => 'Perceel', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'vak' => array('label' => 'Vak', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
-						'oppervlakte' => array('label' => 'Oppervlakte', 'type' => 'float'), 
-						'monster' => array('label' => 'Monster', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'label' => array('label' => 'label', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'bedrijf_verzaaien' => array('label' => 'Perceel naam verzaaien', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'perceel_verzaaien' => array('label' => 'Perceel plaats verzaaien', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'vak_verzaaien' => array('label' => 'Vak', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
-						'oppervlakte_verzaaien' => array('label' => 'Oppervlakte verzaaien', 'type' => 'float'), 
-						'busstukstal' => array('label' => 'Busstukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10), 
-						'mosselton' => array('label' => 'Mosselton', 'type' => 'text', 'minLength' => 0, 'maxLength' => 100), 
-						'perceel_leeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 100), 
-						'opmerkingen' => array('label' => 'opmerkingen', 'type' => 'text', 'minLength' => 0, 'maxLength' => 500));
+                    $rules = array(
+                        'Bedrijf' => array('label' => 'Bedrijf', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
+                        'Perceel' => array('label' => 'Perceel', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
+                        'Vak' => array('label' => 'Vak', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
+                        'VerzaaienPerceel' => array('label' => 'Perceel (verzaaien)', 'type' => 'int', 'minLength' => 1, 'maxLength' => 100),
+                        'VerzaaienVak' => array('label' => 'Vak (verzaaien)', 'type' => 'int', 'minLength' => 1, 'maxLength' => 45),
+                        'VerzaaienOppervlakte' => array('label' => 'Oppervlakte (verzaaien)', 'type' => 'float'),
+                        'Datum' => array('label' => 'Datum', 'type' => 'date', 'format' => 'd/m/Y'),
+                        'Activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200),
+                        'Oppervlakte' => array('label' => 'Oppervlakte', 'type' => 'float'),
+                        'Monster' => array('label' => 'Monster', 'type' => 'text', 'minLength' => 1, 'maxLength' => 1),
+                        'MonsterLabel' => array('label' => 'label', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200),
+                        'Bustal' => array('label' => 'Bustal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
+                        'Stukstal' => array('label' => 'Stukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
+                        'Mosselton' => array('label' => 'Mosselton', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
+                        'PerceelLeeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 5),
+                        'Opmerking' => array('label' => 'Opmerking', 'type' => 'text', 'minLength' => 0, 'maxLength' => 200)
+                    );
 
 					if (isValidArray($rules, $_POST)) {
 						$datum = strtotime($_POST['datum']);	
@@ -72,12 +73,12 @@ require_once ('includes/functions.php');
 				<form role="form" method="post">
 
 					<div class="form-group">
-						<label for="datum">Datum:</label>
-						<input type="text" class="form-control date" name="datum">
+						<label for="Datum">Datum:</label>
+						<input type="text" class="form-control date" name="Datum">
 					</div>
 
 					<div class="form-group">
-						<label for="activiteit">Activiteit:</label>
+						<label for="Activiteit">Activiteit:</label>
 						<select class="form-control" id="activiteit" name="activiteit" >
 							<?php echo '<option selected disabled></option>'; ?>
 							<option >Zaaien</option>
@@ -99,8 +100,8 @@ require_once ('includes/functions.php');
 					</div>
 
 					<div class="form-group">
-						<label for="bedrijf">Bedrijf: </label>
-						<select id="bedrijf" name="bedrijf" class="form-control">
+						<label for="Bedrijf">Bedrijf: </label>
+						<select id="Bedrijf" name="Bedrijf" class="form-control">
 							<?php
 							$bedrijven = $database -> get('bedrijf');
 							echo '<option selected disabled>Select one</option>';
@@ -112,8 +113,8 @@ require_once ('includes/functions.php');
 					</div>
 					
 					<div class="form-group">
-						<label for="perceel">Perceel: </label>
-						<select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
+						<label for="Perceel">Perceel: </label>
+						<select id="Perceel" name="Perceel" class="form-control" onchange="fillVak()">
 							<?php
 							$percelen = $database -> get('perceel');
 							echo '<option selected disabled>Select one</option>';
@@ -124,27 +125,28 @@ require_once ('includes/functions.php');
 						</select>
 					</div>
 					
-					<div class="form-group" id="vak"></div>
+					<div class="form-group" id="Vak"></div>
 					
 					<div class="form-group">
-						<label for="oppervlakte">Oppervlakte: </label>
-						<input type="float" class="form-control" id="oppervlakte" name="oppervlakte" >
+						<label for="Oppervlakte">Oppervlakte: </label>
+						<input type="float" class="form-control" id="Oppervlakte" name="Oppervlakte" >
 					</div>
 
 					<br>
 					<br>
 
 					<div class="form-group">
-						<label for="monster">Monster:</label>
-						<select class="form-control" id="monster" name="monster" >
-							<option >Ja</option>
-							<option >Nee</option>
+						<label for="Monster">Monster:</label>
+						<select class="form-control" id="Monster" name="Monster" onchange="toggleMonster()">
+							<option selected disabled>Select one</option>
+							<option value="Ja">Ja</option>
+							<option value="Nee">Nee</option>
 						</select>
 					</div>
 
-					<div class="form-group">
-						<label for="label">Label: </label>
-						<input type="text" class="form-control" id="label" name="label" >
+					<div class="form-group" id="labelDiv">
+						<label for="MonsterLabel">Label: </label>
+						<input type="text" class="form-control" id="MonsterLabel" name="MonsterLabel">
 					</div>
 
 					<br>
@@ -153,23 +155,10 @@ require_once ('includes/functions.php');
 					<div class="form-group">
 						<label for="label">Verzaaien </label>
 					</div>
-
-					<div class="form-group">
-						<label for="bedrijf_verzaaien">Bedrijf: </label>
-						<select id="bedrijf_verzaaien" name="bedrijf_verzaaien" class="form-control">
-							<?php
-							$bedrijven = $database -> get('bedrijf');
-							echo '<option selected disabled>Select one</option>';
-							foreach ($bedrijven as $bedrijf) {
-								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
-							}
-							?>
-						</select>
-					</div>
 					
 					<div class="form-group">
-						<label for="perceel_verzaaien">Perceel: </label>
-						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVakVerzaaien()">
+						<label for="VerzaaienPerceel">Perceel: </label>
+						<select id="VerzaaienPerceel" name="VerzaaienPerceel" class="form-control" onchange="fillVakVerzaaien()">
 							<?php
 							$percelen = $database -> get('perceel');
 							echo '<option selected disabled>Select one</option>';
@@ -180,11 +169,11 @@ require_once ('includes/functions.php');
 						</select>
 					</div>
 					
-					<div class="form-group" id="vak_verzaaien"></div>
+					<div class="form-group" id="VerzaaienVak"></div>
 
 					<div class="form-group">
-						<label for="oppervlakte_verzaaien">Oppervlakte: </label>
-						<input type="float" class="form-control" id="oppervlakte_verzaaien" name="oppervlakte_verzaaien" >
+						<label for="VerzaaienOppervlakte">Oppervlakte: </label>
+						<input type="float" class="form-control" id="VerzaaienOppervlakte" name="VerzaaienOppervlakte" >
 					</div>
 
 					<br>
@@ -195,18 +184,18 @@ require_once ('includes/functions.php');
 					</div>
 
 					<div class="form-group">
-						<label for="busstukstal">Busstukstal: </label>
-						<input type="int" class="form-control" id="busstukstal" name="busstukstal" >
+						<label for="Busstukstal">Busstukstal: </label>
+						<input type="int" class="form-control" id="Busstukstal" name="Busstukstal" >
 					</div>
 
 					<div class="form-group">
-						<label for="mosselton">Mosselton: </label>
-						<input type="text" class="form-control" id="mosselton" name="mosselton" >
+						<label for="Mosselton">Mosselton: </label>
+						<input type="text" class="form-control" id="Mosselton" name="Mosselton" >
 					</div>
 
 					<div class="form-group">
-						<label for="perceel_leeggevist">Perceel leeggevist?</label>
-						<select class="form-control" id="perceel_leeggevist" name="perceel_leeggevist" >
+						<label for="PerceelLeeggevist">Perceel leeggevist?</label>
+						<select class="form-control" id="PerceelLeeggevist" name="PerceelLeeggevist" >
 							<?php echo '<option selected disabled>Select one</option>'; ?>
 							<option >Ja</option>
 							<option >Nee</option>
@@ -214,8 +203,8 @@ require_once ('includes/functions.php');
 					</div>
 
 					<div class="form-group">
-						<label for="opmerkingen">Opmerkingen:</label>
-						<textarea class="form-control" rows="5" id="opmerkingen" name="opmerkingen" ></textarea>
+						<label for="Opmerkingen">Opmerkingen:</label>
+						<textarea class="form-control" rows="5" id="Opmerkingen" name="Opmerkingen" ></textarea>
 					</div>
 
 					<div class="form-group">
