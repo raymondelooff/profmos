@@ -82,13 +82,13 @@
                                         $kilogramPerM2 = NULL;
                                         foreach ($reader as $row) {
                                             $insert['Datum'] = strtotime($row[1]);
-                                            if ($i == 1) {
-                                                if(!isvalidDate($row[1], 'd-m-Y')) {
-                                                    $error .= "<li>Vul a.u.b. een geldige waarde in het veld <b>Datum</b> in.</li>";
-                                                    $error_count++;
-                                                }
+                                            //if ($i == 1) {
+                                            //    if(!isvalidDate($row[1], 'd-m-Y')) {
+                                            //       $error .= "<li>Vul a.u.b. een geldige waarde in het veld <b>Datum</b> in.</li>";
+                                            //       $error_count++;
+                                            //    }
 
-                                            }
+                                            //}
                                             if ($i == 2) {
                                                 $activiteit = $row[1];
                                                 if ($activiteit == "Zaaien" || $activiteit == "Bijzaaien") {

@@ -1,5 +1,5 @@
 <?php
-
+    //includes
     require_once('includes/MysqliDb.php');
     require_once('includes/connectdb.php');
 
@@ -31,12 +31,13 @@
 
             <h2>Zaaiingen</h2>
             <?php
-
+                //opvragen gegevens
                 $bedrijf_id = 1; // Moet gekoppeld worden aan sessie
 
                 $database->where('Bedrijf_BedrijfID', $bedrijf_id);
                 $result = $database->get('zaaiing');
 
+                //gegevens weergeven
                 if($result) {
                     echo '<table class="table">';
                         echo '<thead>';

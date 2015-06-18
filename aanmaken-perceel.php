@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
 require_once('includes/functions.php');
@@ -30,7 +30,7 @@ require_once('includes/functions.php');
             <h1>Aanmaken perceel</h1>
             
             <?php
-            
+                //verwerken invoer
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
 						'plaats' => array(
@@ -52,7 +52,7 @@ require_once('includes/functions.php');
                                     'maxLength' => 10					
 								)
 					);
-					
+					//validatie invoer
 					if(isValidArray($rules, $_POST)) {
 						$arrayperceel = array();
 						$arrayvak = array();
@@ -79,7 +79,7 @@ require_once('includes/functions.php');
             	}
             
             ?>
-
+            <!--invulformulier-->
             <form role="form" method="post">
             	
                 <div class="form-group">
