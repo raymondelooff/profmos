@@ -3,20 +3,43 @@
     // Includes
     require_once('../includes/MysqliDb.php');
     require_once('../includes/connectdb.php');
+    require_once('../includes/functions.php');
 
 ?>
 
 <label for="vak">Vak: </label>
-<select id="vak" name="vak" class="form-control">
-    <?php
-        if(isset($_GET['perceelID'])) {
-            $database->where('Perceel_PerceelID', $_GET['perceelID']);
+
+<?php
+
+    if(isset($_GET['perceelID'])) {
+        $rules = array(
+            'perceelID' => array(
+                'label' => 'Perceel ID',
+                'type' => 'int',
+                'minLength' => 1,
+                'maxLength' => 11
+            )
+        );
+
+        $get = isValidArray($rules, $_GET);
+
+        if($get !== FALSE) {
+            $database->where('Perceel_PerceelID', $get['perceelID']);
             $vakken = $database->get('vak');
 
-            foreach ($vakken as $vak) {
-                echo '<option value="' . $vak['VakID'] . '">' . $vak['Omschrijving'] . '</option>';
-            }
-        }
-    ?>
+            echo '<select id="vak" name="vak" class="form-control">';
+                echo '<option selected disabled></option>';
 
-</select>
+                if ($database->count > 0) {
+                    foreach ($vakken as $vak) {
+                        echo '<option value="' . $vak['VakID'] . '">' . $vak['Omschrijving'] . '</option>';
+                    }
+                }
+                else {
+                    echo '<option selected disabled>- Geen vakken gevonden -</option>';
+                }
+            echo '</select>';
+        }
+    }
+
+?>
