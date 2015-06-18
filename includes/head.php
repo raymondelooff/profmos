@@ -7,6 +7,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="/css/screen.css" rel="stylesheet">
 	<link href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap-file/css/fileinput.min.css" rel="stylesheet" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
