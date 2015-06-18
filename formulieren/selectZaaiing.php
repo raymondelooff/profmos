@@ -86,6 +86,16 @@
                                     }
                                 }
                                 if (isset($_GET['behandelingID'])) {
+                                    $database->where('BehandelingID', $_GET['behandelingID']);
+                                    $success = $database->update(
+                                        'behandeling',
+                                        array(
+                                            'Zaaiing_ZaaiingID' => $_GET['zaaiingID'],
+                                        )
+                                    );
+                                    if (!$success) {
+                                        $error_msg .= "De zaaiing kon niet toegevoegd worden.";
+                                    }
                                     $mosselgroepResult = $database->rawQuery("
                                         SELECT Z.Mosselgroep_MosselgroepID AS Mosselgroep_MosselgroepID
                                         FROM zaaiing Z, behandeling B
@@ -96,12 +106,10 @@
                                     foreach($mosselgroepResult as $mosselgroepRow) {
                                         $mosselgroepID = $mosselgroepRow['Mosselgroep_MosselgroepID'];
                                     }
-                                    echo $mosselgroepID;
                                     $database->where('BehandelingID', $_GET['behandelingID']);
                                     $success = $database->update(
                                         'behandeling',
                                         array(
-                                            'Zaaiing_ZaaiingID' => $_GET['zaaiingID'],
                                             'Mosselgroep_MosselgroepID' => $mosselgroepID
                                         )
                                     );
