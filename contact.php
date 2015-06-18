@@ -72,8 +72,6 @@
                             $post = isValidArray($rules, $_POST);
 
                             if($post !== FALSE) {
-                                print_r($post);
-
                                 $mail->From = $post['email'];
                                 $mail->FromName = $post['name'];
                                 $mail->Subject = $post['subject'];
