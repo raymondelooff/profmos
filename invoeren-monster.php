@@ -211,7 +211,7 @@ require_once('includes/functions.php');
             <form role="form" method="post">
                 <div class="form-group">
                     <label for="datum">Datum</label>
-                    <input type="text" class="form-control date" name="date">
+                    <input type="text" class="form-control date" name="date" <?php getTextFieldValue('date'); ?>>
                 </div>
                 <div class="form-group">
                     <label for="mosselgroep">Mosselgroep</label>
