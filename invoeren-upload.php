@@ -362,7 +362,7 @@
                                     $percelen = $database->get('perceel');
                                     echo '<option selected disabled></option>';
                                     foreach($percelen as $perceel) {
-                                        echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+                                        echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
                                     }
                                     ?>
                                 </select>
@@ -398,7 +398,7 @@
                                     $percelen = $database->get('perceel');
                                     echo '<option selected disabled></option>';
                                     foreach($percelen as $perceel) {
-                                        echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+                                        echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
                                     }
                                     ?>
                                 </select>
