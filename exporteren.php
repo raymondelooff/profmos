@@ -122,7 +122,7 @@
 
                     if(isset($_POST['vak'])) {
                         foreach($_POST['vak'] AS $vak) {
-                            $database->where('Vak_VakID', $vak);
+                            $database->orWhere('Vak_VakID', $vak);
                         }
                     }
 
@@ -150,7 +150,7 @@
 
                             if($result) {
                                 echo '<p class="text-right">';
-                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monsters">Geselecteerde gegevens exporteren</a>';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monsters" download="data.xls">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
 
                                 echo '<div class="table-responsive">';
@@ -238,7 +238,7 @@
                                 echo '</div>';
 
                                 echo '<p class="text-right">';
-                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monsters">Geselecteerde gegevens exporteren</a>';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monsters" download="data.xls">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
                             }
                             else {
@@ -285,7 +285,7 @@
                                 $i = 0;
 
                                 echo '<p class="text-right">';
-                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="zaaiing-oogst">Geselecteerde gegevens exporteren</a>';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="zaaiing-oogst" download="data.xls">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
 
                                 echo '<div class="table-responsive">';
@@ -393,7 +393,7 @@
                                 echo '</div>';
 
                                 echo '<p class="text-right">';
-                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="zaaiing-oogst">Geselecteerde gegevens exporteren</a>';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="zaaiing-oogst" download="data.xls">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
                             }
                             else {
@@ -421,7 +421,7 @@
 
                             if($result) {
                                 echo '<p class="text-right">';
-                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monitoring">Geselecteerde gegevens exporteren</a>';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monitoring" download="data.xls">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
 
                                 echo '<div class="table-responsive">';
@@ -467,7 +467,7 @@
                                 echo '</div>';
 
                                 echo '<p class="text-right">';
-                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monitoring">Geselecteerde gegevens exporteren</a>';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monitoring" download="data.xls">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
                             }
                             else {
