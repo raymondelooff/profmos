@@ -45,7 +45,7 @@
                         'Activiteit' => array('label' => 'Activiteit', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200),
                         'Oppervlakte' => array('label' => 'Oppervlakte', 'type' => 'float'),
                         'Monster' => array('label' => 'Monster', 'type' => 'text', 'minLength' => 1, 'maxLength' => 1),
-                        'MonsterLabel' => array('label' => 'label', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200),
+                        'MonsterLabel' => array('label' => 'Label', 'type' => 'text', 'minLength' => 1, 'maxLength' => 200, 'optional' => true),
                         'Bustal' => array('label' => 'Bustal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
                         'Stukstal' => array('label' => 'Stukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
                         'Mosselton' => array('label' => 'Mosselton', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
@@ -75,134 +75,129 @@
 
 				<form role="form" method="post">
 
-					<div class="form-group">
-						<label for="Datum">Datum:</label>
-						<input type="text" class="form-control date" name="Datum">
-					</div>
+					<div class="row">
+						<div class="col col-md-6">
+							<h3>Gegevens</h3>
+							<div class="form-group">
+								<label for="Datum">Datum:</label>
+								<input type="text" class="form-control date" name="Datum">
+							</div>
 
-					<div class="form-group">
-						<label for="Activiteit">Activiteit:</label>
-						<select class="form-control" id="activiteit" name="activiteit" >
-							<?php echo '<option selected disabled></option>'; ?>
-							<option >Zaaien</option>
-							<option >Bijzaaien</option>
-							<option >Verzaaien</option>
-							<option >Vissen voor veiling</option>
-							<option >Leegvissen</option>
-							<option >Trekje op perceel</option>
-							<option >Sterren dweilen</option>
-							<option >Sterren rapen</option>
-							<option >Sterren</option>
-							<option >Onder zoet water</option>
-							<option >Onder warm water</option>
-							<option >Peulen</option>
-							<option >Groen</option>
-							<option >Droog leggen</option>
-							<option >Over spoelerij</option>
-						</select>
-					</div>
+							<div class="form-group">
+								<label for="Activiteit">Activiteit:</label>
+								<select class="form-control" id="activiteit" name="activiteit" >
+									<?php echo '<option selected disabled></option>'; ?>
+									<option >Zaaien</option>
+									<option >Bijzaaien</option>
+									<option >Verzaaien</option>
+									<option >Vissen voor veiling</option>
+									<option >Leegvissen</option>
+									<option >Trekje op perceel</option>
+									<option >Sterren dweilen</option>
+									<option >Sterren rapen</option>
+									<option >Sterren</option>
+									<option >Onder zoet water</option>
+									<option >Onder warm water</option>
+									<option >Peulen</option>
+									<option >Groen</option>
+									<option >Droog leggen</option>
+									<option >Over spoelerij</option>
+								</select>
+							</div>
 
-					<div class="form-group">
-						<label for="Bedrijf">Bedrijf: </label>
-						<select id="Bedrijf" name="Bedrijf" class="form-control">
-							<?php
-							$bedrijven = $database -> get('bedrijf');
-							echo '<option selected disabled>Select one</option>';
-							foreach ($bedrijven as $bedrijf) {
-								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
-							}
-							?>
-						</select>
-					</div>
-					
-					<div class="form-group">
-						<label for="Perceel">Perceel: </label>
-						<select id="Perceel" name="Perceel" class="form-control" onchange="fillVak()">
-							<?php
-							$percelen = $database -> get('perceel');
-							echo '<option selected disabled>Select one</option>';
-							foreach ($percelen as $perceel) {
-								echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
-							}
-							?>
-						</select>
-					</div>
-					
-					<div class="form-group" id="Vak"></div>
-					
-					<div class="form-group">
-						<label for="Oppervlakte">Oppervlakte: </label>
-						<input type="float" class="form-control" id="Oppervlakte" name="Oppervlakte" >
-					</div>
+							<div class="form-group">
+								<label for="Bedrijf">Bedrijf: </label>
+								<select id="Bedrijf" name="Bedrijf" class="form-control">
+									<?php
+									$bedrijven = $database -> get('bedrijf');
+									echo '<option selected disabled></option>';
+									foreach ($bedrijven as $bedrijf) {
+										echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . ' - ' . $bedrijf['Afkorting'] . '</option>';
+									}
+									?>
+								</select>
+							</div>
 
-					<br>
-					<br>
+							<div class="form-group">
+								<label for="perceel">Perceel: </label>
+								<select id="perceel" name="Perceel" class="form-control" onchange="fillVak()">
+									<?php
+									$percelen = $database -> get('perceel');
+									echo '<option selected disabled></option>';
+									foreach ($percelen as $perceel) {
+										echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+									}
+									?>
+								</select>
+							</div>
 
-					<div class="form-group">
-						<label for="Monster">Monster:</label>
-						<select class="form-control" id="Monster" name="Monster" onchange="toggleMonster()">
-							<option selected disabled>Select one</option>
-							<option value="Ja">Ja</option>
-							<option value="Nee">Nee</option>
-						</select>
-					</div>
+							<div class="form-group" id="vak"></div>
 
-					<div class="form-group" id="labelDiv">
-						<label for="MonsterLabel">Label: </label>
-						<input type="text" class="form-control" id="MonsterLabel" name="MonsterLabel">
-					</div>
+							<div class="form-group">
+								<label for="Oppervlakte">Oppervlakte: </label>
+								<input type="float" class="form-control" id="Oppervlakte" name="Oppervlakte" >
+							</div>
 
-					<br>
-					<br>
+							<h3>Monster</h3>
 
-					<div class="form-group">
-						<label for="label">Verzaaien </label>
-					</div>
-					
-					<div class="form-group">
-						<label for="VerzaaienPerceel">Perceel: </label>
-						<select id="VerzaaienPerceel" name="VerzaaienPerceel" class="form-control" onchange="fillVakVerzaaien()">
-							<?php
-							$percelen = $database -> get('perceel');
-							echo '<option selected disabled>Select one</option>';
-							foreach ($percelen as $perceel) {
-								echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
-							}
-							?>
-						</select>
-					</div>
-					
-					<div class="form-group" id="VerzaaienVak"></div>
+							<div class="form-group">
+								<label for="monster">Monster:</label>
+								<select class="form-control" id="monster" name="Monster" onchange="toggleMonster()">
+									<option selected disabled></option>
+									<option value="Ja">Ja</option>
+									<option value="Nee">Nee</option>
+								</select>
+							</div>
 
-					<div class="form-group">
-						<label for="VerzaaienOppervlakte">Oppervlakte: </label>
-						<input type="float" class="form-control" id="VerzaaienOppervlakte" name="VerzaaienOppervlakte" >
-					</div>
+							<div class="form-group" id="labelDiv">
+								<label for="MonsterLabel">Label: </label>
+								<input type="text" class="form-control" id="MonsterLabel" name="MonsterLabel">
+							</div>
+						</div>
 
-					<br>
-					<br>
+						<div class="col col-md-6">
+							<h3>Verzaaien</h3>
 
-					<div class="form-group">
-						<label for="label">Indien van toepassing </label>
-					</div>
+							<div class="form-group">
+								<label for="verzaaienPerceelSelect">Perceel: </label>
+								<select id="verzaaienPerceelSelect" name="VerzaaienPerceel" class="form-control" onchange="fillVakVerzaaien()">
+									<?php
+									$percelen = $database -> get('perceel');
+									echo '<option selected disabled></option>';
+									foreach ($percelen as $perceel) {
+										echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+									}
+									?>
+								</select>
+							</div>
 
-					<div class="form-group">
-						<label for="Busstukstal">Busstukstal: </label>
-						<input type="int" class="form-control" id="Busstukstal" name="Busstukstal" >
-					</div>
+							<div class="form-group" id="verzaaienVak"></div>
 
-					<div class="form-group">
-						<label for="Mosselton">Mosselton: </label>
-						<input type="text" class="form-control" id="Mosselton" name="Mosselton" >
-					</div>
+							<div class="form-group">
+								<label for="VerzaaienOppervlakte">Oppervlakte: </label>
+								<input type="float" class="form-control" id="VerzaaienOppervlakte" name="VerzaaienOppervlakte" >
+							</div>
 
-					<div class="form-group">
-						<label for="PerceelLeeggevist">Perceel leeggevist?</label>
-						<select class="form-control" id="PerceelLeeggevist" name="PerceelLeeggevist" >
-							<?php echo '<option selected disabled>Select one</option>'; ?>
-							<option >Ja</option>
-							<option >Nee</option>
-						</select>
+							<h3>Indien van toepassing</h3>
+							<div class="form-group">
+								<label for="Busstukstal">Busstukstal: </label>
+								<input type="int" class="form-control" id="Busstukstal" name="Busstukstal" >
+							</div>
+
+							<div class="form-group">
+								<label for="Mosselton">Mosselton: </label>
+								<input type="text" class="form-control" id="Mosselton" name="Mosselton" >
+							</div>
+
+							<div class="form-group">
+								<label for="PerceelLeeggevist">Perceel leeggevist?</label>
+								<select class="form-control" id="PerceelLeeggevist" name="PerceelLeeggevist" >
+									<option selected disabled></option>
+									<option >Ja</option>
+									<option >Nee</option>
+								</select>
+							</div>
+						</div>
 					</div>
 
 					<div class="form-group">

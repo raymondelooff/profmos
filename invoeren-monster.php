@@ -231,124 +231,151 @@
             ?>
 
             <form role="form" method="post">
-                <div class="form-group">
-                    <label for="date">Datum</label>
-                    <input type="text" class="form-control date" id="date" name="date" <?php getTextFieldValue('date'); ?>>
-                </div>
-                <div class="form-group">
-                    <label for="mosselgroep">Mosselgroep</label>
-                    <input class="form-control" type="text" id="mosselgroep" name="mosselgroep" <?php getTextFieldValue('mosselgroep'); ?>maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="bedrijf">Bedrijf</label>
-                    <select id="bedrijf" name="bedrijf" class="form-control" onchange="fillBoot()">
-                        <?php
-                        $bedrijven = $database->get('bedrijf');
-                        echo '<option selected disabled>Select one</option>';
-                        foreach($bedrijven as $bedrijf) {
-                            echo '<option value=" ' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';
-                        }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group" id="boot">
-                </div>
-                <div class="form-group">
-                    <label for="perceel">Perceel: </label>
-                    <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
-                        <?php
-                        $percelen = $database->get('perceel');
-                        echo '<option selected disabled>Select one</option>';
-                        foreach($percelen as $perceel) {
-                            echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
-                        }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group" id="vak">
-                </div>
-                <div class="form-group">
-                    <label for="brutomonster">Bruto monster (g)</label>
-                    <input class="form-control" type="text" id="brutomonster" name="brutomonster" <?php getTextFieldValue('brutomonster'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="nettomonster">Netto monster (g)</label>
-                    <input class="form-control" type="text" id="nettomonster" name="nettomonster" <?php getTextFieldValue('nettomonster'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="bustal">Bustal</label>
-                    <input class="form-control" type="text" id="bustal" name="bustal" <?php getTextFieldValue('bustal'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="slippers">Slippers (g)</label>
-                    <input class="form-control" type="text" id="slippers" name="slippers" <?php getTextFieldValue('slippers'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="zeester">Zeester (g)</label>
-                    <input class="form-control" type="text" id="zeester" name="zeester" <?php getTextFieldValue('zeester'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="pokken">Pokken</label>
-                    <input class="form-control" type="text" id="pokken" name="pokken" <?php getTextFieldValue('pokken'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="busnetto">Bus netto</label>
-                    <input class="form-control" type="text" id="busnetto" name="busnetto" <?php getTextFieldValue('busnetto'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="kookmonsteraantal">Kookmonster aantal</label>
-                    <input class="form-control" type="text" id="kookmonsteraantal" name="kookmonsteraantal" <?php getTextFieldValue('kookmonsteraantal'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="nettokookmonster">Netto kookmonster (g)</label>
-                    <input class="form-control" type="text" id="nettokookmonster" name="nettokookmonster" <?php getTextFieldValue('nettokookmonster'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="vistotalemonster">Vis totale monster</label>
-                    <input class="form-control" type="text" id="vistotalemonster" name="vistotalemonster" <?php getTextFieldValue('vistotalemonster'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="vispercentage">Vis (%)</label>
-                    <input class="form-control" type="text" id="vispercentage" name="vispercentage" <?php getTextFieldValue('vispercentage'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="opmerkingen">Opmerkingen</label>
-                    <input class="form-control" type="text" id="opmerkingen" name="opmerkingen" <?php getTextFieldValue('opmerkingen'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="kroesnummer">Kroesnummer</label>
-                    <input class="form-control" type="text" id="kroesnummer" name="kroesnummer" <?php getTextFieldValue('kroesnummer'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="kroes">Kroes (g)</label>
-                    <input class="form-control"  type="text" id="kroes" name="kroes" <?php getTextFieldValue('kroes'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="kroesvleesnat">Kroes+vlees nat</label>
-                    <input class="form-control" type="text" id="kroesvleesnat" name="kroesvleesnat" <?php getTextFieldValue('kroesvleesnat'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="drooggewicht">Droog gewicht (g)</label>
-                    <input class="form-control" type="text" id="drooggewicht" name="drooggewicht" <?php getTextFieldValue('drooggewicht'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="asvrijdrooggewicht">Asvrij droog gewicht (g)</label>
-                    <input class="form-control" type="text" id="asvrijdrooggewicht" name="asvrijdrooggewicht" <?php getTextFieldValue('asvrijdrooggewicht'); ?> maxlength="80" size="20">
-                </div>
+				<div class="row">
+					<div class="col col-md-6">
+						<div class="form-group">
+							<label for="date">Datum</label>
+							<input type="text" class="form-control date" id="date" name="date" <?php getTextFieldValue('date'); ?>>
+						</div>
 
-                <div class="form-group">
-                    <label for="schelpendroog">Schelpen droog (g)</label>
-                    <input class="form-control" type="text" id="schelpendroog" name="schelpendroog" <?php getTextFieldValue('schelpendroog'); ?> maxlength="80" size="20">
-                </div>
+						<div class="form-group">
+							<label for="mosselgroep">Mosselgroep</label>
+							<input class="form-control" type="text" id="mosselgroep" name="mosselgroep" <?php getTextFieldValue('mosselgroep'); ?>maxlength="80" size="20">
+						</div>
 
-                <div class="form-group">
-                    <label for="gemiddeldelengte">Gemiddelde lengte</label>
-                    <input class="form-control" type="text" id="gemiddeldelengte" name="gemiddeldelengte" <?php getTextFieldValue('gemiddeldelengte'); ?> maxlength="80" size="20">
-                </div>
+						<div class="form-group">
+							<label for="bedrijf">Bedrijf</label>
+							<select id="bedrijf" name="bedrijf" class="form-control" onchange="fillBoot()">
+								<?php
+								$bedrijven = $database->get('bedrijf');
+								echo '<option selected disabled></option>';
+								foreach($bedrijven as $bedrijf) {
+									echo '<option value=" ' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';
+								}
+								?>
+							</select>
+						</div>
 
-                <div class="form-group">
-                    <input class="btn btn-primary" type="submit" value="Verstuur">
-                </div>
+						<div class="form-group" id="boot"></div>
+
+						<div class="form-group">
+							<label for="perceel">Perceel: </label>
+							<select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
+								<?php
+
+								$percelen = $database->get('perceel');
+
+								echo '<option selected disabled></option>';
+								foreach($percelen as $perceel) {
+									echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+								}
+
+								?>
+							</select>
+						</div>
+						<div class="form-group" id="vak"></div>
+
+						<div class="form-group">
+							<label for="brutomonster">Bruto monster (g)</label>
+							<input class="form-control" type="text" id="brutomonster" name="brutomonster" <?php getTextFieldValue('brutomonster'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="nettomonster">Netto monster (g)</label>
+							<input class="form-control" type="text" id="nettomonster" name="nettomonster" <?php getTextFieldValue('nettomonster'); ?> maxlength="80" size="20">
+						</div>
+						<div class="form-group">
+							<label for="bustal">Bustal</label>
+							<input class="form-control" type="text" id="bustal" name="bustal" <?php getTextFieldValue('bustal'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="slippers">Slippers (g)</label>
+							<input class="form-control" type="text" id="slippers" name="slippers" <?php getTextFieldValue('slippers'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="zeester">Zeester (g)</label>
+							<input class="form-control" type="text" id="zeester" name="zeester" <?php getTextFieldValue('zeester'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="pokken">Pokken</label>
+							<input class="form-control" type="text" id="pokken" name="pokken" <?php getTextFieldValue('pokken'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="busnetto">Bus netto</label>
+							<input class="form-control" type="text" id="busnetto" name="busnetto" <?php getTextFieldValue('busnetto'); ?> maxlength="80" size="20">
+						</div>
+					</div>
+
+					<div class="col col-md-6">
+						<div class="form-group">
+							<label for="kookmonsteraantal">Kookmonster aantal</label>
+							<input class="form-control" type="text" id="kookmonsteraantal" name="kookmonsteraantal" <?php getTextFieldValue('kookmonsteraantal'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="nettokookmonster">Netto kookmonster (g)</label>
+							<input class="form-control" type="text" id="nettokookmonster" name="nettokookmonster" <?php getTextFieldValue('nettokookmonster'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="vistotalemonster">Vis totale monster</label>
+							<input class="form-control" type="text" id="vistotalemonster" name="vistotalemonster" <?php getTextFieldValue('vistotalemonster'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="vispercentage">Vis (%)</label>
+							<input class="form-control" type="text" id="vispercentage" name="vispercentage" <?php getTextFieldValue('vispercentage'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="opmerkingen">Opmerkingen</label>
+							<input class="form-control" type="text" id="opmerkingen" name="opmerkingen" <?php getTextFieldValue('opmerkingen'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="kroesnummer">Kroesnummer</label>
+							<input class="form-control" type="text" id="kroesnummer" name="kroesnummer" <?php getTextFieldValue('kroesnummer'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="kroes">Kroes (g)</label>
+							<input class="form-control"  type="text" id="kroes" name="kroes" <?php getTextFieldValue('kroes'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="kroesvleesnat">Kroes + vlees nat</label>
+							<input class="form-control" type="text" id="kroesvleesnat" name="kroesvleesnat" <?php getTextFieldValue('kroesvleesnat'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="drooggewicht">Droog gewicht (g)</label>
+							<input class="form-control" type="text" id="drooggewicht" name="drooggewicht" <?php getTextFieldValue('drooggewicht'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="asvrijdrooggewicht">Asvrij droog gewicht (g)</label>
+							<input class="form-control" type="text" id="asvrijdrooggewicht" name="asvrijdrooggewicht" <?php getTextFieldValue('asvrijdrooggewicht'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="schelpendroog">Schelpen droog (g)</label>
+							<input class="form-control" type="text" id="schelpendroog" name="schelpendroog" <?php getTextFieldValue('schelpendroog'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="gemiddeldelengte">Gemiddelde lengte</label>
+							<input class="form-control" type="text" id="gemiddeldelengte" name="gemiddeldelengte" <?php getTextFieldValue('gemiddeldelengte'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<input class="btn btn-primary" type="submit" value="Verstuur">
+						</div>
+					</div>
+				</div>
             </form>
         </div>
     </section>

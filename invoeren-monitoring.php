@@ -119,67 +119,86 @@
             ?>
 
             <form name="input" method="post">
-                <div class="form-group">
-                    <label for="datum">Datum</label>
-                    <input class="form-control date" type="text" id="datum" name="datum" <?php getTextFieldValue('datum'); ?> maxlength="50" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="compartiment">Compartiment</label>
-                    <select class="form-control" name="compartiment" id="compartiment">
-                        <option value="">Select one</option>
-                        <?php
-                        for($i = 1; $i <13; $i++){
-                            echo "<option value='".$i."''>".$i."</option>";
-                        }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="perceel">Perceel: </label>
-                    <select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
-                        <?php
-                        $percelen = $database->get('perceel');
-                        echo '<option selected disabled>Select one</option>';
-                        foreach($percelen as $perceel) {
-                            echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
-                        }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group" id="vak">
-                </div>
-                <div class="form-group">
-                    <label for="type">Type</label>
-                    <select class="form-control" name="type" id="type">
-                        <option value="">Select one</option>
-                        <option value="Halfwas">Halfwas</option>
-                        <option value="consumptieFormaat">consumptie formaat</option>
-                        <option value="zaad">zaad</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="lengte">Lengte</label>
-                    <input class="form-control" type="text" id="lengte" name="lengte" <?php getTextFieldValue('lengte'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="natgewicht">Natgewicht</label>
-                    <input class="form-control" type="text" id="natgewicht" name="natgewicht" <?php getTextFieldValue('natgewicht'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="visgewicht">Visgewicht</label>
-                    <input class="form-control" type="text" id="visgewicht" name="visgewicht" <?php getTextFieldValue('visgewicht'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="AFDW">AFDW</label>
-                    <input class="form-control" type="text" id="AFDW" name="AFDW" <?php getTextFieldValue('AFDW'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <label for="DryWeightSchelp">Dry Weight schelp</label>
-                    <input class="form-control" type="text" id="DryWeightSchelp" name="DryWeightSchelp" <?php getTextFieldValue('DryWeightSchelp'); ?> maxlength="80" size="20">
-                </div>
-                <div class="form-group">
-                    <input class="btn btn-primary" type="submit" value="Verstuur">
-                </div>
+				<div class="row">
+					<div class="col col-md-6">
+						<div class="form-group">
+							<label for="datum">Datum</label>
+							<input class="form-control date" type="text" id="datum" name="datum" <?php getTextFieldValue('datum'); ?> maxlength="50" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="compartiment">Compartiment</label>
+							<select class="form-control" name="compartiment" id="compartiment">
+								<option selected disabled></option>
+								<?php
+
+									for($i = 1; $i <13; $i++){
+										echo "<option value='".$i."''>".$i."</option>";
+									}
+
+								?>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="perceel">Perceel: </label>
+							<select id="perceel" name="perceel" class="form-control" onchange="fillVak()">
+								<?php
+
+									$percelen = $database->get('perceel');
+									echo '<option selected disabled></option>';
+									foreach($percelen as $perceel) {
+										echo '<option value=" ' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . ' - ' . $perceel['Nummer'] . '</option>';
+									}
+
+								?>
+							</select>
+						</div>
+
+						<div class="form-group" id="vak"></div>
+
+						<div class="form-group">
+							<label for="type">Type</label>
+							<select class="form-control" name="type" id="type">
+								<option selected disabled></option>
+								<option value="Halfwas">Halfwas</option>
+								<option value="Consumptie formaat">Consumptie formaat</option>
+								<option value="Zaad">Zaad</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="col col-md-6">
+						<div class="form-group">
+							<label for="lengte">Lengte</label>
+							<input class="form-control" type="text" id="lengte" name="lengte" <?php getTextFieldValue('lengte'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="natgewicht">Natgewicht</label>
+							<input class="form-control" type="text" id="natgewicht" name="natgewicht" <?php getTextFieldValue('natgewicht'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="visgewicht">Visgewicht</label>
+							<input class="form-control" type="text" id="visgewicht" name="visgewicht" <?php getTextFieldValue('visgewicht'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="AFDW">AFDW</label>
+							<input class="form-control" type="text" id="AFDW" name="AFDW" <?php getTextFieldValue('AFDW'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<label for="DryWeightSchelp">Dry Weight schelp</label>
+							<input class="form-control" type="text" id="DryWeightSchelp" name="DryWeightSchelp" <?php getTextFieldValue('DryWeightSchelp'); ?> maxlength="80" size="20">
+						</div>
+
+						<div class="form-group">
+							<input class="btn btn-primary" type="submit" value="Verstuur">
+						</div>
+					</div>
+				</div>
             </form>
         </div>
     </section>
