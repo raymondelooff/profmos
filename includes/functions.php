@@ -157,7 +157,7 @@ function isValidArray($rules, $array) {
 
 	if(!empty($errors)) {
 
-        echo '<div class="alert alert-danger alert-dismissible">';
+        echo '<div class="alert alert-danger">';
 
             if(count($errors) == 1) {
                 echo 'Er trad <strong>1</strong> fout op:';
