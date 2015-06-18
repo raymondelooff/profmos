@@ -85,7 +85,11 @@
                                         $kilogramPerM2 = NULL;
 
                                         foreach ($reader as $row) {
-                                            $insert['Datum'] = strtotime($row[1]);
+
+                                            if ($i == 1) {
+                                                $insert['Datum'] = strtotime($row[1]);
+                                            }
+
                                             //if ($i == 1) {
                                             //    if(!isvalidDate($row[1], 'd-m-Y')) {
                                             //       $error .= "<li>Vul a.u.b. een geldige waarde in het veld <b>Datum</b> in.</li>";
@@ -389,7 +393,7 @@
 
                             <div class="form-group" id="verzaaienPerceel">
                                 <label for="verzaaienPerceelSelect">Perceel: </label>
-                                <select id="verzaaienPerceelSelect" name="verzaaienPerceelSelect" class="form-control" onchange="fillVakVerzaaid()">
+                                <select id="verzaaienPerceelSelect" name="verzaaienPerceelSelect" class="form-control" onchange="fillVakVerzaaien()">
                                     <?php
                                     $percelen = $database->get('perceel');
                                     echo '<option selected disabled></option>';
