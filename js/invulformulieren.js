@@ -25,7 +25,7 @@ function fillVak() {
 function fillVakVerzaaien() {
 
     var url;
-    url = "/ajax/getVakVerzaaien.php?perceelID=" + $( "#VerzaaienPerceel" ).val();
+    url = "/ajax/getVakVerzaaien.php?perceelID=" + $( "#verzaaienPerceelSelect" ).val();
     $.ajax({url: url , success: function(result){
         $("#verzaaienVak").html(result);
     }});
