@@ -1,5 +1,28 @@
 <?php
 
+// Function for cleaning text inputs
+function cleanText($input) {
+
+    return preg_replace('/[^[:alnum:][:space:].,?!:;]/ui', '', $input);
+
+}
+
+// Function for cleaning integer inputs
+function cleanInteger($input) {
+
+    return preg_replace('/[^[:digit:]]/ui', '', $input);
+
+}
+
+// Function for cleaning float inputs
+function cleanFloat($input) {
+
+    $input = str_replace(',', '.', $input);
+
+    return preg_replace('/[^[:digit:].]/ui', '', $input);
+
+}
+
 // Function for validating text input
 function isValidText($input, $minLength, $maxLength) {
 
@@ -16,7 +39,7 @@ function isValidText($input, $minLength, $maxLength) {
     $input = filter_var($input, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
     // Check if the string contains legit characters
-    return !preg_match('/[^[:alnum:][:space:].,?!]/ui', $input);
+    return !preg_match('/[^[:alnum:][:space:].,?!:;]/ui', $input);
 
 }
 
@@ -73,6 +96,7 @@ function isValidDate($input, $format) {
 function isValidArray($rules, $array) {
 
 	$errors = array();
+    $newArray = array();
 
     // Check if all the required fields are sent
     foreach($rules as $key => $rule) {
@@ -102,6 +126,9 @@ function isValidArray($rules, $array) {
                         if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
 							$errors[] = 'Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
                         }
+                        else {
+                            $newArray[$name] = cleanText($value);
+                        }
 
                         break;
 
@@ -110,6 +137,9 @@ function isValidArray($rules, $array) {
 
                         if (!isValidEmail($value)) {
 							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!';
+                        }
+                        else {
+                            $newArray[$name] = $value;
                         }
 
                         break;
@@ -120,6 +150,9 @@ function isValidArray($rules, $array) {
                         if (!isValidInteger($value, $rule['minLength'], $rule['maxLength'])) {
 							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
                         }
+                        else {
+                            $newArray[$name] = cleanInteger($value);
+                        }
 
                         break;
 
@@ -129,6 +162,9 @@ function isValidArray($rules, $array) {
                         if (!isValidFloat($value)) {
 							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) getal in!';
                         }
+                        else {
+                            $newArray[$name] = cleanFloat($value);
+                        }
 
                         break;
 
@@ -137,6 +173,9 @@ function isValidArray($rules, $array) {
 
                         if (!isValidDate($value, $rule['format'])) {
 							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!';
+                        }
+                        else {
+                            $newArray[$name] = $value;
                         }
 
                         break;
@@ -178,7 +217,7 @@ function isValidArray($rules, $array) {
 
 	}
 
-    return true;
+    return $newArray;
 
 }
 
