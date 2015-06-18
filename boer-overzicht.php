@@ -57,7 +57,7 @@
                                 echo '<td>' . $row['Mosselgroep_MosselgroepID'] . '</td>';
                                 echo '<td>' . date('d-m-Y', $row['Datum']) . '</td>';
                                 echo '<td><a href="boer-bekijk-gegevens.php?view=zaaiing&id=' . $row['ZaaiingID'] . '">Bekijk zaaiing &raquo;</a></td>';
-                                echo '<td><a href="invoeren-upload.php?view=zaaiing&id=' . $row['ZaaiingID'] . '">Oogst invoeren &raquo;</a></td>';
+                                echo '<td><a href="invoeren-upload.php">Oogst invoeren &raquo;</a></td>';
                             echo '</tr>';
                         }
                     echo '</table>';
