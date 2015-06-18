@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
 require_once('includes/functions.php');
@@ -28,7 +28,7 @@ require_once('includes/functions.php');
     <section id="content">
         <div class="container">
             <?php
-
+                //opstellen regels validatie
                 $rules = array(
                     'id' => array(
                         'label' => 'Mosselgroep ID',

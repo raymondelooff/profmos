@@ -11,6 +11,7 @@ $('.date').datepicker({
     todayHighlight: true
 });
 
+//functie opdat vak gekozen kan worden
 function fillVak() {
 
     var url;
@@ -20,6 +21,7 @@ function fillVak() {
     }});
 }
 
+//functie opdat vak gekozen kan worden
 function fillVakVerzaaien() {
 
     var url;
@@ -29,6 +31,7 @@ function fillVakVerzaaien() {
     }});
 }
 
+//functie opdat boot gekozen kan worden
 function fillBoot() {
 
     var url;
@@ -37,6 +40,7 @@ function fillBoot() {
         $("#boot").html(result);
     }});
 }
+
 
 function toggleMonster() {
     if( $( "#monster" ).val() === "Ja" ) {

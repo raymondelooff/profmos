@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once ('includes/MysqliDb.php');
 require_once ('includes/connectdb.php');
 require_once ('includes/functions.php');
@@ -31,7 +31,7 @@ require_once ('includes/functions.php');
 				<?php
 
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+                    //defineren validatie regels
                     $rules = array(
                         'Bedrijf' => array('label' => 'Bedrijf', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
                         'Perceel' => array('label' => 'Perceel', 'type' => 'int', 'minLength' => 1, 'maxLength' => 10),
@@ -50,7 +50,7 @@ require_once ('includes/functions.php');
                         'PerceelLeeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 5),
                         'Opmerking' => array('label' => 'Opmerking', 'type' => 'text', 'minLength' => 0, 'maxLength' => 200)
                     );
-
+                    //validatie
 					if (isValidArray($rules, $_POST)) {
 						$datum = strtotime($_POST['datum']);	
 						
@@ -68,6 +68,7 @@ require_once ('includes/functions.php');
 					}
 
 				}
+                //invulformulier
 				?>
 
 				<form role="form" method="post">

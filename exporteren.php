@@ -1,5 +1,5 @@
 <?php
-
+    //includes
     require_once('includes/MysqliDb.php');
     require_once('includes/connectdb.php');
     require_once('includes/functions.php');
@@ -34,7 +34,7 @@
             </p>
 
             <form method="post" action="exporteren.php">
-
+                <!--selectie soort data-->
                 <div class="row">
                     <div class="col col-md-4">
                         <div class="form-group">
@@ -44,7 +44,7 @@
                             <label class="radio-inline"><input type="radio" name="type" id="type" value="3">Monitoring</label>
                         </div>
                     </div>
-
+                    <!--specificatie bedrijven en percelen-->
                     <div class="col col-md-4">
                         <div class="form-group">
                             <label for="bedrijf">Bedrijf (meerdere mogelijk):</label>
@@ -93,7 +93,7 @@
             <?php
 
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+                //ophalen en valideren requestgegevens
                 $rules = array(
                     'type' => array(
                         'label' => 'Type',
