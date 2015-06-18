@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
 require_once('includes/functions.php');
@@ -32,7 +32,7 @@ require_once('includes/functions.php');
             <?php
 
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+                //defineren regels validatie
                 $rules = array(
                     'date' => array(
                         'label' => 'Datum',
@@ -154,10 +154,11 @@ require_once('includes/functions.php');
                         'type' => 'float'
                     )
                 );
-
+                //validatie
                 $post = isValidArray($rules, $_POST);
 
                 if($post !== FALSE) {
+                    //ontbrekende gegevens berekenen
                     $datum = strtotime($post['date']);
                     $tarra = 1 - ($post['nettomonster']/$post['brutomonster']);
                     $gewichtMossel = ($post['busnetto']/$post['bustal']);
@@ -179,7 +180,7 @@ require_once('includes/functions.php');
                         $grafdw = ($afdwpm - $mosselgroep['AFDWpM'])/$time;
                     }
 
-
+                    //opstellen array voor database
                     $array = array(
                         'Bedrijf_BedrijfID' => $post['bedrijf'],
                         'Boot_BootID' => $post['boot'],
@@ -214,7 +215,7 @@ require_once('includes/functions.php');
                         'GrAFDW' => $grafdw,
                         'Opmerking' => $post['opmerkingen'],
                     );
-
+                    //insert in database en controle.
                     $insert = $database->insert('monster', $array);
 
                     if($insert) {
@@ -225,6 +226,7 @@ require_once('includes/functions.php');
                     }
                 }
             }
+            //invulformulier
             ?>
 
             <form role="form" method="post">

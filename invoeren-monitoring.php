@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
 require_once('includes/functions.php');
@@ -32,7 +32,7 @@ require_once('includes/functions.php');
             <?php
             
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-            		
+            		//defineren regels validatie
 					$rules = array(
 						'datum' => array(
                             'label' => 'Datum',
@@ -84,12 +84,12 @@ require_once('includes/functions.php');
                             'type' => 'float',
                         )
 					);
-
+                    //validatie
                     $post = isValidArray($rules, $_POST);
 
                     if($post !== FALSE) {
                         $datum = strtotime($post['datum']);
-
+                        //opstellen array voor database
 						$array = array(
                             'Datum' => $datum,
                             'Vak_VakID' => $post['vak'],
@@ -102,7 +102,7 @@ require_once('includes/functions.php');
                             'AFDW' => $post['AFDW'],
                             'DW_Schelp' => $post['DryWeightSchelp']
                         );
-						
+						//insert in database en controle
 						$insert = $database->insert('meting', $array);
 
                         if($insert) {
@@ -114,7 +114,7 @@ require_once('includes/functions.php');
 					}
 					
             	}
-            
+            //invulformulier
             ?>
 
             <form name="input" method="post">
