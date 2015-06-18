@@ -5,8 +5,8 @@ require_once('includes/connectdb.php');
 
 ?>
 
-<label for="vak_verzaaien">Vak: </label>
-<select id="vak_verzaaien" name="vak_verzaaien" class="form-control">
+<label for="VerzaaienVak">Vak: </label>
+<select id="VerzaaienVak" name="VerzaaienVak" class="form-control">
     <?php
         if(isset($_GET['perceelID'])) {
             $database->where('Perceel_PerceelID', $_GET['perceelID']);
