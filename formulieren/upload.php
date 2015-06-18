@@ -82,6 +82,7 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                     $verzaaien = false;
                                     $tabel = "";
                                     $oppervlakte = 0;
+                                    $kilogramPerM2 = NULL;
 
                                     foreach ($reader as $row) {
                                         if ($i == 1) {
@@ -89,10 +90,10 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                         }
                                         if ($i == 2) {
                                             $activiteit = $row[1];
-                                            if ($activiteit == "Zaaien" || $activiteit == "Bijzaaien" || $activiteit == "Verzaaien") {
+                                            if ($activiteit == "Zaaien" || $activiteit == "Bijzaaien") {
                                                 $tabel = 'zaaiing';
                                             }
-                                            if ($activiteit == "Leegvissen" || $activiteit == "Vissen voor veiling") {
+                                            if ($activiteit == "Leegvissen" || $activiteit == "Vissen voor veiling" || $activiteit == "Verzaaien") {
                                                 $tabel = 'oogst';
                                             }
                                             if ($activiteit == "Trekje op perceel" || $activiteit == "Sterren Dweilen" || $activiteit == "Sterren Rapen" || $activiteit == "Sterren" || $activiteit == "Onder Zoet Water" || $activiteit == "Onder Warm Water" || $activiteit == "Peulen" || $activiteit == "Groen" || $activiteit == "Droog Leggen" || $activiteit == "Over Spoelerij") {
@@ -116,37 +117,29 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
                                                 $insert['Monster'] = FALSE;
                                             }
                                         }
-                                        if ($i == 6) {
+                                        if ($i == 6 && $insert['Monster'] == TRUE) {
                                             $insert['MonsterLabel'] = $row[1];
                                         }
-                                        if ($i == 9 && $verzaaien) {
-                                            $herkomstNaam = $row[1];
 
-                                        }
-                                        if ($i == 10 && $verzaaien) {
-                                            $herkomstPlaats = $row[1];
-                                        }
-                                        if ($i == 11 && $verzaaien) {
-                                            $herkomstOppervlakte = $row[1];
-                                        }
-                                        if ($i == 14 && $tabel != "behandeling") {
+                                        if ($i == 9 && $tabel != "behandeling") {
                                             $insert['Bustal'] = $row[1];
                                         }
-                                        if ($i == 15 && $tabel == 'oogst') {
+                                        if ($i == 10 && $tabel == 'oogst') {
                                             $insert['Stukstal'] = $row[1];
                                         }
-                                        if ($i == 16  && $tabel != "behandeling") {
+                                        if ($i == 11  && $tabel != "behandeling") {
                                             $insert['BrutoMton'] = $row[1];
                                             $insert['Kilogram'] = $insert['BrutoMton'] * 100;
+                                            $kilogramPerM2 = $insert['Kilogram'] / ($oppervlakte * 10000);
                                             if ($tabel == 'zaaiing') {
-                                                $insert['KilogramPerM2'] = ($insert['Kilogram'] / ($oppervlakte * 10000));
+                                                $insert['KilogramPerM2'] = $kilogramPerM2;
                                             }
 
                                         }
-                                        if ($i == 17) {
+                                        if ($i == 12) {
                                             $perceelLeeggevist = $row[1];
                                         }
-                                        if ($i == 18) {
+                                        if ($i == 13) {
                                             $insert['Opmerking'] = $row[1];
                                         }
                                         $i++;
@@ -163,32 +156,60 @@ require_once('../lib/ExcelReader/SpreadsheetReader.php');
 
                                     }
                                         $database->insert($tabel, $insert);
+                                        if ($tabel == "oogst") {
+                                            $oogstID = $database->getInsertId();
+                                        }
+                                        else if ($tabel == "behandeling") {
+                                            $behandelingID = $database->getInsertId();
+                                        }
                                         if ($verzaaien) {
-                                            $database->insert('zaaiing', array(
+                                            $data = array(
                                                 'Bedrijf_BedrijfID' => $_POST['bedrijf'],
                                                 'Vak_VakID' => $_POST['verzaaienVakSelect'],
                                                 'Perceel_PerceelID' => $_POST['verzaaienPerceelSelect'],
-                                                'Mosselgroep_MosselgroepID' => 18,
                                                 'Activiteit' => $insert['Activiteit'],
                                                 'Datum' => $insert['Datum'],
-                                                'BrutoMton' => $insert['Activiteit'],
+                                                'BrutoMton' => $insert['BrutoMton'],
                                                 'Kilogram' => $insert['Kilogram'],
-                                                'KilogramPerM2' => $insert['KilogramPerM2'],
+                                                'KilogramPerM2' => $kilogramPerM2,
                                                 'Bustal' => $insert['Bustal'],
                                                 'Monster' => $insert['Monster'],
                                                 'MonsterLabel' => $insert['MonsterLabel'],
                                                 'Opmerking' => $insert['Opmerking']
-                                            ));
+                                            );
+                                            $database->insert('zaaiing', $data);
+                                            $verzaaienID = $database->getInsertId();
                                         }
 
                                     }
                                     if ($tabel == 'oogst') {
-                                        header("Location: selectZaaiing.php?oogstID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
-                                        die();
+                                        if (isset($oogstID)) {
+                                            if ($verzaaien) {
+                                                $location = "Location: selectZaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
+                                            }
+                                            else {
+                                                $location = "Location: selectZaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID;
+
+                                            }
+
+                                            header($location);
+                                            die();
+
+                                        }
+                                        else {
+                                            $error .= "Er is een fout opgetreden (oogstID niet meegegeven.)";
+                                        }
                                     }
                                     if ($tabel == 'behandeling') {
-                                        header("Location: selectZaaiing.php?behandelingID=" . $database->getInsertId() . "&bedrijfID=" . $_POST['bedrijf']);
-                                        die();
+                                        if (isset($behandelingID)) {
+                                            $location = "Location: selectZaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
+                                            header($location);
+                                            die();
+                                        }
+                                        else {
+                                            $error .= "Er is een fout opgetreden (oogstID niet meegegeven.)";
+                                        }
+
                                     }
 
                                 }
