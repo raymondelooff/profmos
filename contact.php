@@ -1,5 +1,5 @@
 <?php
-
+    //includes
     require_once('includes/MysqliDb.php');
     require_once('includes/connectdb.php');
     require_once('includes/functions.php');
@@ -88,7 +88,7 @@
                         }
 
                     ?>
-
+                    <!--invulformulier-->
                     <form method="post">
                         <div class="form-group">
                             <label for="name">Naam:</label>
