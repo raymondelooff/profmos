@@ -30,7 +30,7 @@ require_once('includes/functions.php');
             <?php
 
                 $rules = array(
-                    'mosselID' => array(
+                    'id' => array(
                         'label' => 'Mosselgroep ID',
                         'type' => 'int',
                         'minLength' => 1,
@@ -43,17 +43,17 @@ require_once('includes/functions.php');
 
                 if($get !== FALSE) {
                     echo '<h1>Mosselgroep overzicht</h1>';
-                    echo '<p>Deze pagina toont de gegevens van de mosselgroep met nummer ' . $get['mosselID'] . '.';
+                    echo '<p>Deze pagina toont de gegevens van de mosselgroep met nummer ' . $get['id'] . '.';
 
                     // Subgroepen
                     echo '<h2>Subgroepen</h2>';
-                    $database->where('ParentMosselgroepID', $get['mosselID']);
+                    $database->where('ParentMosselgroepID', $get['id']);
                     $subgroepen = $database->get('mosselgroep');
 
                     if($database->count > 0) {
                         echo '<ul>';
                             foreach ($subgroepen as $subgroep) {
-                                echo '<li>Mosselgroep ' . $subgroep['MosselgroepID'] . ': <a href="mosselgroep.php?mosselID=' . $subgroep['MosselgroepID'] . '">Bekijken &raquo;</a></li>';
+                                echo '<li>Mosselgroep ' . $subgroep['MosselgroepID'] . ': <a href="mosselgroep.php?id=' . $subgroep['MosselgroepID'] . '">Bekijken &raquo;</a></li>';
                             }
                         echo '</ul>';
                     }
@@ -63,12 +63,12 @@ require_once('includes/functions.php');
 
                     // Parent groep
                     echo '<h2>Supergroep</h2>';
-                    $database->where('MosselgroepID', $get['mosselID']);
+                    $database->where('MosselgroepID', $get['id']);
                     $supergroep = $database->getOne('mosselgroep');
 
                     if(!empty($supergroep['ParentMosselgroepID'])) {
                         echo '<ul>';
-                            echo '<li>Mosselgroep ' . $supergroep['ParentMosselgroepID'] . ': <a href="mosselgroep.php?mosselID=' . $supergroep['ParentMosselgroepID'] . '">Bekijken &raquo;</a></li>';
+                            echo '<li>Mosselgroep ' . $supergroep['ParentMosselgroepID'] . ': <a href="mosselgroep.php?id=' . $supergroep['ParentMosselgroepID'] . '">Bekijken &raquo;</a></li>';
                         echo '</ul>';
                     }
                     else {
@@ -80,7 +80,7 @@ require_once('includes/functions.php');
                     $database->join('bedrijf b', 'z.Bedrijf_BedrijfID = b.BedrijfID', 'LEFT');
                     $database->join('perceel p', 'z.Perceel_PerceelID = p.PerceelID', 'LEFT');
                     $database->join('vak v', 'z.Vak_VakID = v.VakID', 'LEFT');
-                    $database->where('Mosselgroep_mosselgroepID', $get['mosselID']);
+                    $database->where('Mosselgroep_mosselgroepID', $get['id']);
                     $results = $database->get('zaaiing z', null,
                         'z.*,
 
@@ -140,7 +140,7 @@ require_once('includes/functions.php');
 
                     // Oogst
                     echo '<h2>Oogst</h2>';
-                    $database->where('Mosselgroep_mosselgroepID', $get['mosselID']);
+                    $database->where('Mosselgroep_mosselgroepID', $get['id']);
                     $results = $database->get('oogst');
 
                     if($database->count > 0) {
@@ -190,7 +190,7 @@ require_once('includes/functions.php');
                     echo '<h2>Behandelingen</h2>';
                     $database->join('perceel p', 'b.Perceel_PerceelID = p.PerceelID', 'LEFT');
                     $database->join('vak v', 'b.Vak_VakID = v.VakID', 'LEFT');
-                    $database->where('Mosselgroep_mosselgroepID', $get['mosselID']);
+                    $database->where('Mosselgroep_mosselgroepID', $get['id']);
                     $results = $database->get('behandeling b', null,
                         'b.*,
 
