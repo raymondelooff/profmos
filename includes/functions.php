@@ -94,7 +94,7 @@ function isValidDate($input, $format) {
 
 // Function for validating a form
 // Returns an array of cleaned inputs when valid, false when not
-function isValidArray($rules, $array) {
+function isValidArray($rules = array(), $array = array()) {
 
 	$errors = array();
     $newArray = array();
@@ -102,7 +102,8 @@ function isValidArray($rules, $array) {
     // Check if all the required fields are sent
     foreach($rules as $key => $rule) {
 
-        if($rule != 'optional') {
+        // If field is not optional
+        if(!(isset($rule['optional']) && $rule['optional'] === true)) {
             if (!isset($array[$key])) {
                 $errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> in!';
             }
@@ -117,77 +118,91 @@ function isValidArray($rules, $array) {
         if(isset($rules[$name])) {
             $rule = $rules[$name];
 
-            // Check if the rule is optional
-            if($rule != 'optional') {
-                switch ($rule['type']) {
+            // Check if field is optional
+            if(!(isset($rule['optional']) && $rule['optional'] === true)) {
+                $optional = false;
+            }
+            else {
+                $optional = true;
+            }
 
-                    // Value needs to be checked as 'text'
-                    case 'text':
+            // Switch between types
+            switch ($rule['type']) {
 
-                        if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
-							$errors[] = 'Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
-                        }
-                        else {
-                            $newArray[$name] = cleanText($value);
-                        }
+                // Value needs to be checked as 'text'
+                case 'text':
 
-                        break;
+                    if (!isValidText($value, $rule['minLength'], $rule['maxLength']) && !$optional) {
+                        $errors[] = 'Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
+                    }
+                    else {
+                        $newArray[$name] = cleanText($value);
+                    }
 
-                    // Value needs to be checked as 'email'
-                    case 'email':
+                    break;
 
-                        if (!isValidEmail($value)) {
-							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!';
-                        }
-                        else {
-                            $newArray[$name] = $value;
-                        }
+                // Value needs to be checked as 'email'
+                case 'email':
 
-                        break;
+                    if (!isValidEmail($value) && !$optional) {
+                        $errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!';
+                    }
+                    else {
+                        $newArray[$name] = $value;
+                    }
 
-                    // Value needs to be checked as 'int'
-                    case 'int':
+                    break;
 
-                        if (!isValidInteger($value, $rule['minLength'], $rule['maxLength'])) {
-							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
-                        }
-                        else {
-                            $newArray[$name] = cleanInteger($value);
-                        }
+                // Value needs to be checked as 'int'
+                case 'int':
 
-                        break;
+                    if (!isValidInteger($value, $rule['minLength'], $rule['maxLength']) && !$optional) {
+                        $errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
+                    }
+                    else {
+                        $newArray[$name] = cleanInteger($value);
+                    }
 
-                    // Value needs to be checked as 'float'
-                    case 'float':
+                    break;
 
-                        if (!isValidFloat($value)) {
-							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) getal in!';
-                        }
-                        else {
-                            $newArray[$name] = cleanFloat($value);
-                        }
+                // Value needs to be checked as 'float'
+                case 'float':
 
-                        break;
+                    if (!isValidFloat($value) && !$optional) {
+                        $errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) getal in!';
+                    }
+                    else {
+                        $newArray[$name] = cleanFloat($value);
+                    }
 
-                    // Value needs to be checked as 'date'
-                    case 'date':
+                    break;
 
-                        if (!isValidDate($value, $rule['format'])) {
-							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!';
-                        }
-                        else {
-                            $newArray[$name] = $value;
-                        }
+                // Value needs to be checked as 'date'
+                case 'date':
 
-                        break;
+                    if (!isValidDate($value, $rule['format']) && !$optional) {
+                        $errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!';
+                    }
+                    else {
+                        $newArray[$name] = $value;
+                    }
 
-                    default:
+                    break;
 
-						$errors[] = 'Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!';
+                // Value needs to be checked as 'array'
+                case 'array':
 
-                        break;
+                    // TODO: Write validation for array values here
+                    $newArray[$name] = $value;
 
-                }
+                    break;
+
+                default:
+
+                    $errors[] = 'Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!';
+
+                    break;
+
             }
         }
         else {
