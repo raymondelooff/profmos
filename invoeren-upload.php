@@ -282,9 +282,9 @@
                                                 if ($tabel == 'oogst') {
                                                     if (isset($oogstID)) {
                                                         if ($verzaaien) {
-                                                            $location = "Location: selectZaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
+                                                            $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
                                                         } else {
-                                                            $location = "Location: selectZaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID;
+                                                            $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID;
 
                                                         }
 
@@ -298,7 +298,7 @@
                                                 }
                                                 if ($tabel == 'behandeling') {
                                                     if (isset($behandelingID)) {
-                                                        $location = "Location: selectZaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
+                                                        $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
                                                         header($location);
                                                         die();
                                                     }
