@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
 require_once('includes/functions.php');
@@ -30,7 +30,7 @@ require_once('includes/functions.php');
             <h1>Toevoegen bedrijf</h1>
             
             <?php
-            
+            //verwerken invoer
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
 						'naam' => array(
@@ -46,7 +46,7 @@ require_once('includes/functions.php');
                                     'maxLength' => 10							
 								)
 					);
-					
+					//validatie invoer
 					if(isValidArray($rules, $_POST)) {
 						$array = array();
 						
@@ -66,7 +66,7 @@ require_once('includes/functions.php');
             	}
             
             ?>
-
+            <!--invoer formulier-->
             <form role="form" method="post">
             	
                 <div class="form-group">
@@ -88,7 +88,7 @@ require_once('includes/functions.php');
     </section>
 
 	<?php
-
+        //footer en includes
 		include_once('includes/footer.php');
 		include_once('includes/scripts.php');
 

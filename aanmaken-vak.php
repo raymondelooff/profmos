@@ -1,5 +1,5 @@
 <?php
-
+//includes
 require_once('includes/MysqliDb.php');
 require_once('includes/connectdb.php');
 require_once('includes/functions.php');
@@ -30,7 +30,7 @@ require_once('includes/functions.php');
             <h1>Aanmaken vak</h1>
             
             <?php
-            
+                //verwerken invoer
             	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 					$rules = array(
 						'omschrijving' => array(
@@ -50,7 +50,7 @@ require_once('includes/functions.php');
                                     'maxLength' => 10
 								)
 					);
-					
+					//valideren invoer
 					if(isValidArray($rules, $_POST)) {
 						$array = array();
 						
@@ -71,7 +71,7 @@ require_once('includes/functions.php');
             	}
             
             ?>
-
+            <!--invulfromulier-->
             <form role="form" method="post">
             	
                 <div class="form-group">
