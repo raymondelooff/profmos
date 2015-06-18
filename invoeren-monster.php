@@ -156,10 +156,27 @@ require_once('includes/functions.php');
                 );
 
                 if(isValidArray($rules, $_POST)) {
+                    $datum = strtotime($_POST['date']);
                     $tarra = 1 - ($_POST['nettomonster']/$_POST['brutomonster']);
                     $gewichtMossel = ($_POST['busnetto']/$_POST['bustal']);
                     $stuktal = (2500/$gewichtMossel);
                     $afdwpm = ($_POST['asvrijdrooggewicht']/$_POST['kookmonsteraantal']);
+
+                    $database->where('mosselgroep_MosselgroepID', $_POST['mosselgroep']);
+                    $database->orderby('Datum','DESC');
+                    $mosselgroep = $database -> getOne('monster');
+                    if(empty($mosselgroep)){
+                        $grgewicht = null;
+                        $grlengte = null;
+                        $grafdw = null;
+                    }
+                    else{
+                        $time = ($datum - $mosselgroep['Datum'])/86400;
+                        $grgewicht = ($gewichtMossel - $mosselgroep['GewichtMossel'])/$time;
+                        $grlengte = ($_POST['gemiddeldelengte'] - $mosselgroep['GemiddeldeLengte'] )/$time;
+                        $grafdw = ($afdwpm - $mosselgroep['AFDWpM'])/$time;
+                    }
+
 
                     $array = array(
                         'Bedrijf_BedrijfID' => $_POST['bedrijf'],
@@ -167,7 +184,7 @@ require_once('includes/functions.php');
                         'Perceel_PerceelID' => $_POST['perceel'],
                         'Vak_VakID' => $_POST['vak'],
                         'mosselgroep_MosselgroepID' => $_POST['mosselgroep'],
-                        'Datum' => $_POST['date'],
+                        'Datum' => $datum,
                         'BrutoMonster' => $_POST['brutomonster'],
                         'NettoMonster' => $_POST['nettomonster'],
                         'Tarra' => $tarra,
@@ -190,9 +207,9 @@ require_once('includes/functions.php');
                         'AFDWpM' => $afdwpm,
                         'SchelpenDroog' => $_POST['schelpendroog'],
                         'GemiddeldeLengte' => $_POST['gemiddeldelengte'],
-                        'GrGewicht' => 0,
-                        'GrLengte' => 0,
-                        'GrAFDW' => 0,
+                        'GrGewicht' => $grgewicht,
+                        'GrLengte' => $grlengte,
+                        'GrAFDW' => $grafdw,
                         'Opmerking' => $_POST['opmerkingen'],
                     );
 
@@ -210,8 +227,8 @@ require_once('includes/functions.php');
 
             <form role="form" method="post">
                 <div class="form-group">
-                    <label for="datum">Datum</label>
-                    <input type="text" class="form-control date" name="date" <?php getTextFieldValue('date'); ?>>
+                    <label for="date">Datum</label>
+                    <input type="text" class="form-control date" id="date" name="date" <?php getTextFieldValue('date'); ?>>
                 </div>
                 <div class="form-group">
                     <label for="mosselgroep">Mosselgroep</label>
@@ -310,7 +327,7 @@ require_once('includes/functions.php');
                     <input class="form-control" type="text" id="drooggewicht" name="drooggewicht" <?php getTextFieldValue('drooggewicht'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
-                    <label for="asvrijdroogewicht">Asvrij droog gewicht (g)</label>
+                    <label for="asvrijdrooggewicht">Asvrij droog gewicht (g)</label>
                     <input class="form-control" type="text" id="asvrijdrooggewicht" name="asvrijdrooggewicht" <?php getTextFieldValue('asvrijdrooggewicht'); ?> maxlength="80" size="20">
                 </div>
 

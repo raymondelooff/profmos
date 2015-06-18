@@ -94,7 +94,7 @@ require_once('includes/functions.php');
                             'Perceel_PerceelID' => $_POST['perceel'],
                             'Compartiment' => $_POST['compartiment'],
                             'Type' => $_POST['type'],
-                            'Lengte' => $_POST['type'],
+                            'Lengte' => $_POST['lengte'],
                             'Natgewicht' => $_POST['natgewicht'],
                             'Visgewicht' => $_POST['visgewicht'],
                             'AFDW' => $_POST['AFDW'],
