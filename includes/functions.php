@@ -1,5 +1,28 @@
 <?php
 
+// Function for cleaning text inputs
+function cleanText($input) {
+
+    return preg_replace('/[^[:alnum:][:space:].,?!:;@]/ui', '', $input);
+
+}
+
+// Function for cleaning integer inputs
+function cleanInteger($input) {
+
+    return preg_replace('/[^[:digit:]]/ui', '', $input);
+
+}
+
+// Function for cleaning float inputs
+function cleanFloat($input) {
+
+    $input = str_replace(',', '.', $input);
+
+    return preg_replace('/[^[:digit:].]/ui', '', $input);
+
+}
+
 // Function for validating text input
 function isValidText($input, $minLength, $maxLength) {
 
@@ -16,7 +39,7 @@ function isValidText($input, $minLength, $maxLength) {
     $input = filter_var($input, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
     // Check if the string contains legit characters
-    return !preg_match('/[^[:alnum:][:space:].,?!]/ui', $input);
+    return !preg_match('/[^[:alnum:][:space:].,?!:;@]/ui', $input);
 
 }
 
@@ -72,14 +95,15 @@ function isValidDate($input, $format) {
 // Function for validating a form
 function isValidArray($rules, $array) {
 
-	$errors = '';
+	$errors = array();
+    $newArray = array();
 
     // Check if all the required fields are sent
     foreach($rules as $key => $rule) {
 
         if($rule != 'optional') {
             if (!isset($array[$key])) {
-                $errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> in!</div>';
+                $errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> in!';
             }
         }
 
@@ -100,7 +124,10 @@ function isValidArray($rules, $array) {
                     case 'text':
 
                         if (!isValidText($value, $rule['minLength'], $rule['maxLength'])) {
-							$errors .= '<div class="alert alert-danger">Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
+							$errors[] = 'Vul a.u.b. het veld <strong>' . $rule['label'] . '</strong> (geldig) in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
+                        }
+                        else {
+                            $newArray[$name] = cleanText($value);
                         }
 
                         break;
@@ -109,7 +136,10 @@ function isValidArray($rules, $array) {
                     case 'email':
 
                         if (!isValidEmail($value)) {
-							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!</div>';
+							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) e-mailadres in!';
+                        }
+                        else {
+                            $newArray[$name] = $value;
                         }
 
                         break;
@@ -118,7 +148,10 @@ function isValidArray($rules, $array) {
                     case 'int':
 
                         if (!isValidInteger($value, $rule['minLength'], $rule['maxLength'])) {
-							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.</div>';
+							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) nummer in! Minimaal ' . $rule['minLength'] . ', maximaal ' . $rule['maxLength'] . ' tekens.';
+                        }
+                        else {
+                            $newArray[$name] = cleanInteger($value);
                         }
 
                         break;
@@ -127,7 +160,10 @@ function isValidArray($rules, $array) {
                     case 'float':
 
                         if (!isValidFloat($value)) {
-							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) getal in!</div>';
+							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldig) getal in!';
+                        }
+                        else {
+                            $newArray[$name] = cleanFloat($value);
                         }
 
                         break;
@@ -136,14 +172,17 @@ function isValidArray($rules, $array) {
                     case 'date':
 
                         if (!isValidDate($value, $rule['format'])) {
-							$errors .= '<div class="alert alert-danger">Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!</div>';
+							$errors[] = 'Vul a.u.b. in het veld <strong>' . $rule['label'] . '</strong> een (geldige) datum in!';
+                        }
+                        else {
+                            $newArray[$name] = $value;
                         }
 
                         break;
 
                     default:
 
-						$errors .= '<div class="alert alert-danger">Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!</div>';
+						$errors[] = 'Ongeldig validatie type <strong>' . $rule['type'] . '</strong>!';
 
                         break;
 
@@ -151,18 +190,34 @@ function isValidArray($rules, $array) {
             }
         }
         else {
-			$errors .= '<div class="alert alert-danger">Veld <strong>' . $name . '</strong> wordt niet gevalideerd! Voeg regels toe aan de validatie rules array.</div>';
+			$errors[] = 'Veld <strong>' . $name . '</strong> wordt niet gevalideerd! Voeg regels toe aan de validatie rules array.';
         }
     }
 
 	if(!empty($errors)) {
 
-		echo $errors;
+        echo '<div class="alert alert-danger">';
+
+            if(count($errors) == 1) {
+                echo 'Er trad <strong>1</strong> fout op:';
+            }
+            else {
+                echo 'Er traden <strong>' . count($errors) . '</strong> fouten op:';
+            }
+
+            echo '<ul>';
+                foreach($errors as $error) {
+                    echo '<li>' . $error . '</li>';
+                }
+            echo '</ul>';
+
+        echo '</div>';
+
 		return false;
 
 	}
 
-    return true;
+    return $newArray;
 
 }
 

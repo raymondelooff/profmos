@@ -45,12 +45,14 @@ require_once ('includes/functions.php');
 						'perceel_verzaaien' => array('label' => 'Perceel plaats verzaaien', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
 						'vak_verzaaien' => array('label' => 'Vak', 'type' => 'text', 'minLength' => 1, 'maxLength' => 45), 
 						'oppervlakte_verzaaien' => array('label' => 'Oppervlakte verzaaien', 'type' => 'float'), 
-						'busstukstal' => array('label' => 'Busstukstal', 'type' => 'int'), 
-						'mosselton' => array('label' => 'Mosselton', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'perceel_leeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 1, 'maxLength' => 100), 
-						'opmerkingen' => array('label' => 'opmerkingen', 'type' => 'text', 'minLength' => 1, 'maxLength' => 500));
+						'busstukstal' => array('label' => 'Busstukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10), 
+						'mosselton' => array('label' => 'Mosselton', 'type' => 'text', 'minLength' => 0, 'maxLength' => 100), 
+						'perceel_leeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 100), 
+						'opmerkingen' => array('label' => 'opmerkingen', 'type' => 'text', 'minLength' => 0, 'maxLength' => 500));
 
 					if (isValidArray($rules, $_POST)) {
+						$datum = strtotime($_POST['datum']);	
+						
 						$array = array();
 
 						// Array voor database vullen
@@ -58,9 +60,9 @@ require_once ('includes/functions.php');
 						$insert = $database -> insert('TABEL', $array);
 
 						if ($insert) {
-							// bootstrap succes melding
+							echo '<div class="alert alert-success text-center">Data is succesvol toegevoegd</div>';
 						} else {
-							// bootstrap foutmelding
+							echo '<div class="alert alert-warning text-center">Het is niet gelukt om de data toe te voegen, probeer het later opnieuw</div>';
 						}
 					}
 
@@ -167,7 +169,7 @@ require_once ('includes/functions.php');
 					
 					<div class="form-group">
 						<label for="perceel_verzaaien">Perceel: </label>
-						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVakVerzaaid()">
+						<select id="perceel_verzaaien" name="perceel_verzaaien" class="form-control" onchange="fillVakVerzaaien()">
 							<?php
 							$percelen = $database -> get('perceel');
 							echo '<option selected disabled>Select one</option>';
@@ -205,6 +207,7 @@ require_once ('includes/functions.php');
 					<div class="form-group">
 						<label for="perceel_leeggevist">Perceel leeggevist?</label>
 						<select class="form-control" id="perceel_leeggevist" name="perceel_leeggevist" >
+							<?php echo '<option selected disabled>Select one</option>'; ?>
 							<option >Ja</option>
 							<option >Nee</option>
 						</select>

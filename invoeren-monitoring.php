@@ -84,21 +84,23 @@ require_once('includes/functions.php');
                             'type' => 'float',
                         )
 					);
-					
-					if(isValidArray($rules, $_POST)) {
-                        $datum = strtotime($_POST['datum']);
+
+                    $post = isValidArray($rules, $_POST);
+
+                    if($post !== FALSE) {
+                        $datum = strtotime($post['datum']);
 
 						$array = array(
                             'Datum' => $datum,
-                            'Vak_VakID' => $_POST['vak'],
-                            'Perceel_PerceelID' => $_POST['perceel'],
-                            'Compartiment' => $_POST['compartiment'],
-                            'Type' => $_POST['type'],
-                            'Lengte' => $_POST['type'],
-                            'Natgewicht' => $_POST['natgewicht'],
-                            'Visgewicht' => $_POST['visgewicht'],
-                            'AFDW' => $_POST['AFDW'],
-                            'DW_Schelp' => $_POST['DryWeightSchelp']
+                            'Vak_VakID' => $post['vak'],
+                            'Perceel_PerceelID' => $post['perceel'],
+                            'Compartiment' => $post['compartiment'],
+                            'Type' => $post['type'],
+                            'Lengte' => $post['lengte'],
+                            'Natgewicht' => $post['natgewicht'],
+                            'Visgewicht' => $post['visgewicht'],
+                            'AFDW' => $post['AFDW'],
+                            'DW_Schelp' => $post['DryWeightSchelp']
                         );
 						
 						$insert = $database->insert('meting', $array);
@@ -118,7 +120,7 @@ require_once('includes/functions.php');
             <form name="input" method="post">
                 <div class="form-group">
                     <label for="datum">Datum</label>
-                    <input class="form-control date" type="text" id="datum" name="datum" maxlength="50" size="20">
+                    <input class="form-control date" type="text" id="datum" name="datum" <?php getTextFieldValue('datum'); ?> maxlength="50" size="20">
                 </div>
                 <div class="form-group">
                     <label for="compartiment">Compartiment</label>
@@ -156,23 +158,23 @@ require_once('includes/functions.php');
                 </div>
                 <div class="form-group">
                     <label for="lengte">Lengte</label>
-                    <input class="form-control" type="text" id="lengte" name="lengte" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="lengte" name="lengte" <?php getTextFieldValue('lengte'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="natgewicht">Natgewicht</label>
-                    <input class="form-control" type="text" id="natgewicht" name="natgewicht" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="natgewicht" name="natgewicht" <?php getTextFieldValue('natgewicht'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="visgewicht">Visgewicht</label>
-                    <input class="form-control" type="text" id="visgewicht" name="visgewicht" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="visgewicht" name="visgewicht" <?php getTextFieldValue('visgewicht'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="AFDW">AFDW</label>
-                    <input class="form-control" type="text" id="AFDW" name="AFDW" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="AFDW" name="AFDW" <?php getTextFieldValue('AFDW'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <label for="DryWeightSchelp">Dry Weight schelp</label>
-                    <input class="form-control" type="text" id="DryWeightSchelp" name="DryWeightSchelp" maxlength="80" size="20">
+                    <input class="form-control" type="text" id="DryWeightSchelp" name="DryWeightSchelp" <?php getTextFieldValue('DryWeightSchelp'); ?> maxlength="80" size="20">
                 </div>
                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Verstuur">

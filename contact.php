@@ -69,11 +69,13 @@
                                 )
                             );
 
-                            if(isValidArray($rules, $_POST)) {
-                                $mail->From = $_POST['email'];
-                                $mail->FromName = $_POST['name'];
-                                $mail->Subject = $_POST['subject'];
-                                $mail->Body = '<p>Bericht via het contactformulier:</p>' . $_POST['message'];
+                            $post = isValidArray($rules, $_POST);
+
+                            if($post !== FALSE) {
+                                $mail->From = $post['email'];
+                                $mail->FromName = $post['name'];
+                                $mail->Subject = $post['subject'];
+                                $mail->Body = '<p>Bericht via het contactformulier:</p>' . $post['message'];
 
                                 if($mail->send()) {
                                     echo '<div class="alert alert-success">Bedankt voor uw bericht!</div>';

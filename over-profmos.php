@@ -52,7 +52,7 @@
                     <p>Uitgezet in maart 2014 en maart 2015. Per jaar 9 keer bemonsterd:</p>
 					<ul>
 						<li>1 keer per maand in het groeiseizoen (apr, mei, jun, jul, aug, sept)</li>
-						<li>1 keer per 2 maanden buiten groeiseizoen (dec, jan, mrt)</li>
+						<li>1 keer per 2 maanden buiten groeiseizoen (nov, jan, mrt)</li>
 					</ul>
 
                 </div>
