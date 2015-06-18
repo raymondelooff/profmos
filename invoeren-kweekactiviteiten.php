@@ -50,7 +50,7 @@
                         'Stukstal' => array('label' => 'Stukstal', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
                         'Mosselton' => array('label' => 'Mosselton', 'type' => 'int', 'minLength' => 0, 'maxLength' => 10),
                         'PerceelLeeggevist' => array('label' => 'Perceel leeggevist', 'type' => 'text', 'minLength' => 0, 'maxLength' => 5),
-                        'Opmerking' => array('label' => 'Opmerking', 'type' => 'text', 'minLength' => 0, 'maxLength' => 200)
+                        'Opmerkingen' => array('label' => 'Opmerkingen', 'type' => 'text', 'minLength' => 0, 'maxLength' => 200)
                     );
                     //validatie
 					if (isValidArray($rules, $_POST)) {
