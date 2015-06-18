@@ -15,7 +15,7 @@ $('.date').datepicker({
 function fillVak() {
 
     var url;
-    url = "getVak.php?perceelID=" + $( "#perceel" ).val();
+    url = "/ajax/getVak.php?perceelID=" + $( "#perceel" ).val();
     $.ajax({url: url , success: function(result){
         $("#vak").html(result);
     }});
@@ -25,7 +25,7 @@ function fillVak() {
 function fillVakVerzaaien() {
 
     var url;
-    url = "getVakVerzaaien.php?perceelID=" + $( "#VerzaaienPerceel" ).val();
+    url = "/ajax/getVakVerzaaien.php?perceelID=" + $( "#VerzaaienPerceel" ).val();
     $.ajax({url: url , success: function(result){
         $("#VerzaaienVak").html(result);
     }});
@@ -35,7 +35,7 @@ function fillVakVerzaaien() {
 function fillBoot() {
 
     var url;
-    url = "getBoot.php?bedrijfID=" + $( "#bedrijf" ).val();
+    url = "/ajax/getBoot.php?bedrijfID=" + $( "#bedrijf" ).val();
     $.ajax({url: url , success: function(result){
         $("#boot").html(result);
     }});
