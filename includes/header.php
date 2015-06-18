@@ -39,7 +39,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Invoeren data <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                        	<li><a href="/formulieren/upload.php">Uploaden Excel kweekactiviteiten</a></li>
+                        	<li><a href="/invoeren-upload.php">Uploaden Excel kweekactiviteiten</a></li>
                             <li><a href="/invoeren-kweekactiviteiten.php">Registratie kweekactiviteiten</a></li>
                             <li><a href="/invoeren-monster.php">Monster data</a></li>
                             <li><a href="/invoeren-monitoring.php">Monitoring</a></li>
