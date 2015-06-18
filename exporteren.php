@@ -36,15 +36,16 @@
             <form method="post" action="exporteren.php">
 
                 <div class="row">
-                    <div class="col col-md-3">
+                    <div class="col col-md-4">
                         <div class="form-group">
                             <label for="type">Type:</label>
                             <label class="radio-inline"><input type="radio" name="type" id="type" value="1">Monster</label>
                             <label class="radio-inline"><input type="radio" name="type" id="type" value="2">Zaai/Oogst data</label>
+                            <label class="radio-inline"><input type="radio" name="type" id="type" value="3">Monitoring</label>
                         </div>
                     </div>
 
-                    <div class="col col-md-5">
+                    <div class="col col-md-4">
                         <div class="form-group">
                             <label for="bedrijf">Bedrijf (meerdere mogelijk):</label>
                             <select class="form-control" id="bedrijf" name="bedrijf[]" multiple>
@@ -106,7 +107,7 @@
 
                 if(isValidArray($rules, $_POST)) {
 
-                    if(isset($_POST['bedrijf'])) {
+                    if(isset($_POST['bedrijf']) && $_POST['type'] != '3') {
                         foreach($_POST['bedrijf'] AS $bedrijf) {
                             $database->orWhere('Bedrijf_BedrijfID', $bedrijf);
                         }
@@ -382,6 +383,80 @@
 
                                 echo '<p class="text-right">';
                                     echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="zaaiing-oogst">Geselecteerde gegevens exporteren</a>';
+                                echo '</p>';
+                            }
+                            else {
+                                echo '<p class="alert alert-danger">Kon geen gegevens vinden.</p>';
+                            }
+
+                            break;
+
+                        case '3':
+
+                            // Join other tables
+                            $database->join('perceel p', 'm.Perceel_PerceelID = p.PerceelID', 'LEFT');
+                            $database->join('vak v', 'm.Vak_VakID = v.VakID', 'LEFT');
+
+                            $result = $database->get('meting m', null,
+                                'm.*,
+
+                                p.Plaats AS p_Plaats,
+                                p.Nummer AS p_Nummer,
+
+                                v.VakID AS v_VakID,
+                                v.Omschrijving AS v_Omschrijving,
+                                v.Oppervlakte AS v_Oppervlakte'
+                            );
+
+                            if($result) {
+                                echo '<p class="text-right">';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monitoring">Geselecteerde gegevens exporteren</a>';
+                                echo '</p>';
+
+                                echo '<div class="table-responsive">';
+                                    echo '<table id="monitoring" class="table table-bordered table-striped table-hover">';
+
+                                        echo '<thead>';
+                                            echo '<tr>';
+                                                echo '<th>Exporteren</th>';
+                                                echo '<th>Meting ID</th>';
+                                                echo '<th>Perceel</th>';
+                                                echo '<th>Nummer</th>';
+                                                echo '<th>Vak</th>';
+                                                echo '<th>Datum</th>';
+                                                echo '<th>Compartiment</th>';
+                                                echo '<th>Type</th>';
+                                                echo '<th>Lengte</th>';
+                                                echo '<th>Natgewicht</th>';
+                                                echo '<th>Visgewicht</th>';
+                                                echo '<th>AFDW</th>';
+                                                echo '<th>Drooggewicht schelp</th>';
+                                            echo '</tr>';
+                                        echo '</thead>';
+
+                                        foreach ($result as $row) {
+                                            echo '<tr class="active">';
+                                                echo '<td class="text-center"><input type="checkbox" class="toggle-active-row" checked></td>';
+                                                echo '<td>' . $row['MetingID'] . '</td>';
+                                                echo '<td>' . $row['p_Plaats'] . '</td>';
+                                                echo '<td>' . $row['p_Nummer'] . '</td>';
+                                                echo '<td>' . $row['v_Omschrijving'] . '</td>';
+                                                echo '<td>' . date('d-m-Y', $row['Datum']) . '</td>';
+                                                echo '<td>' . $row['Compartiment'] . '</td>';
+                                                echo '<td>' . $row['Type'] . '</td>';
+                                                echo '<td>' . $row['Lengte'] . '</td>';
+                                                echo '<td>' . $row['Natgewicht'] . '</td>';
+                                                echo '<td>' . $row['Visgewicht'] . '</td>';
+                                                echo '<td>' . $row['AFDW'] . '</td>';
+                                                echo '<td>' . $row['DW_Schelp'] . '</td>';
+                                            echo '</tr>';
+                                        }
+
+                                    echo '</table>';
+                                echo '</div>';
+
+                                echo '<p class="text-right">';
+                                    echo '<a href="#" class="btn btn-primary export-table" data-export-table-id="monitoring">Geselecteerde gegevens exporteren</a>';
                                 echo '</p>';
                             }
                             else {
