@@ -3,7 +3,7 @@
 // Function for cleaning text inputs
 function cleanText($input) {
 
-    return preg_replace('/[^[:alnum:][:space:].,?!:;]/ui', '', $input);
+    return preg_replace('/[^[:alnum:][:space:].,?!:;@]/ui', '', $input);
 
 }
 
@@ -39,7 +39,7 @@ function isValidText($input, $minLength, $maxLength) {
     $input = filter_var($input, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
     // Check if the string contains legit characters
-    return !preg_match('/[^[:alnum:][:space:].,?!:;]/ui', $input);
+    return !preg_match('/[^[:alnum:][:space:].,?!:;@]/ui', $input);
 
 }
 
