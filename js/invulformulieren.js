@@ -1,5 +1,6 @@
 $( document ).ready(function(){
     toggleVerzaaien();
+    toggleMonster();
 });
 
 $('.date').datepicker({
@@ -35,6 +36,15 @@ function fillBoot() {
     $.ajax({url: url , success: function(result){
         $("#boot").html(result);
     }});
+}
+
+function toggleMonster() {
+    if( $( "#monster" ).val() === "Ja" ) {
+        $( "#labelDiv" ).show();
+    }
+    else {
+        $( "#labelDiv" ).hide();
+    }
 }
 
 function toggleVerzaaien() {

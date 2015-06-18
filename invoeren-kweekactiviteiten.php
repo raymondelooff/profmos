@@ -136,15 +136,16 @@ require_once ('includes/functions.php');
 
 					<div class="form-group">
 						<label for="monster">Monster:</label>
-						<select class="form-control" id="monster" name="monster" >
-							<option >Ja</option>
-							<option >Nee</option>
+						<select class="form-control" id="monster" name="monster" onchange="toggleMonster()">
+							<option selected disabled>Select one</option>
+							<option value="Ja">Ja</option>
+							<option value="Nee">Nee</option>
 						</select>
 					</div>
 
-					<div class="form-group">
+					<div class="form-group" id="labelDiv">
 						<label for="label">Label: </label>
-						<input type="text" class="form-control" id="label" name="label" >
+						<input type="text" class="form-control" id="label" name="label">
 					</div>
 
 					<br>
