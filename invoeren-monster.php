@@ -155,14 +155,16 @@ require_once('includes/functions.php');
                     )
                 );
 
-                if(isValidArray($rules, $_POST)) {
-                    $datum = strtotime($_POST['date']);
-                    $tarra = 1 - ($_POST['nettomonster']/$_POST['brutomonster']);
-                    $gewichtMossel = ($_POST['busnetto']/$_POST['bustal']);
-                    $stuktal = (2500/$gewichtMossel);
-                    $afdwpm = ($_POST['asvrijdrooggewicht']/$_POST['kookmonsteraantal']);
+                $post = isValidArray($rules, $_POST);
 
-                    $database->where('mosselgroep_MosselgroepID', $_POST['mosselgroep']);
+                if($post !== FALSE) {
+                    $datum = strtotime($post['date']);
+                    $tarra = 1 - ($post['nettomonster']/$post['brutomonster']);
+                    $gewichtMossel = ($post['busnetto']/$post['bustal']);
+                    $stuktal = (2500/$gewichtMossel);
+                    $afdwpm = ($post['asvrijdrooggewicht']/$post['kookmonsteraantal']);
+
+                    $database->where('mosselgroep_MosselgroepID', $post['mosselgroep']);
                     $database->orderby('Datum','DESC');
                     $mosselgroep = $database -> getOne('monster');
                     if(empty($mosselgroep)){
@@ -173,44 +175,44 @@ require_once('includes/functions.php');
                     else{
                         $time = ($datum - $mosselgroep['Datum'])/86400;
                         $grgewicht = ($gewichtMossel - $mosselgroep['GewichtMossel'])/$time;
-                        $grlengte = ($_POST['gemiddeldelengte'] - $mosselgroep['GemiddeldeLengte'] )/$time;
+                        $grlengte = ($post['gemiddeldelengte'] - $mosselgroep['GemiddeldeLengte'] )/$time;
                         $grafdw = ($afdwpm - $mosselgroep['AFDWpM'])/$time;
                     }
 
 
                     $array = array(
-                        'Bedrijf_BedrijfID' => $_POST['bedrijf'],
-                        'Boot_BootID' => $_POST['boot'],
-                        'Perceel_PerceelID' => $_POST['perceel'],
-                        'Vak_VakID' => $_POST['vak'],
-                        'mosselgroep_MosselgroepID' => $_POST['mosselgroep'],
+                        'Bedrijf_BedrijfID' => $post['bedrijf'],
+                        'Boot_BootID' => $post['boot'],
+                        'Perceel_PerceelID' => $post['perceel'],
+                        'Vak_VakID' => $post['vak'],
+                        'mosselgroep_MosselgroepID' => $post['mosselgroep'],
                         'Datum' => $datum,
-                        'BrutoMonster' => $_POST['brutomonster'],
-                        'NettoMonster' => $_POST['nettomonster'],
+                        'BrutoMonster' => $post['brutomonster'],
+                        'NettoMonster' => $post['nettomonster'],
                         'Tarra' => $tarra,
-                        'Busstal' => $_POST['bustal'],
+                        'Busstal' => $post['bustal'],
                         'GewichtMossel' => $gewichtMossel,
-                        'Slippers' => $_POST['slippers'],
-                        'Zeester' => $_POST['zeester'],
-                        'Pokken' => $_POST['pokken'],
-                        'BusNetto' => $_POST['busnetto'],
-                        'AantalKookmonsters' => $_POST['kookmonsteraantal'],
-                        'NettoKookmonster' => $_POST['nettokookmonster'],
-                        'VisTotalemonster' => $_POST['vistotalemonster'],
-                        'VisPercentage' => $_POST['vispercentage'],
+                        'Slippers' => $post['slippers'],
+                        'Zeester' => $post['zeester'],
+                        'Pokken' => $post['pokken'],
+                        'BusNetto' => $post['busnetto'],
+                        'AantalKookmonsters' => $post['kookmonsteraantal'],
+                        'NettoKookmonster' => $post['nettokookmonster'],
+                        'VisTotalemonster' => $post['vistotalemonster'],
+                        'VisPercentage' => $post['vispercentage'],
                         'Stukstal' => $stuktal,
-                        'Kroesnr' => $_POST['kroesnummer'],
-                        'Kroes' => $_POST['kroes'],
-                        'KroesEnVlees' => $_POST['kroesvleesnat'],
-                        'DW' => $_POST['drooggewicht'],
-                        'AFDW' => $_POST['asvrijdrooggewicht'],
+                        'Kroesnr' => $post['kroesnummer'],
+                        'Kroes' => $post['kroes'],
+                        'KroesEnVlees' => $post['kroesvleesnat'],
+                        'DW' => $post['drooggewicht'],
+                        'AFDW' => $post['asvrijdrooggewicht'],
                         'AFDWpM' => $afdwpm,
-                        'SchelpenDroog' => $_POST['schelpendroog'],
-                        'GemiddeldeLengte' => $_POST['gemiddeldelengte'],
+                        'SchelpenDroog' => $post['schelpendroog'],
+                        'GemiddeldeLengte' => $post['gemiddeldelengte'],
                         'GrGewicht' => $grgewicht,
                         'GrLengte' => $grlengte,
                         'GrAFDW' => $grafdw,
-                        'Opmerking' => $_POST['opmerkingen'],
+                        'Opmerking' => $post['opmerkingen'],
                     );
 
                     $insert = $database->insert('monster', $array);
