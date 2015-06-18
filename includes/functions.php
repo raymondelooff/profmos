@@ -159,7 +159,13 @@ function isValidArray($rules, $array) {
 
         echo '<div class="alert alert-danger alert-dismissible">';
 
-            echo 'Er trad(en) <strong>' . count($errors) . '</strong> fouten op:';
+            if(count($errors) == 1) {
+                echo 'Er trad <strong>1</strong> fout op:';
+            }
+            else {
+                echo 'Er traden <strong>' . count($errors) . '</strong> fouten op:';
+            }
+
             echo '<ul>';
                 foreach($errors as $error) {
                     echo '<li>' . $error . '</li>';
