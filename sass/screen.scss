@@ -67,6 +67,20 @@ form {
 	}
 }
 
+table {
+	thead {
+		th {
+			white-space: nowrap;
+		}
+	}
+
+	tr {
+		td {
+			white-space: nowrap;
+		}
+	}
+}
+
 .col {
 	img {
 		width: 100%;

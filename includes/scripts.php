@@ -4,4 +4,6 @@
 	<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 	<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 	<script src="/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js"></script>
-    <script src="/bower_components/excellentexport/excellentexport.min.js"></script>
+    <script src="/js/tableExport.js"></script>
+    <script src="/js/jquery.base64.js"></script>
+    <script src="/js/global.js"></script>

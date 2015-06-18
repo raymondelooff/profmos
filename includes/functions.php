@@ -93,6 +93,7 @@ function isValidDate($input, $format) {
 }
 
 // Function for validating a form
+// Returns an array of cleaned inputs when valid, false when not
 function isValidArray($rules, $array) {
 
 	$errors = array();
