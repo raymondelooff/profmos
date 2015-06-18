@@ -153,6 +153,7 @@
                                         echo '<tr>';
                                             echo '<th>Exporteren</th>';
                                             echo '<th>Monster ID</th>';
+                                            echo '<th>Mosselgroep</th>';
                                             echo '<th>Bedrijf</th>';
                                             echo '<th>Perceel</th>';
                                             echo '<th>Nummer</th>';
@@ -191,6 +192,7 @@
                                         echo '<tr class="active">';
                                             echo '<td class="text-center"><input type="checkbox" class="toggle-active-row" checked></td>';
                                             echo '<td>' . $row['MonsterID'] . '</td>';
+                                            echo '<td><a href="mosselgroep.php?id=' . $row['mosselgroep_MosselgroepID'] . '">Bekijken</a></td>';
                                             echo '<td>' . $row['b_Naam'] . '</td>';
                                             echo '<td>' . $row['p_Plaats'] . '</td>';
                                             echo '<td>' . $row['p_Nummer'] . '</td>';
@@ -292,6 +294,7 @@
                                         echo '<tr>';
                                             echo '<th>Exporteren</th>';
                                             echo '<th>Zaaiing ID</th>';
+                                            echo '<th>Mosselgroep</th>';
                                             echo '<th>Bedrijf</th>';
                                             echo '<th>Perceel</th>';
                                             echo '<th>Nummer</th>';
@@ -342,6 +345,7 @@
                                         echo '<tr class="active">';
                                             echo '<td class="text-center"><input type="checkbox" class="toggle-active-row" checked></td>';
                                             echo '<td>' . $row['ZaaiingID'] . '</td>';
+                                            echo '<td><a href="mosselgroep.php?id=' . $row['Mosselgroep_MosselgroepID'] . '">Bekijken</a></td>';
                                             echo '<td>' . $row['b_Naam'] . '</td>';
                                             echo '<td>' . $row['p_Plaats'] . '</td>';
                                             echo '<td>' . $row['p_Nummer'] . '</td>';
