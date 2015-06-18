@@ -19,12 +19,12 @@ function fillVak() {
     }});
 }
 
-function fillVakVerzaaid() {
+function fillVakVerzaaien() {
 
     var url;
-    url = "getVakVerzaaid.php?perceelID=" + $( "#verzaaienPerceelSelect" ).val();
+    url = "getVakVerzaaien.php?perceelID=" + $( "#perceel_verzaaien" ).val();
     $.ajax({url: url , success: function(result){
-        $("#verzaaienVak").html(result);
+        $("#vak_verzaaien").html(result);
     }});
 }
 
