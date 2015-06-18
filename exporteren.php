@@ -101,8 +101,14 @@
                         'minLength' => 1,
                         'maxLength' => 1
                     ),
-                    'bedrijf' => 'optional',
-                    'vak' => 'optional'
+                    'bedrijf' => array(
+                        'type' => 'array',
+                        'optional' => true
+                    ),
+                    'vak' => array(
+                        'type' => 'array',
+                        'optional' => true
+                    )
                 );
 
                 if(isValidArray($rules, $_POST)) {
