@@ -14,7 +14,7 @@
 
         <!-- CSS -->
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-        <link href="../css/screen.css" rel="stylesheet">
+        <link href="css/screen.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -120,7 +120,6 @@
                                     //header("Location: ./invoeren-upload.php");
                                     //die();
                             }
-                            date_default_timezone_set("Europe/Amsterdam");
 
                             $bedrijf_id = 1; // Moet gekoppeld worden aan sessie
 
@@ -193,7 +192,7 @@
                                         echo '<td>' . $row['Opmerking'] . '</td>';
 
                                         if (isset($_GET['oogstID'])) {
-                                            echo '<td><a href="selectZaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&oogstID=' . $_GET['oogstID'];
+                                            echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&oogstID=' . $_GET['oogstID'];
                                             if (isset($_GET['verzaaiingID'])) {
                                                 echo '&verzaaiingID=' . $_GET['verzaaiingID'];
                                             }
@@ -203,7 +202,7 @@
                                             echo '">Selecteer zaaiing &raquo;</a></td>';
                                         }
                                         if (isset($_GET['behandelingID'])) {
-                                            echo '<td><a href="selectZaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '">Selecteer zaaiing &raquo;</a></td>';
+                                            echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '">Selecteer zaaiing &raquo;</a></td>';
                                         }
                                         echo '</tr>';
                                     }
