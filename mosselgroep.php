@@ -37,6 +37,14 @@ include_once('includes/header.php');
                     echo "<li>Child ID is: <a href='mosselgroep.php?mosselID=".$childID['MosselgroepID']."' >".$childID['MosselgroepID']."</a>.</li>";
                 }
                 echo "</ul>";
+                $database-> where('MosselgroepID',$_GET['mosselID']);
+                $parentIDs = $database-> get('mosselgroep');
+                echo "<h2>Parent ID</h2>";
+                echo "<ul>";
+                foreach ($parentIDs as $parentID) {
+                    echo "<li>Parent ID is: <a href='mosselgroep.php?mosselID=".$parentID['ParentMosselgroepID']."' >".$parentID['ParentMosselgroepID']."</a>.</li>";
+                }
+                echo "</ul>";
 
                 $database-> where('Mosselgroep_mosselgroepID',$_GET['mosselID']);
                 $results = $database-> get('zaaiing');
