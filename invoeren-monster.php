@@ -155,11 +155,11 @@
                         'type' => 'float'
                     )
                 );
-                //validatie
+                // Validatie
                 $post = isValidArray($rules, $_POST);
 
                 if($post !== FALSE) {
-                    //ontbrekende gegevens berekenen
+                    // Ontbrekende gegevens berekenen
                     $datum = strtotime($post['date']);
                     $tarra = 1 - ($post['nettomonster']/$post['brutomonster']);
                     $gewichtMossel = ($post['busnetto']/$post['bustal']);
@@ -168,20 +168,27 @@
 
                     $database->where('mosselgroep_MosselgroepID', $post['mosselgroep']);
                     $database->orderby('Datum','DESC');
-                    $mosselgroep = $database -> getOne('monster');
-                    if(empty($mosselgroep)){
+                    $mosselgroep = $database->getOne('monster');
+
+	                print_r($mosselgroep);
+
+                    if(empty($mosselgroep)) {
                         $grgewicht = null;
                         $grlengte = null;
                         $grafdw = null;
                     }
-                    else{
-                        $time = ($datum - $mosselgroep['Datum'])/86400;
-                        $grgewicht = ($gewichtMossel - $mosselgroep['GewichtMossel'])/$time;
-                        $grlengte = ($post['gemiddeldelengte'] - $mosselgroep['GemiddeldeLengte'] )/$time;
-                        $grafdw = ($afdwpm - $mosselgroep['AFDWpM'])/$time;
+                    else {
+                        $time = ($datum - $mosselgroep['Datum']) / 86400;
+
+	                    // Als het verschil in dagen 0 is, zet verschil op 1
+	                    $time = ($time == 0 ? $time = 1 : null);
+
+                        $grgewicht = ($gewichtMossel - $mosselgroep['GewichtMossel']) / $time;
+                        $grlengte = ($post['gemiddeldelengte'] - $mosselgroep['GemiddeldeLengte'] ) / $time;
+                        $grafdw = ($afdwpm - $mosselgroep['AFDWpM']) / $time;
                     }
 
-                    //opstellen array voor database
+                    // Opstellen array voor database
                     $array = array(
                         'Bedrijf_BedrijfID' => $post['bedrijf'],
                         'Boot_BootID' => $post['boot'],
@@ -216,18 +223,21 @@
                         'GrAFDW' => $grafdw,
                         'Opmerking' => $post['opmerkingen'],
                     );
-                    //insert in database en controle.
+
+                    // Insert in database en controle.
                     $insert = $database->insert('monster', $array);
 
                     if($insert) {
                         echo '<div class="alert alert-success text-center">Monster data toegevoegd</div>';
                     }
                     else {
+	                    $database->getLastError();
                         echo '<div class="alert alert-warning text-center">Het is niet gelukt de monster data toe te voegen, probeer het later opnieuw</div>';
                     }
                 }
             }
-            //invulformulier
+
+            // Invulformulier
             ?>
 
             <form role="form" method="post">
