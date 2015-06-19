@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $oppervlakte = $_POST['oppervlakte'];
     if ($_POST['monster'] == "Ja") {
         $insert['Monster'] = TRUE;
-    } else if ($_POST['Monster'] == "Nee") {
+    } else if ($_POST['monster'] == "Nee") {
         $insert['Monster'] = FALSE;
     } else {
         $insert['Monster'] = NULL;
