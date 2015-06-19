@@ -259,7 +259,7 @@
                                 if ($verzaaien) {
                                     $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
                                 } else {
-                                    $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID;
+                                    $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&leeggevist=" . $perceelLeeggevist;
 
                                 }
 

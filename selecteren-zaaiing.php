@@ -194,7 +194,14 @@
                                             echo '">Selecteer zaaiing &raquo;</a></td>';
                                         }
                                         if (isset($_GET['behandelingID'])) {
-                                            echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '">Selecteer zaaiing &raquo;</a></td>';
+                                            if (isset($_GET['leeggevist'])) {
+                                                echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '&leeggevist' . $_GET['leeggevist'] . '>Selecteer zaaiing &raquo;</a></td>';
+
+                                            }
+                                            else {
+                                                echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '">Selecteer zaaiing &raquo;</a></td>';
+
+                                            }
                                         }
                                         echo '</tr>';
                                     }
