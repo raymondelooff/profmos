@@ -170,8 +170,6 @@
                     $database->orderby('Datum','DESC');
                     $mosselgroep = $database->getOne('monster');
 
-	                print_r($mosselgroep);
-
                     if(empty($mosselgroep)) {
                         $grgewicht = null;
                         $grlengte = null;
