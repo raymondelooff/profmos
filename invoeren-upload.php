@@ -172,16 +172,20 @@
 
                 if ($tabel != 'oogst') {
 
-                    $insert['Bedrijf_BedrijfID'] = $_POST['bedrijf'];
-                    if (!is_numeric($insert['Bedrijf_BedrijfID'])){
+                    if (!isset($_POST['bedrijf']) || !is_numeric($_POST['bedrijf'])) {
                         $error .= "<li>Vul a.u.b. in het veld <b>Bedrijf</b> een geldige keuze in.</li>";
                         $error_count++;
                     }
+                    else {
+                        $insert['Bedrijf_BedrijfID'] = $_POST['bedrijf'];
+                    }
 
-                    $insert['Perceel_PerceelID'] = $_POST['perceel'];
-                    if (!is_numeric($insert['Perceel_PerceelID'])){
+                    if (!isset($_POST['perceel']) || !is_numeric($_POST['perceel'])) {
                         $error .= "<li>Vul a.u.b. in het veld <b>Perceel</b> een geldige keuze in.</li>";
                         $error_count++;
+                    }
+                    else {
+                        $insert['Perceel_PerceelID'] = $_POST['perceel'];
                     }
 
                     if (!isset($_POST['vak'])) {
