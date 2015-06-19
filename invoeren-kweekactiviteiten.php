@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $oppervlakte = $_POST['oppervlakte'];
     if ($_POST['monster'] == "Ja") {
         $insert['Monster'] = TRUE;
-    } else if ($_POST['Monster'] == "Nee") {
+    } else if ($_POST['monster'] == "Nee") {
         $insert['Monster'] = FALSE;
     } else {
         $insert['Monster'] = NULL;
@@ -49,7 +49,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     }
     $insert['MonsterLabel'] = $_POST['monsterLabel'];
-    if (!isValidText($insert['MonsterLabel'], 1, 200)) {
+    if (!isValidText($insert['MonsterLabel'], 0, 200)) {
         $error .= "<li>Vul a.u.b. in het veld <b>Monster label</b> een geldige tekst in. (Minimale lengte: 1 teken; Maximale lengte: 200 tekens)</li>";
         $error_count++;
     }
@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error_count++;
     }
     $insert['Opmerking'] = $_POST['opmerking'];
-    if (!isValidText($insert['Opmerking'], 1, 200)) {
+    if (!isValidText($insert['Opmerking'], 0, 200)) {
         $error .= "<li>Vul a.u.b. in het veld <b>Opmerking</b> een geldige tekst in. (Minimale lengte: 1 teken; Maximale lengte: 200 tekens)</li>";
         $error_count++;
     }
