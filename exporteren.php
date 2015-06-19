@@ -35,7 +35,6 @@
             </p>
 
             <form method="post" action="exporteren.php">
-                <!--selectie soort data-->
                 <div class="row">
                     <div class="col col-md-4">
                         <div class="form-group">
@@ -45,7 +44,7 @@
                             <label class="radio-inline"><input type="radio" name="type" id="type" value="3">Monitoring</label>
                         </div>
                     </div>
-                    <!--specificatie bedrijven en percelen-->
+
                     <div class="col col-md-4">
                         <div class="form-group">
                             <label for="bedrijf">Bedrijf (meerdere mogelijk):</label>
@@ -84,7 +83,21 @@
                 </div>
 
                 <div class="row">
-                    <div class="col col-md-12 text-right">
+                    <div class="col col-md-4">
+                        <div class="form-group">
+                            <label for="datum">Vanaf datum:</label>
+                            <input type="text" class="form-control date" name="from-date" <?php getTextFieldValue('from-date'); ?>>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-4">
+                        <div class="form-group">
+                            <label for="datum">Tot datum:</label>
+                            <input type="text" class="form-control date" name="to-date" <?php getTextFieldValue('to-date'); ?>>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-4 text-right">
                         <button type="submit" class="btn btn-primary">Toon gegevens</button>
                     </div>
                 </div>
@@ -94,7 +107,7 @@
             <?php
 
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
-                //ophalen en valideren requestgegevens
+                // Ophalen en valideren requestgegevens
                 $rules = array(
                     'type' => array(
                         'label' => 'Type',
@@ -109,31 +122,55 @@
                     'vak' => array(
                         'type' => 'array',
                         'optional' => true
+                    ),
+                    'from-date' => array(
+                        'label' => 'Vanaf datum',
+                        'type' => 'date',
+                        'format' => 'd-m-Y',
+                        'optional' => true
+                    ),
+                    'to-date' => array(
+                        'label' => 'Tot datum',
+                        'type' => 'date',
+                        'format' => 'd-m-Y',
+                        'optional' => true
                     )
                 );
 
-                if(isValidArray($rules, $_POST)) {
+                $post = isValidArray($rules, $_POST);
 
-                    if(isset($_POST['bedrijf']) && $_POST['type'] != '3') {
-                        foreach($_POST['bedrijf'] AS $bedrijf) {
+                if($post !== FALSE) {
+
+                    if(isset($post['bedrijf']) && $post['type'] != '3') {
+                        foreach($post['bedrijf'] AS $bedrijf) {
                             $database->orWhere('Bedrijf_BedrijfID', $bedrijf);
                         }
                     }
 
-                    if(isset($_POST['vak'])) {
-                        foreach($_POST['vak'] AS $vak) {
+                    if(isset($post['vak'])) {
+                        foreach($post['vak'] AS $vak) {
                             $database->orWhere('Vak_VakID', $vak);
                         }
                     }
 
                     // Switch between tables
-                    switch($_POST['type']) {
+                    switch($post['type']) {
                         case '1':
 
                             // Join other tables
                             $database->join('bedrijf b', 'm.Bedrijf_BedrijfID = b.BedrijfID', 'LEFT');
                             $database->join('perceel p', 'm.Perceel_PerceelID = p.PerceelID', 'LEFT');
                             $database->join('vak v', 'm.Vak_VakID = v.VakID', 'LEFT');
+
+                            if(isset($post['to-date']) && !empty($post['from-date'])) {
+                                $timestamp = strtotime($post['from-date']);
+                                $database->where('Datum', $timestamp, '>');
+                            }
+                            if(isset($post['to-date']) && !empty($post['to-date'])) {
+                                $timestamp = strtotime($post['to-date']);
+                                $database->where('Datum', $timestamp, '<');
+                            }
+
                             $result = $database->get('monster m', null, '
                                 m.*,
 
@@ -253,6 +290,15 @@
                             $database->join('bedrijf b', 'z.Bedrijf_BedrijfID = b.BedrijfID', 'LEFT');
                             $database->join('perceel p', 'z.Perceel_PerceelID = p.PerceelID', 'LEFT');
                             $database->join('vak v', 'z.Vak_VakID = v.VakID', 'LEFT');
+
+                            if(isset($post['to-date']) && !empty($post['from-date'])) {
+                                $timestamp = strtotime($post['from-date']);
+                                $database->where('Datum', $timestamp, '>');
+                            }
+                            if(isset($post['to-date']) && !empty($post['to-date'])) {
+                                $timestamp = strtotime($post['to-date']);
+                                $database->where('Datum', $timestamp, '<');
+                            }
 
                             $result = $database->get('zaaiing z', null,
                                 'z.ZaaiingID,
@@ -407,6 +453,15 @@
                             // Join other tables
                             $database->join('perceel p', 'm.Perceel_PerceelID = p.PerceelID', 'LEFT');
                             $database->join('vak v', 'm.Vak_VakID = v.VakID', 'LEFT');
+
+                            if(isset($post['to-date']) && !empty($post['from-date'])) {
+                                $timestamp = strtotime($post['from-date']);
+                                $database->where('Datum', $timestamp, '>');
+                            }
+                            if(isset($post['to-date']) && !empty($post['to-date'])) {
+                                $timestamp = strtotime($post['to-date']);
+                                $database->where('Datum', $timestamp, '<');
+                            }
 
                             $result = $database->get('meting m', null,
                                 'm.*,
