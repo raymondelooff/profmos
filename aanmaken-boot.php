@@ -79,7 +79,7 @@
 							
 							$bedrijven = $database->get('bedrijf');
 							
-							echo '<option selected disabled>Select one</option>';
+							echo '<option selected disabled></option>';
 							foreach($bedrijven as $bedrijf) {
 								echo '<option value="' . $bedrijf['BedrijfID'] . '">' . $bedrijf['Naam'] . '</option>';	
 							}
