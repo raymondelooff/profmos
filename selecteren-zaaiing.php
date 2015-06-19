@@ -82,8 +82,17 @@ if (isset($_GET['zaaiingID'])) {
             $error_msg .= "De zaaiing kon niet toegevoegd worden.";
         }
     }
-    header("Location: ./invoeren-upload.php");
-    die();
+    if ($_GET['from'] == "form") {
+        header("Location: invoeren-kweekactiviteiten.php");
+        die();
+    }
+
+    else if ($_GET['from'] == "upload") {
+        header("Location: invoeren-upload.php");
+        die();
+    }
+
+
 }
 
 
@@ -184,7 +193,7 @@ if (isset($_GET['zaaiingID'])) {
                                         echo '<td>' . $row['Opmerking'] . '</td>';
 
                                         if (isset($_GET['oogstID'])) {
-                                            echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&oogstID=' . $_GET['oogstID'];
+                                            echo '<td><a href="selecteren-zaaiing.php?from=' . $_GET['from'] . '&zaaiingID=' . $row['ZaaiingID'] . '&oogstID=' . $_GET['oogstID'];
                                             if (isset($_GET['verzaaiingID'])) {
                                                 echo '&verzaaiingID=' . $_GET['verzaaiingID'];
                                             }
@@ -195,11 +204,11 @@ if (isset($_GET['zaaiingID'])) {
                                         }
                                         if (isset($_GET['behandelingID'])) {
                                             if (isset($_GET['leeggevist'])) {
-                                                echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '&leeggevist' . $_GET['leeggevist'] . '>Selecteer zaaiing &raquo;</a></td>';
+                                                echo '<td><a href="selecteren-zaaiing.php?from=' . $_GET['from'] . 'zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '&leeggevist' . $_GET['leeggevist'] . '>Selecteer zaaiing &raquo;</a></td>';
 
                                             }
                                             else {
-                                                echo '<td><a href="selecteren-zaaiing.php?zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '">Selecteer zaaiing &raquo;</a></td>';
+                                                echo '<td><a href="selecteren-zaaiing.php?from=' . $_GET['from'] . 'zaaiingID=' . $row['ZaaiingID'] . '&behandelingID=' . $_GET['behandelingID'] . '">Selecteer zaaiing &raquo;</a></td>';
 
                                             }
                                         }

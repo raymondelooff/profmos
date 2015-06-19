@@ -168,8 +168,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 );
                 $database->insert('zaaiing', $data);
                 $verzaaienID = $database->getInsertId();
-                echo $verzaaienID;
-                echo $database->getLastQuery();
             }
             $success = $database->insert($tabel, $insert);
             if (!$success) {
@@ -183,9 +181,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($tabel == 'oogst') {
                 if (isset($oogstID)) {
                     if ($verzaaien) {
-                        $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
+                        $location = "Location: selecteren-zaaiing.php?from=form&bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
                     } else {
-                        $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&leeggevist=" . $perceelLeeggevist;
+                        $location = "Location: selecteren-zaaiing.php?from=form&bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&leeggevist=" . $perceelLeeggevist;
 
                     }
 
@@ -199,7 +197,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             if ($tabel == 'behandeling') {
                 if (isset($behandelingID)) {
-                    $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
+                    $location = "Location: selecteren-zaaiing.php?from=form&bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
                     header($location);
                     die();
                 } else {

@@ -108,7 +108,7 @@
                     }
                     if ($i == 6 && $insert['Monster'] == TRUE) {
                         $insert['MonsterLabel'] = $row[1];
-                        if (!isValidText($insert['MonsterLabel'], 1, 200)) {
+                        if (!isValidText($insert['MonsterLabel'], 0, 200)) {
                             $error .= "<li>Vul a.u.b. in het veld <b>Monster label</b> een geldige tekst in. (Minimale lengte: 1 teken; Maximale lengte: 200 tekens)</li>";
                             $error_count++;
                         }
@@ -162,7 +162,7 @@
                     }
                     if ($i == 13) {
                         $insert['Opmerking'] = $row[1];
-                        if (!isValidText($insert['Opmerking'], 1, 200)) {
+                        if (!isValidText($insert['Opmerking'], 0, 200)) {
                             $error .= "<li>Vul a.u.b. in het veld <b>Opmerking</b> een geldige tekst in. (Minimale lengte: 1 teken; Maximale lengte: 200 tekens)</li>";
                             $error_count++;
                         }
@@ -221,8 +221,8 @@
                                 $error .= "<li>Vul a.u.b. het veld <b>Perceel (verzaaien)</b> in.</li>";
                                 $error_count++;
                             }
-                            if (isset($_POST['verzaaienVakSelect'])) {
-                                if (!is_numeric($_POST['verzaaienVakSelect'])) {
+                            if (isset($_POST['verzaaienVak'])) {
+                                if (!is_numeric($_POST['verzaaienVak'])) {
                                     $error .= "<li>Vul a.u.b. in het veld <b>Vak (verzaaien)</b> een geldige keuze in.</li>";
                                     $error_count++;
                                 }
@@ -233,7 +233,7 @@
                             }
                             $data = array(
                                 'Bedrijf_BedrijfID' => $_POST['bedrijf'],
-                                'Vak_VakID' => $_POST['verzaaienVakSelect'],
+                                'Vak_VakID' => $_POST['verzaaienVak'],
                                 'Perceel_PerceelID' => $_POST['verzaaienPerceelSelect'],
                                 'Activiteit' => $insert['Activiteit'],
                                 'Datum' => $insert['Datum'],
@@ -261,9 +261,9 @@
                         if ($tabel == 'oogst') {
                             if (isset($oogstID)) {
                                 if ($verzaaien) {
-                                    $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
+                                    $location = "Location: selecteren-zaaiing.php?from=upload&bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&verzaaiingID=" . $verzaaienID . "&leeggevist=" . $perceelLeeggevist;
                                 } else {
-                                    $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&leeggevist=" . $perceelLeeggevist;
+                                    $location = "Location: selecteren-zaaiing.php?from=upload&bedrijfID=" . $_POST['bedrijf'] . "&oogstID=" . $oogstID . "&leeggevist=" . $perceelLeeggevist;
 
                                 }
 
@@ -277,7 +277,7 @@
                         }
                         if ($tabel == 'behandeling') {
                             if (isset($behandelingID)) {
-                                $location = "Location: selecteren-zaaiing.php?bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
+                                $location = "Location: selecteren-zaaiing.php?from=upload&bedrijfID=" . $_POST['bedrijf'] . "&behandelingID=" . $behandelingID;
                                 header($location);
                                 die();
                             }
