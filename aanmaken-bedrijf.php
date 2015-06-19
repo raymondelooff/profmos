@@ -48,11 +48,13 @@
 								)
 					);
 					//validatie invoer
-					if(isValidArray($rules, $_POST)) {
+		            $post = isValidArray($rules, $_POST);
+
+					if($post !== FALSE) {
 						$array = array();
 						
-						$array['Naam'] = $_POST['naam'];
-						$array['Afkorting'] = $_POST['afkorting'];
+						$array['Naam'] = $post['naam'];
+						$array['Afkorting'] = $post['afkorting'];
 						
 						$insert = $database->insert('bedrijf', $array);
 						

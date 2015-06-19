@@ -54,17 +54,19 @@
 								)
 					);
 					//validatie invoer
-					if(isValidArray($rules, $_POST)) {
+		            $post = isValidArray($rules, $_POST);
+
+					if($post !== FALSE) {
 						$arrayperceel = array();
 						$arrayvak = array();
 						
-						$arrayperceel['Plaats'] = $_POST['plaats'];
-						$arrayperceel['Nummer'] = $_POST['nummer'];
+						$arrayperceel['Plaats'] = $post['plaats'];
+						$arrayperceel['Nummer'] = $post['nummer'];
 						
 						$insert = $database->insert('perceel', $arrayperceel);
 						
 						$arrayvak['Omschrijving'] = "Geheel";
-						$arrayvak['Oppervlakte'] = $_POST['oppervlakte'];
+						$arrayvak['Oppervlakte'] = $post['oppervlakte'];
 						$arrayvak['Perceel_PerceelID'] = $database->getInsertId();
 
 						$insert = $database->insert('vak', $arrayvak);

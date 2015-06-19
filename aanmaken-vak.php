@@ -52,12 +52,14 @@
 								)
 					);
 					//valideren invoer
-					if(isValidArray($rules, $_POST)) {
+		            $post = isValidArray($rules, $_POST);
+
+					if($post !== FALSE) {
 						$array = array();
 						
-						$array['Omschrijving'] = $_POST['omschrijving'];
-						$array['Oppervlakte'] = $_POST['oppervlakte'];
-						$array['Perceel_PerceelID'] = $_POST['perceel_perceelID'];
+						$array['Omschrijving'] = $post['omschrijving'];
+						$array['Oppervlakte'] = $post['oppervlakte'];
+						$array['Perceel_PerceelID'] = $post['perceel_perceelID'];
 						
 						$insert = $database->insert('vak', $array);
 						
@@ -91,8 +93,8 @@
         				<?php 
 							
 							$percelen = $database->get('perceel');
-							
-							echo '<option selected disabled>Select one</option>';
+
+				            echo '<option selected disabled></option>';
 							foreach($percelen as $perceel) {
 								echo '<option value="' . $perceel['PerceelID'] . '">' . $perceel['Plaats'] . $perceel['Nummer'] . '</option>';	
 							}
