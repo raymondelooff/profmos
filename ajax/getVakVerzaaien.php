@@ -27,7 +27,7 @@
             $database->where('Perceel_PerceelID', $get['perceelID']);
             $vakken = $database->get('vak');
 
-            echo '<select id="verzaaienVak" name="VerzaaienVak" class="form-control">';
+            echo '<select id="verzaaienVak" name="verzaaienVak" class="form-control">';
                 echo '<option selected disabled></option>';
 
                 if ($database->count) {

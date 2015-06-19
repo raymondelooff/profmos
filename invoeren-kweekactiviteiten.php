@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error .= "<li>Vul a.u.b. een geldige waarde in het veld <b>Datum</b> in.</li>";
         $error_count++;
     } else {
-        $insert['datum'] = strtotime($_POST['datum']);
+        $insert['Datum'] = strtotime($_POST['datum']);
     }
     $activiteit = $_POST['activiteit'];
     if ($activiteit == "Zaaien" || $activiteit == "Bijzaaien") {
@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error_count++;
     }
 
-    if ($activiteit == "Verzaaien" && $_POST['Verzaaien']) {
+    if ($activiteit == "Verzaaien") {
         $verzaaien = TRUE;
     }
     $insert['Activiteit'] = $activiteit;
@@ -143,8 +143,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $error .= "<li>Vul a.u.b. het veld <b>Perceel (verzaaien)</b> in.</li>";
                     $error_count++;
                 }
-                if (isset($_POST['verzaaienVakSelect'])) {
-                    if (!is_numeric($_POST['verzaaienVakSelect'])) {
+                if (isset($_POST['verzaaienVak'])) {
+                    if (!is_numeric($_POST['verzaaienVak'])) {
                         $error .= "<li>Vul a.u.b. in het veld <b>Vak (verzaaien)</b> een geldige keuze in.</li>";
                         $error_count++;
                     }
@@ -154,7 +154,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
                 $data = array(
                     'Bedrijf_BedrijfID' => $_POST['bedrijf'],
-                    'Vak_VakID' => $_POST['verzaaienVakSelect'],
+                    'Vak_VakID' => $_POST['verzaaienVak'],
                     'Perceel_PerceelID' => $_POST['verzaaienPerceelSelect'],
                     'Activiteit' => $insert['Activiteit'],
                     'Datum' => $insert['Datum'],
@@ -168,6 +168,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 );
                 $database->insert('zaaiing', $data);
                 $verzaaienID = $database->getInsertId();
+                echo $verzaaienID;
+                echo $database->getLastQuery();
             }
             $success = $database->insert($tabel, $insert);
             if (!$success) {

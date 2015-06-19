@@ -3,6 +3,90 @@
     // Includes
     require_once('includes/MysqliDb.php');
     require_once('includes/connectdb.php');
+$error_msg = "";
+if (isset($_GET['zaaiingID'])) {
+    if (isset($_GET['oogstID'])) {
+        $database->where('OogstID', $_GET['oogstID']);
+        $success = $database->update(
+            'oogst',
+            array(
+                'Zaaiing_ZaaiingID' => $_GET['zaaiingID']
+            )
+        );
+        if (!$success) {
+            $error_msg .= "De zaaiing kon niet toegevoegd worden.";
+        }
+        $mosselgroepID = NULL;
+
+        $mosselgroepResult = $database->rawQuery("
+                                    SELECT Z.Mosselgroep_MosselgroepID AS Mosselgroep_MosselgroepID
+                                    FROM zaaiing Z, oogst O
+                                    WHERE OogstID = " . $_GET['oogstID'] . "
+                                    AND ZaaiingID = O.Zaaiing_ZaaiingID
+                                    ");
+        foreach($mosselgroepResult as $mosselgroepRow) {
+            if ($mosselgroepID == NULL) {
+                $mosselgroepID = $mosselgroepRow['Mosselgroep_MosselgroepID'];
+            }
+        }
+
+        if ($_GET['leeggevist'] == "Nee") {
+            $database->insert('mosselgroep', array('ParentMosselgroepID' => $mosselgroepID));
+            $mosselgroepID = $database->getInsertId();
+        }
+
+        $database->where('OogstID', $_GET['oogstID']);
+        $success = $database->update(
+            'oogst',
+            array(
+                'Mosselgroep_MosselgroepID' => $mosselgroepID
+            )
+        );
+        if (!$success) {
+            $error_msg .= "De zaaiing kon niet toegevoegd worden.";
+        }
+        if (isset($_GET['verzaaiingID'])) {
+            $database->where('ZaaiingID', $_GET['verzaaiingID']);
+            $database->update('zaaiing', array('Mosselgroep_MosselgroepID' => $mosselgroepID));
+        }
+    }
+    if (isset($_GET['behandelingID'])) {
+        $database->where('BehandelingID', $_GET['behandelingID']);
+        $success = $database->update(
+            'behandeling',
+            array(
+                'Zaaiing_ZaaiingID' => $_GET['zaaiingID'],
+            )
+        );
+        if (!$success) {
+            $error_msg .= "De zaaiing kon niet toegevoegd worden.";
+        }
+        $mosselgroepResult = $database->rawQuery("
+                                        SELECT Z.Mosselgroep_MosselgroepID AS Mosselgroep_MosselgroepID
+                                        FROM zaaiing Z, behandeling B
+                                        WHERE BehandelingID = " . $_GET['behandelingID'] . "
+                                        AND ZaaiingID = Zaaiing_ZaaiingID
+                                        ");
+        $mosselgroepID = NULL;
+        foreach($mosselgroepResult as $mosselgroepRow) {
+            $mosselgroepID = $mosselgroepRow['Mosselgroep_MosselgroepID'];
+        }
+        $database->where('BehandelingID', $_GET['behandelingID']);
+        $success = $database->update(
+            'behandeling',
+            array(
+                'Mosselgroep_MosselgroepID' => $mosselgroepID
+            )
+        );
+        if (!$success) {
+            $error_msg .= "De zaaiing kon niet toegevoegd worden.";
+        }
+    }
+    header("Location: ./invoeren-upload.php");
+    die();
+}
+
+
 
 ?>
 <!DOCTYPE html>
@@ -27,94 +111,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-md-6">
-                        <h2>Zaaiingen</h2>
-
                         <?php
-                            $error_msg = "";
-                            if (isset($_GET['zaaiingID'])) {
-                                if (isset($_GET['oogstID'])) {
-                                    $database->where('OogstID', $_GET['oogstID']);
-                                    $success = $database->update(
-                                        'oogst',
-                                        array(
-                                            'Zaaiing_ZaaiingID' => $_GET['zaaiingID']
-                                        )
-                                    );
-                                    if (!$success) {
-                                        $error_msg .= "De zaaiing kon niet toegevoegd worden.";
-                                    }
-                                    $mosselgroepID = NULL;
-
-                                    $mosselgroepResult = $database->rawQuery("
-                                    SELECT Z.Mosselgroep_MosselgroepID AS Mosselgroep_MosselgroepID
-                                    FROM zaaiing Z, oogst O
-                                    WHERE OogstID = " . $_GET['oogstID'] . "
-                                    AND ZaaiingID = O.Zaaiing_ZaaiingID
-                                    ");
-                                    foreach($mosselgroepResult as $mosselgroepRow) {
-                                        if ($mosselgroepID == NULL) {
-                                            $mosselgroepID = $mosselgroepRow['Mosselgroep_MosselgroepID'];
-                                        }
-                                    }
-
-                                    if ($_GET['leeggevist'] == "Nee") {
-                                        $database->insert('mosselgroep', array('ParentMosselgroepID' => $mosselgroepID));
-                                        $mosselgroepID = $database->getInsertId();
-                                    }
-
-                                    $database->where('OogstID', $_GET['oogstID']);
-                                    $success = $database->update(
-                                        'oogst',
-                                        array(
-                                            'Mosselgroep_MosselgroepID' => $mosselgroepID
-                                        )
-                                    );
-                                    if (!$success) {
-                                        $error_msg .= "De zaaiing kon niet toegevoegd worden.";
-                                    }
-                                    if (isset($_GET['verzaaiingID'])) {
-                                        $database->where('ZaaiingID', $_GET['verzaaiingID']);
-                                        $database->update('zaaiing', array('Mosselgroep_MosselgroepID' => $mosselgroepID));
-                                    }
-                                }
-                                if (isset($_GET['behandelingID'])) {
-                                    $database->where('BehandelingID', $_GET['behandelingID']);
-                                    $success = $database->update(
-                                        'behandeling',
-                                        array(
-                                            'Zaaiing_ZaaiingID' => $_GET['zaaiingID'],
-                                        )
-                                    );
-                                    if (!$success) {
-                                        $error_msg .= "De zaaiing kon niet toegevoegd worden.";
-                                    }
-                                    $mosselgroepResult = $database->rawQuery("
-                                        SELECT Z.Mosselgroep_MosselgroepID AS Mosselgroep_MosselgroepID
-                                        FROM zaaiing Z, behandeling B
-                                        WHERE BehandelingID = " . $_GET['behandelingID'] . "
-                                        AND ZaaiingID = Zaaiing_ZaaiingID
-                                        ");
-                                    $mosselgroepID = NULL;
-                                    foreach($mosselgroepResult as $mosselgroepRow) {
-                                        $mosselgroepID = $mosselgroepRow['Mosselgroep_MosselgroepID'];
-                                    }
-                                    $database->where('BehandelingID', $_GET['behandelingID']);
-                                    $success = $database->update(
-                                        'behandeling',
-                                        array(
-                                            'Mosselgroep_MosselgroepID' => $mosselgroepID
-                                        )
-                                    );
-                                    if (!$success) {
-                                        $error_msg .= "De zaaiing kon niet toegevoegd worden.";
-                                    }
-                                }
-                                    //header("Location: ./invoeren-upload.php");
-                                    //die();
-                            }
 
                             $bedrijf_id = 1; // Moet gekoppeld worden aan sessie
-
+                            echo '<h2>Zaaiingen</h2>';
                             $database->where('Bedrijf_BedrijfID', $bedrijf_id);
                             if (!isset($_GET['bedrijfID'])) {
                                 $error_msg .= "Het bedrijfID is niet meegegeven. ";
