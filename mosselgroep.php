@@ -36,8 +36,7 @@
                         'type' => 'int',
                         'minLength' => 1,
                         'maxLength' => 11
-                    ),
-                    'ckcachecontrol' => 'optional'
+                    )
                 );
 
                 $get = isValidArray($rules, $_GET);
