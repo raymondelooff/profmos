@@ -240,7 +240,15 @@
 
 						<div class="form-group">
 							<label for="mosselgroep">Mosselgroep</label>
-							<input class="form-control" type="text" id="mosselgroep" name="mosselgroep" <?php getTextFieldValue('mosselgroep'); ?>maxlength="80" size="20">
+                            <select id="mosselgroep" name="mosselgroep" class="form-control" >
+                                <?php
+                                $mosselgroepen = $database->get('mosselgroep');
+                                echo '<option selected disabled></option>';
+                                foreach($mosselgroepen as $mosselgroep) {
+                                    echo '<option value=" ' . $mosselgroep['MosselgroepID'] . '">' . $mosselgroep['MosselgroepID'] . '</option>';
+                                }
+                                ?>
+                            </select>
 						</div>
 
 						<div class="form-group">
