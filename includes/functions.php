@@ -233,6 +233,9 @@ function isValidArray($rules = array(), $array = array()) {
 
 	}
 
+	// Clean $_POST because array is validated
+	$_POST = array();
+
     return $newArray;
 
 }
