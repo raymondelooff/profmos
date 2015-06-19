@@ -381,15 +381,22 @@ include_once ('includes/header.php');
                     </div>
                     <br>
                 </div>
+	        </div>
 
-                <div class="form-group">
-                    <label for="opmerking">Opmerking:</label>
-                    <textarea class="form-control" rows="5" id="opmerking" name="opmerking" ></textarea>
-                </div>
+	        <div class="row">
+		        <div class="col col-md-12">
+	                <div class="form-group">
+	                    <label for="opmerking">Opmerking:</label>
+	                    <textarea class="form-control" rows="5" id="opmerking" name="opmerking" ></textarea>
+	                </div>
+		        </div>
 
-                <div class="form-group">
-                    <input class="btn btn-primary" type="submit" value="Verstuur">
-                </div>
+		        <div class="col col-md-2">
+	                <div class="form-group">
+	                    <input class="btn btn-primary" type="submit" value="Verstuur">
+	                </div>
+		        </div>
+	        </div>
         </form>
     </div>
 </section>
